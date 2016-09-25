@@ -28,10 +28,8 @@ function nowServing(katzDeli) {
 
 var line = [];
 
-//for (i = 0; i < cars.length; i++) {
-
 function currentLine(katzDeli) {
-  while (i = 0; i < katzDeli.length; i++) {
+  for (let i = 0; i < katzDeli.length; i++) {
     line.push(` `+[i+1]+`. `  + katzDeli[i])
   }
   if (katzDeli.length === 0) {
@@ -39,6 +37,10 @@ function currentLine(katzDeli) {
   } else
   return(`The line is currently:` + line);
 }
+
+
+/// did it this way first, then refactored to above
+//(i used a for loop instead of a while loop)
 
 // function currentLine(katzDeli) {
 //   let i = 0;
