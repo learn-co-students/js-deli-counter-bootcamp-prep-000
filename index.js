@@ -11,15 +11,16 @@ function nowServing(deliLine, name){
   }
 }
 
-var katzDeliline = ["Bill", "Jane", "Ann"];
+var katzDeliline = ["bill"]
 
 function currentLine(katzDeliline){
   const numbersAndNames = [];
-  for( var i = 0; i < katzDeliline.length; i--){
-    numbersAndNames.push((i + 1) + ". " + katzDeliline.shift())
+  for( var i = katzDeliline.length; i > 0; i--){
+    numbersAndNames.unshift(i + ". " + katzDeliline.pop())
     }
+  var newN = numbersAndNames.join(', ');
 if (numbersAndNames.length > 0){
-    return ("The line is currently: " + numbersAndNames)
+    return ("The line is currently: " + newN)
 } else {
     return( "The line is currently empty.")
   }
