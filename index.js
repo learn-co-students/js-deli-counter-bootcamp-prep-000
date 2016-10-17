@@ -12,15 +12,20 @@ function nowServing(katzDeliLine){
 }
 
 
-
-
 function currentLine(line){
+  var newArray = []
+  i = 0
   if (line.length === 0) {
     return "The line is currently empty."}
 
   else if (line.length > 0){
-   //return ("The line is currently: " + [1] + ". " + `${line}`)
-   return (`The line is currently: 1. ${line[0]}, 2. ${line[1]}, 3. ${line[2]}`)
+    for (var i; i < line.length; i++){
+      newArray.push([i+1] + ". " + line[i]) //+ `${[i+1]}. ${line[i].join(,)}`
+
+    }
+
+  return "The line is currently: " + newArray.join(", ")
+   //return (`The line is currently: 1. ${line[0]}, 2. ${line[1]}, 3. ${line[2]}`)
    //basically cheating. How the fuck do I get this to work iteratively?
 }
 }
