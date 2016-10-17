@@ -30,7 +30,7 @@ describe('deli', () => {
   });
 
   describe('nowServing', () => {
-    it('returns the line is empty when no on is on line', () => {
+    it('returns the line is empty when no one is in line', () => {
       expect(nowServing([])).toEqual("There is nobody waiting to be served!");
     });
 
