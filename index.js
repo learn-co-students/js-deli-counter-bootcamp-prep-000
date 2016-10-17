@@ -20,7 +20,7 @@ function currentLine(line){
 
   else if (line.length > 0){
    //return ("The line is currently: " + [1] + ". " + `${line}`)
-   return ("The line is currently: " + "1. " + line[0] + "2. " +line[1] + "3. " + line[2])
+   return (`The line is currently: 1. ${line[0]}, 2. ${line[1]}, 3. ${line[2]}`)
    //basically cheating. How the fuck do I get this to work iteratively?
 }
 }
