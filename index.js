@@ -26,22 +26,13 @@ function currentLine(katzDeliLine){
     return "The line is currently empty."
   }
   else if (length > 0){
-    i = 1
-    var current = katzDeline.map(funtion(name) { 
-      var numberedName = `${i}. ${name}`
-      i += 1
-      numberedName
-    }
-    /*
     var current = []
     for (let i = 0; i < length; i++){
       var name = katzDeliLine[i]
       var list = `${i + 1}. ${name}`
       current.push(list)
     }
-    */
     return `The line is currently: ${current.join(', ')}`
-
   }
 
 }
