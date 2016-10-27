@@ -10,11 +10,11 @@ function nowServing() {
 
   for(let i = 0; i >= katzDeli.length; i++){
 
-     if (i === 0) {
-      return `There is nobody waiting to be served!`;
+     if (i != 0) {
+      return `Currently serving ${katzDeli[i]}`;
      }
      else {
-       return `Currently serving ${katzDeli[i]}`
+       return `There is nobody waiting to be served!`;
 
      }
   }
