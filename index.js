@@ -8,7 +8,7 @@ function takeANumber(katzDeliLine, name){
 function nowServing() {
 
   for(let i = 0; i >= katzDeli.length; i++){
-     if (i === 1) {
+     if (i === 0) {
       return `There is nobody waiting to be served!`;
      }
      else {
