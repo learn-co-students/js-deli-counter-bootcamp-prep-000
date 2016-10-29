@@ -21,6 +21,16 @@ function currentLine(katzDeli){
   if (katzDeli.length === 0) {
     return `The line is currently empty.`
   }
-  else { return `The line is currently: ${katzDeli.slice(0)}`;
+  else {
+    var array = []
+    for (let i = 0; i < katzDeli.length; i++){
+      var index = i + 1
+      var name = katzDeli[i]
+      array.push(` ${index}. ${name}`)
+    }
   }
+  return `The line is currently:${array}`
 }
+
+
+//return `The line is currently: ${katz} ${katzDeli.slice(0)}`;
