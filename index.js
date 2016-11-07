@@ -22,6 +22,6 @@ function currentLine(line) {
       line[idx] = (idx + 1) + '. ' + line[idx]
       idx ++
     }
-    return `The line is currently: &{line.join(" ")}`
+    return `The line is currently: ${line.join(', ')}`
   }
 }
