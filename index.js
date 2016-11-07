@@ -20,6 +20,7 @@ function currentLine(line) {
     var idx = 0
     while (idx < line.length){
       line[idx] = (idx + 1) + '. ' + line[idx]
+      idx ++
     }
     return `The line is currently: &{line.join(" ")}`
   }
