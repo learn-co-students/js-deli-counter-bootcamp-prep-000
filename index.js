@@ -8,7 +8,7 @@ return ("Welcome, " + newperson + ". You are number " + (katzDeliLine.indexOf(ne
 function nowServing(katzDeliLine){
 if (katzDeliLine.length>1){
   katzDeliLine.shift;
-  return ( "Currently serving " + (katzDeliLine.indexOf(newperson)) );
+  return ( "Currently serving " + (katzDeliLine.indexOf(1)) );
 }
 else{
   return ("There is nobody waiting to be served!");
