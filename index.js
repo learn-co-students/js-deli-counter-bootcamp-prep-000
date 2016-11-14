@@ -4,4 +4,4 @@ var katzDeliLine = new Array();
 katzDeliLine.push(newperson)
 
 
-return katzDeli.push(katzDeliLine);}
+return ("Welcome," + newperson ". You are " (katzDeliLine[]+1) +"in line." )
