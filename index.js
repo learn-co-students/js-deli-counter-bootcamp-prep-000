@@ -6,7 +6,7 @@ return ("Welcome, " + newperson + ". You are number " + (katzDeliLine.indexOf(ne
 }
 
 function nowServing(katzDeliLine){
-if (katzDeliLine.length>1){
+if (katzDeliLine.length>=1){
   katzDeliLine.shift;
   return ( "Currently serving " + (katzDeliLine[newperson]);
 }
