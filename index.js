@@ -1,8 +1,7 @@
 
 function takeANumber(katzDeliLine,newperson){
-var positionInLine = new Array();
-positionInLine.push(katzDeliLine,newperson)
-}
+var katzDeliLine = new Array();
+katzDeliLine.push(newperson)
 
-return positionInLine;
-}
+
+return katzDeli.push(katzDeliLine);}
