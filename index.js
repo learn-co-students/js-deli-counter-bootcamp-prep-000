@@ -1,5 +1,5 @@
 
 function takeANumber(katzDeliLine,newperson){
 var katzDeliLine= [];
-return ("Welcome," + newperson + ". You are number " (katzDeliLine[]+1) +"in line." )
+return ("Welcome," + newperson + ". You are number " (katzDeliLine.indexOf[newPerson]) +"in line." )
 }
