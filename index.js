@@ -34,7 +34,7 @@ var adline;
 for (var i=1; line.length >= i; i++)
 {
   adline= (i + "." + line[i] + ",");
-}
+}}
 return ("The line is currently: " + adline);
-}
+
 }
