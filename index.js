@@ -35,3 +35,4 @@ for (var i=1; katzDeliLine.length >= i; i++)
     return ("The line is currently empty.");
 }
 }
+}
