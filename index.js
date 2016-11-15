@@ -34,8 +34,8 @@ else
 var online;
 for (var i=0; line.length > i; i++)
 {
-  online=( (i+1) + ". " + line[i] + ", ");
+  online.push( (i+1) + ". " + line[i] + ", ");
 }
 
-return ("The line is currently: " + online.push);
+return ("The line is currently: " + online);
 }}
