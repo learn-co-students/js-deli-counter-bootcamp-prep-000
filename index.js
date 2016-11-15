@@ -19,6 +19,6 @@ function currentLine(katzDeliLine){
     return ("The line is currently empty.");
   }
   else {
-    return ( "The line is currently: " + (katzDeliLine.indexOf(newperson)+1) + "." + katzDeliLine + ",");
+    return ( "The line is currently: " + (katzDeliLine.indexOf()+1) + "." + katzDeliLine + ",");
   }
 }
