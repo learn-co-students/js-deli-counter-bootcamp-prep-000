@@ -27,7 +27,7 @@ else{
 
 function currentLine(katzDeliLine){
 
-if (katzdeliLine<=0){
+if (katzdeliLine.length<=0){
   return ("The line is currently empty.");
 }
 else{
