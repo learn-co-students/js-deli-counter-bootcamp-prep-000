@@ -14,11 +14,22 @@ else{
 }
 }
 
-function currentLine(katzDeliLine){
+/* unction currentLine(katzDeliLine){
   if (katzDeliLine.length<=0){
     return ("The line is currently empty.");
   }
   else {
     return ( "The line is currently: " + (katzDeliLine.indexOf()+1) + "." + katzDeliLine + ",");
+  }
+}
+*/
+
+
+function currentLine(katzDeliLine){
+  for (var i=1; katzDeliLine.length > 0; i++){
+    return ( "The line is currently: " + i + "." + katzDeliLine + ",")}
+    else {
+    return ("The line is currently empty.");
+
   }
 }
