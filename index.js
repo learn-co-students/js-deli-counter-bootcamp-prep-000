@@ -37,5 +37,5 @@ for (var i=0; line.length > i; i++)
   online=( (i+1) + ". " + line[i] + ", ");
 }
 
-return ("The line is currently: " + online);
+return ("The line is currently: " + online.push);
 }}
