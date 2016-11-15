@@ -28,7 +28,7 @@ else{
 function currentLine(line){
 if (line.length<=0){
   return ("The line is currently empty.");
-
+}
 else
 {
 var online;
@@ -36,6 +36,6 @@ for (var i=0; line.length >= i; i++)
 {
   online=(i + ". " + line + ", ");
 }
-}
+
 return ("The line is currently: " + online);
 }}
