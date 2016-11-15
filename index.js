@@ -32,9 +32,9 @@ if (line.length<=0){
 else
 {
 var online;
-for (var i=0; line.length >= i; i++)
+for (var i=1; line.length >= i; i++)
 {
-  online=(i + ". " + line[i] + ", ");
+  online=( i + ". " + line[i] + ", ");
 }
 
 return ("The line is currently: " + online);
