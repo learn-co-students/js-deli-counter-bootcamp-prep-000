@@ -37,5 +37,5 @@ for (var i=0; line.length > i; i++)
   online+=( (i+1) + ". " + line[i] + ", ");
 }
 
-return ("The line is currently: " + online.slice(0,-1));
+return ("The line is currently: " + online.slice(0,-2));
 }}
