@@ -31,11 +31,11 @@ if (line.length<=0){
 }
 else
 {
-var online={};
+var online;
 for (var i=0; line.length > i; i++)
 {
-  online.push( (i+1) + ". " + line[i] + ", ");
+  online=( (i+1) + ". " + line[i] + ", ");
 }
 
-return ("The line is currently: " + online);
+return ("The line is currently: " + online.push);
 }}
