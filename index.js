@@ -26,11 +26,11 @@ else{
 
 
 function currentLine(katzDeliLine){
-var line;
+
 for (var i=1; katzDeliLine.length >= i; i++)
 {
-  line= ( "The line is currently: " + i + ". " + katzDeliLine + ", ");
-  return line;
+("The line is currently: " + i + ". " + katzDeliLine + ", ");
+
 
 }
 
