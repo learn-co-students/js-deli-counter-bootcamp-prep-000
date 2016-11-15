@@ -30,11 +30,11 @@ if (line.length<=0){
   return ("The line is currently empty.");
 }
 else{
-var adline;
+var online;
 for (var i=1; line.length >= i; i++)
 {
-  adline= (i + "." + line[i] + ",");
+  online= (i + "." + line + ",");
 }}
-return ("The line is currently: " + adline);
+return ("The line is currently: " + online);
 
 }
