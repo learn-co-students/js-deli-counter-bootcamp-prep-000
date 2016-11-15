@@ -25,15 +25,15 @@ else{
 */
 
 
-function currentLine(katzDeliLine){
-if (katzdeliLine.length<=0){
+function currentLine(line){
+if (line.length<=0){
   return ("The line is currently empty.");
 }
 else{
-var line;
-for (var i=1; katzDeliLine.length >= i; i++)
+var adline;
+for (var i=1; line.length >= i; i++)
 {
-  line= (i + "." + katzdeliLine[i] + ",");
+  adline= (i + "." + line[i] + ",");
 }
 return ("The line is currently: " + line);
 }
