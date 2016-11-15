@@ -28,10 +28,10 @@ else{
 function currentLine(katzDeliLine){
 for (var i=1; katzDeliLine.length >= i; i++)
 {
-  if(katzDeliLine.length>0) {
+  while(katzDeliLine.length>0) {
     return ( "The line is currently: " + i + "." + katzDeliLine + ",")
 }
-  else {
+  
     return ("The line is currently empty.");
 }
 }
