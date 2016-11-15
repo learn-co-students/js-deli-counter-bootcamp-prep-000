@@ -26,14 +26,13 @@ else{
 
 
 function currentLine(katzDeliLine){
-if{
+
 for (var i=1; katzDeliLine.length >= i; i++)
 {
 var line=("The line is currently: " + i + ". " + katzDeliLine + ", ");
 }
-return line;}
-else{
+return line;
 
-    return ("The line is currently empty.");
-}
+
+//    return ("The line is currently empty.");
 }
