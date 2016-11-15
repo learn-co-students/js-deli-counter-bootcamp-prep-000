@@ -15,11 +15,11 @@ else{
 }
 
 /* unction currentLine(katzDeliLine){
-  if (katzDeliLine.length<=0){
-    return ("The line is currently empty.");
+  if (katzDeliLine.length>0){
+  return ( "The line is currently: " + (katzDeliLine.indexOf()+1) + "." + katzDeliLine + ",");
   }
   else {
-    return ( "The line is currently: " + (katzDeliLine.indexOf()+1) + "." + katzDeliLine + ",");
+    return ("The line is currently empty.");
   }
 }
 */
