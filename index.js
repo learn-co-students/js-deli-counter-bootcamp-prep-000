@@ -32,7 +32,7 @@ if (line.length<=0){
 else
 {
 var online;
-for (var i=0; line.length >= i; i++)
+for (var i=0; line.length > i; i++)
 {
   online=( (i+1) + ". " + line[i] + ", ");
 }
