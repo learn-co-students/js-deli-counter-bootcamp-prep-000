@@ -17,18 +17,13 @@ function nowServing(katzDeliLine) {
   }
 
 function currentLine(katzDeliLine) {
-  //  let i = 0
-    if(katzDeliLine.length < 1 )
-      //    block of code to be executed if the condition is true
-    return "The line is currently empty."
-    }
-    /*
-    var placePlusName = []
+    if(katzDeliLine.length <1) {
+     return "The line is currently empty.";
+     }
 
-    for( i < katzDeliLine.length; i++) {
-    //return a string which gives their place in line Plus their Name
-    //put the first two person in line and then remove them fr the line.
-    //make sure to use exact string as the instructions
+    var numberName = []
+    for(let i = 0; i < katzDeliLine; i++) {
+     numberName.push(`${i + 1}  ${katzDeliLine[i]}`);
     }
-    return `The line is currently: ${i + 1} ${i + 2} ()}`
-  } */
+return `The line is currently: ${numberName()}`
+}
