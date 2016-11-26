@@ -14,20 +14,21 @@ function nowServing(katzDeliLine) {
 
       }
     return "There is nobody waiting to be served!"
-  };
+  }
 
 function currentLine(katzDeliLine) {
-    if(katzDeliLine.length < 1 ) {
+  //  let i = 0
+    if(katzDeliLine.length < 1 )
+      //    block of code to be executed if the condition is true
     return "The line is currently empty."
-
-  //  var numbersNames = []
-
-  } else {
-    for(let i = 0; i < katzDeliLine.length; i ++) {
-    //([initialization]; [condition]; [iteration])
-    //[loopBody] block of code to be executed loops
-    placesNames.push(`${}. ${}`)
     }
+    /*
+    var placePlusName = []
 
-
- }
+    for( i < katzDeliLine.length; i++) {
+    //return a string which gives their place in line Plus their Name
+    //put the first two person in line and then remove them fr the line.
+    //make sure to use exact string as the instructions
+    }
+    return `The line is currently: ${i + 1} ${i + 2} ()}`
+  } */
