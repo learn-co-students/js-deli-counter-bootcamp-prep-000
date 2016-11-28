@@ -23,11 +23,11 @@ function nowServing(katzDeliLine) {
        //define a variable that is a string consisting of current line names
        var numbersJoinNames = [];
 
-       for(let i = 0; i < katzDeliLine; i++) {
+       for(let i = 0; i < katzDeliLine.length; i++) {
        numbersJoinNames.push(`${i + 1}. ${katzDeliLine[i]}`);
       }
       //this will be a string of the currentLine that includes the number combined
       //with names of people next-up-in-line. This will be a string and somehow
       //there must be a method or operator to join numbersJoinNames because
       return `The line is currently: ${numbersJoinNames.join(', ')}`
-   };
+   }
