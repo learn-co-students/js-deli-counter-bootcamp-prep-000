@@ -22,7 +22,7 @@ function nowServing(katzDeliLine) {
         lineNow.push(`${lineNow.length + 1}. ${line[i]}`)
         i++
       }
-      return `The line is currently: ${lineNow + " "}`;
+      return `The line is currently: ${lineNow.join(', ')}`;
     } else {
       return "The line is currently empty."
     }
