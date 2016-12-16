@@ -22,8 +22,8 @@ function currentLine(line) {
   } else {
       var numName = []
       for (var i = 0; i < line.length; i++) {
-        numName.push(`` + `${i + 1}.` + ` ${line[i]}`)
+        numName.push(` ` + `${i + 1}.` + ` ${line[i]}`)
     }
-    return `The line is currently: ${numName} `
+    return `The line is currently:${numName}`
   }
 };
