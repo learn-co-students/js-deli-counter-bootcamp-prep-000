@@ -27,7 +27,13 @@ function currentLine(line){
 for (let i=0;i<line.length;i++){
 
 
-  li+=` ${i+1} ${line[i]}, `;
+  if(i<(line.length-1))
+  {
+    li+=` ${i+1}. ${line[i]},`;
+  }else if(i==(line.length-1))
+  {
+      li+=` ${i+1}. ${line[i]}`;
+  }
 
 
 }
