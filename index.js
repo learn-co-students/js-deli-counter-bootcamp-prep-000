@@ -12,7 +12,7 @@ function nowServing(katzDeli) {
 
   }
   if (katzDeli.length != 0) {
-    return `Currently serving ${katzDeli.shift()}.`
+    return(`Currently serving ${katzDeli.shift()}.`);
   }
   else {
     return "There is nobody waiting to be served!"
@@ -21,20 +21,16 @@ function nowServing(katzDeli) {
 }
 
 
-function currentLine(katzDeliLine){
+function currentLine(katzDeliLine) {
 
-
-  var i = 0;
-  while (i < katzDeliLine.length) {
-    i++
+  if (katzDeliLine !=0) {
+    var inLine = [];
+    for (var i = 0; i < katzDeliLine.length; i++) {
+      inLine.push(` ${i+1}. ${katzDeliLine[i]}`);
+    }
+      return "The line is currently:" + inLine;
+    }
+   else {
+      return "The line is currently empty."
+    }
   }
-
-  if (katzDeliLine.length !=0) {
-    return (`The line is currently: 1. ${katzDeliLine[0]}, 2. ${katzDeliLine[1]}, 3. ${katzDeliLine[2]}`);
-  }
-  else {
-    return "The line is currently empty.";
-  }
-
-  return katzDeliLine;
-}
