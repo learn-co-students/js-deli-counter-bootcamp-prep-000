@@ -1,0 +1,137 @@
+
+> js-deli-counter@0.1.0 test /home/gportela-41622/code/labs/js-deli-counter-bootcamp-prep-000
+> mocha -R mocha-multi --reporter-options nyan=-,json=.results.json
+
+ 0
+ 0
+ 0
+
+[4A[5C-
+[5C-
+[5C-
+[5C-
+[4A[6C_,------,
+[6C_|   /\_/\ 
+[6C^|__( - .-) 
+[6C  ""  "" 
+[4A 1
+ 0
+ 0
+
+[4A[5C-_
+[5C-_
+[5C-_
+[5C-_
+[4A[7C_,------,
+[7C_|  /\_/\ 
+[7C~|_( ^ .^) 
+[7C ""  "" 
+[4A 2
+ 0
+ 0
+
+[4A[5C-_-
+[5C-_-
+[5C-_-
+[5C-_-
+[4A[8C_,------,
+[8C_|   /\_/\ 
+[8C^|__( ^ .^) 
+[8C  ""  "" 
+[4A 3
+ 0
+ 0
+
+[4A[5C-_-_
+[5C-_-_
+[5C-_-_
+[5C-_-_
+[4A[9C_,------,
+[9C_|  /\_/\ 
+[9C~|_( ^ .^) 
+[9C ""  "" 
+[4A 4
+ 0
+ 0
+
+[4A[5C-_-_-
+[5C-_-_-
+[5C-_-_-
+[5C-_-_-
+[4A[10C_,------,
+[10C_|   /\_/\ 
+[10C^|__( ^ .^) 
+[10C  ""  "" 
+[4A 4
+ 1
+ 0
+
+[4A[5C-_-_-_
+[5C-_-_-_
+[5C-_-_-_
+[5C-_-_-_
+[4A[11C_,------,
+[11C_|  /\_/\ 
+[11C~|_( x .x) 
+[11C ""  "" 
+[4A 5
+ 1
+ 0
+
+[4A[5C-_-_-_-
+[5C-_-_-_-
+[5C-_-_-_-
+[5C-_-_-_-
+[4A[12C_,------,
+[12C_|   /\_/\ 
+[12C^|__( x .x) 
+[12C  ""  "" 
+[4A 5
+ 2
+ 0
+
+[4A[5C-_-_-_-_
+[5C-_-_-_-_
+[5C-_-_-_-_
+[5C-_-_-_-_
+[4A[13C_,------,
+[13C_|  /\_/\ 
+[13C~|_( x .x) 
+[13C ""  "" 
+[4A
+
+
+
+
+  5 passing (2s)
+  2 failing
+
+  1) deli nowServing returns an announcement about the person it is serving, and shifts the line:
+
+      Error: Expected [ 'Steven', 'Blake', 'Avi' ] to equal [ 'Blake', 'Avi' ]
+      + expected - actual
+
+       [
+      -  "Steven"
+         "Blake"
+         "Avi"
+       ]
+      
+      at assert (node_modules/expect/lib/assert.js:29:9)
+      at Expectation.toEqual (node_modules/expect/lib/Expectation.js:81:30)
+      at Context.it (test/index-test.js:40:24)
+
+  2) deli currentLine(line) says who is in line when there are people waiting:
+
+      Error: Expected 'Currently serving Bill' to equal 'The line is currently: 1. Bill, 2. Jane, 3. Ann'
+      + expected - actual
+
+      -Currently serving Bill
+      +The line is currently: 1. Bill, 2. Jane, 3. Ann
+      
+      at assert (node_modules/expect/lib/assert.js:29:9)
+      at Expectation.toEqual (node_modules/expect/lib/Expectation.js:81:30)
+      at Context.it (test/index-test.js:50:52)
+
+
+
