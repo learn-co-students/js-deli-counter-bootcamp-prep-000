@@ -18,11 +18,11 @@ function takeANumber(katzDeli, name) {
     if(katzDeliLine.length == 0){
       return  "The line is currently empty.";
       }
-    else { var n;
+    else { var k;
 
-      for(n = 0; n < katzDeliLine.length; n++){
-          var k = n + 1;
-         console.log (`"The line is currently: ${k}. ${katzDeliLine[n]}" `);
-         }
+      for( var n = 0; n < katzDeliLine.length; n++){
+          var v =  k += n;
+
+        }return (`"The line is currently: ${v}. ${katzDeliLine[n]}" `)
    }
  }
