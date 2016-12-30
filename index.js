@@ -13,16 +13,14 @@ function takeANumber(katzDeli, name) {
     }
   }
 
-  function currentLine(katzDeliLine){
-
-    if(katzDeliLine.length == 0){
-      return  "The line is currently empty.";
-      }
-    else { var k;
-
-      for( var n = 0; n < katzDeliLine.length; n++){
-          var v =  k += n;
-
-        }return (`"The line is currently: ${v}. ${katzDeliLine[n]}" `)
-   }
- }
+  function currentLine(katzDeli){
+  if (katzDeli.length !== 0){
+    var currLine = "The line is currently: ";
+    for (let i = 0; i < katzDeli.length; i++){
+      if (i > 0) currLine += ", ";
+      currLine += `${i+1}. ${katzDeli[i]}`;
+    }
+    return currLine;
+  }
+  return "The line is currently empty.";
+}
