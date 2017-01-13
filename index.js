@@ -1,30 +1,35 @@
-//At the beginning of the day, the deli is empty and is represented by an empty array, e.g.,
-var katzDeli = [];
+var katzDeliLine = [];
 
-function takeANumber(katzDeli, name) {
-  katzDeli.push(name); // adding a new people to the end of the array
-return `Welcome, ${name}.` + ` You are number ${katzDeli.length} in line.` // people's position(e.g. "i"th in line)
+function takeANumber(katzDeliLine, person_name){
+  katzDeliLine.push(person_name); //current line of people
+  return `Welcome, ${person_name}.` + ` You are number ${katzDeliLine.length} in line.`
 }
 
-
-
-function nowServing(katzDeliLine) {
-  if (katzDeliLine.length > 0){
-    return `Currently serving ${katzDeliLine.shift()}.`;
+function nowServing(katzDeliLine){
+  if (katzDeliLine.length == 0){
+    return "There is nobody waiting to be served!"
   } else {
-     return "There is nobody waiting to be served!";
-}
+    return `Currently serving ${katzDeliLine.shift()}.`
+  }
 }
 
+function currentLine(katzDeliLine){
+  if (katzDeliLine.length == 0) {
+    return "The line is currently empty.";
+  }else{
+    var output = `The line is currently: 1. ${katzDeliLine[0]}`;
 
-function currentLine(line){
-  if (line.length > 0) {
-  var sayIt = "The line is currently:";
-   for (var i = 0; i < line.length; i++){
-    line[i] = ` ${i+1}. ${line[i]}`;
+    for(var i = 1; i < katzDeliLine.length; i++) {
+      output = `${output}, ${i+1}. ${katzDeliLine[i]}`;
     }
-    return `${sayIt}${line}`;
-  } else {
-      return "The line is currently empty.";
-   }
+  return output;
+  }
+
+  // if (katzDeliLine.length == 0) {
+  //   return "The line is currently empty."
+  // }else{
+  //    if (var i = 0; i < katzDeliLine.length; i++){
+  //     return `The line is currently: 1. ${katzDeliLine[i-1]}` `, ${i+1}. ${katzDeliLine[i]}`
+  //   }
+  // }
 }
