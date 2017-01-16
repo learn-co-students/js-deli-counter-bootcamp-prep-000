@@ -5,11 +5,13 @@ function takeANumber(arr, person) {
   return `Welcome, ${person}. You are number ${arr.length} in line.`
 }
 
-function nowServing(a) {
-  var served = a[0]
-  a.shift()
-  return a.length === 0 ? ('There is nobody waiting to be served!') : (`Currently serving ${served}.`)  
-}
+function nowServing(line) {
+  if (!line.length) {
+    return "There is nobody waiting to be served!"
+  }
+
+  return `Currently serving ${line.shift()}.`
+};
 
 function currentLine(arr) {
   var newArray = []
