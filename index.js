@@ -40,15 +40,16 @@ var newline = "The line is currently: ";
 if (line[0] != undefined) {
 
 for (let i = 0; i < line.length; i++) {
-//lineIndex = 
 
-newLineArray.push(line.indexOf(i) + ". " + line[i])
+
+//lineIndex = line.indexOf(i)
+newLineArray.push(" " + (i+1) + ". " + line[i])
 
 
 }
 
 
-return newLine + newLineArray
+return "The line is currently:" + newLineArray
   
 } else {
   
