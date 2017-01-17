@@ -35,7 +35,7 @@ if (katzDeliLine[0] != undefined) {
 function currentLine(line) {
 
 var newLineArray = [];
-string newline = "The line is currently: ";
+var newline = "The line is currently: ";
 
 if (line[0] != undefined) {
 
