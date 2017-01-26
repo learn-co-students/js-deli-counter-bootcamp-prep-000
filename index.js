@@ -16,3 +16,17 @@ i++;
     return (`Currently serving ${kartzDeli.shift()}.`)
   }
 }
+
+
+
+function currentLine(kartzDeli){
+  let i = 0;
+  while (kartzDeli.length > 0){
+    i++
+  }
+  if (kartzDeli.length === 0) {
+    return "The line is currently empty."
+  } else {
+      return (`The line is currently: + ${kartzDeli[i]}`)
+  }
+}
