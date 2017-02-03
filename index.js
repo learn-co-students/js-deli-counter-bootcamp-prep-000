@@ -21,10 +21,10 @@ function currentLine(line){
   if (line.length === 0){
     return "The line is currently empty."
   } else {
-  var namesOrdered = []
+    var namesOrdered = []
     for (let i=1; line.length >= i; i++ ){
       namesOrdered.push (`${i}. ${line[i-1]}`)
     }
-
-  return `The line is currently: ${namesOrdered.join(', ')}`
+    return `The line is currently: ${namesOrdered.join(', ')}`
+  }
 }
