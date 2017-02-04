@@ -24,7 +24,7 @@ function currentLine(line) {
   } else {
     var output = "The line is currently: "
 
-    line.forEach( function ( name, index , line ) {
+    line.forEach(function (name, index, line) {
       if ( index === line.length - 1) {
         output = output + `${index + 1}. ${name}`
       } else {
