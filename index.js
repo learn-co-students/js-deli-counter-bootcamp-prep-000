@@ -14,9 +14,9 @@ function currentLine(katzDeliLine) {
   let lineArray = []
   if (katzDeliLine.length > 0) {
     for (let n = 0; n < katzDeliLine.length; n += 1) {
-      lineArray.push(` ${n + 1}. ${katzDeliLine[n]}`)
+      lineArray.push(`${n + 1}. ${katzDeliLine[n]}`)
     }
-    return `The line is currently:${lineArray}`
+    return `The line is currently: ${lineArray.join(`, `)}`
   } else {
     return "The line is currently empty."
   }
