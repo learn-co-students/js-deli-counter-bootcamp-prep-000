@@ -30,6 +30,6 @@ function currentLine(katzDeliLine) {
       deliLineOrder = deliLineOrder + `${[i + 1]}. ${katzDeliLine[i]}, `;
     }
   }
-  var deliLineOrder = deliLineOrder.slice(0, -2);
+  deliLineOrder = deliLineOrder.slice(0, -2);
   return deliLineOrder;
 }
