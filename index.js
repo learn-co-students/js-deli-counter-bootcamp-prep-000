@@ -2,7 +2,7 @@ var katzDeliLine = []; // With names of individuals in line
 
 function takeANumber(katzDeliLine, name){ //accepts the current line of people
     katzDeliLine.push(name); //adds name to the end of the array
-    return "Welcome, ${name},  You are number ${katzDeliLine.length} in line."
+    return `Welcome, ${name},  You are number ${katzDeliLine.length} in line.`
 };
 
 function nowServing(katzDeliLine) { //should return the first person in line and then remove that individual from line
@@ -20,8 +20,12 @@ function currentLine(katzDeliLine){
       katzDeliLineAndNumbers.push(`${i + 1}. ${katzDeliLine[i]}`) // the i+1 is purely to start counting at 1 rather than counting at 0.
       //And at the end here, we'll see the the number "pushed" before the line name
     }
-    return "The line is currently: " + ${katzDeliLineAndNumbers.join(", ")}
+    return "The line is currently: " + katzDeliLineAndNumbers.join(", ")
   } else {
     return "The line is currently empty";
   }
+}
+
+function getANumber(katzDeliLine){
+  katzDeliLine.push(katzDeliLine[-1] + 1);
 }
