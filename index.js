@@ -1,10 +1,8 @@
 var katzDeli = []
-var customerName = ['Ada', 'Grace', 'Brent']
 
 function takeANumber(katzDeli, customerName){
    katzDeli.push(customerName)
-   return "Welcome, "+ customerName + ". You are number " + katzDeli.length + " in line."
-   return katzDeli;
+   return `Welcome, ${customerName}. You are number ${katzDeli.length} in line.`
  }
 
 function nowServing(katzDeli){
@@ -16,20 +14,16 @@ function nowServing(katzDeli){
   }
 }
 
+var servingLine = []
+
 function currentLine(katzDeli) {
   if (katzDeli.length===0) {
     return 'The line is currently empty.'
   }
   else {
-    var statement = 'The line is currently: ';
     for (let i = 0; i < katzDeli.length; i++) {
-    if (i === katzDeli.length-1) {
-      statement +=[i+1] + ". " +katzDeli[i]
-    }
-    else {
-      statement += [i+1] + ". " +katzDeli[i] + ", "
-    }
-    }
+    servingLine.push(` ${i+1}. ${katzDeli[i]}`)
   }
-  return statement;
+ }
+return "The line is currently:" + servingLine
 }
