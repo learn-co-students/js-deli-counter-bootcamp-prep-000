@@ -1,10 +1,9 @@
 function takeANumber(katzDeliLine, name){
-katzDeliLine.push(name)
+  katzDeliLine.push(name);
  return `Welcome, ${name}. You are number ${katzDeliLine.length} in line.`;
- }
+}
 
-
- function nowServing(katzDeliLine){
+function nowServing(katzDeliLine){
    if (!katzDeliLine.length) {
      return "There is nobody waiting to be served!";
    } else {
@@ -12,7 +11,7 @@ katzDeliLine.push(name)
    }
  }
 
- function currentLine(line){
+function currentLine(line){
    var numberedNames = []
 
    if (!line.length) {
