@@ -1,5 +1,5 @@
 function takeANumber(katzDeliLine, name){
-  katzDeliLine.push(name);
+    katzDeliLine.push(name);
  return `Welcome, ${name}. You are number ${katzDeliLine.length} in line.`;
 }
 
@@ -12,13 +12,13 @@ function nowServing(katzDeliLine){
  }
 
 function currentLine(line){
-   var numberedNames = []
+   var numberedNames = [];
 
    if (!line.length) {
      return "The line is currently empty.";
    } else {
      line.forEach(function(name, index){
-       numberedNames.push(`${index+1}. ${name}`)
+       numberedNames.push(`${index+1}. ${name}`);
      })
    }
    return `The line is currently: ${numberedNames.join(", ")}`
