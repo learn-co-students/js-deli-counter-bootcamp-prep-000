@@ -1,10 +1,20 @@
-var katzDeli = []
 
-function takeANumber(katzDeliLine, otherDeli){
-  for(var i = 0; i < otherDeli.length; i=3){
-    var string = `${i+1}` + " in line.";
+
+function takeANumber(katzDeliLine, name){
+  katzDeliLine.push(name);
+  var length = katzDeliLine.length;
+    return `Welcome, ${[name]}. You are number ` + length + ' in line.'
   }
-  return `Welcome, ${otherDeli}. You are number` + string;
+
+
+
+
+function nowServing(deliLine){
+    if (deliLine.length > 0){
+    return "Currently serving " + deliLine.shift() + ".";
+  } else {
+  return 'There is nobody waiting to be served!';
+  }
 }
 
 
