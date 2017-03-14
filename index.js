@@ -13,6 +13,7 @@ function nowServing(array) {
   }
 }
 
+
 function currentLine(array) {
   if (array.length === 0) {
     return "The line is currently empty.";
@@ -20,11 +21,11 @@ function currentLine(array) {
     var peopleOnLine = "";
     for (var i = 0; i < array.length; i++) {
       if (i === array.length - 1) {
-        peopleOnLine = `${peopleOnLine} ${i + 1}. ${array[i]}`;
+        peopleOnLine =`${peopleOnLine}${i + 1}. ${array[i]}`;
       } else {
-        peopleOnLine = `${peopleOnLine} ${i + 1}. ${array[i]},`;
+        peopleOnLine =`${peopleOnLine}${i + 1}. ${array[i]}, `;
       }
     }
-    return `The line is currently:${peopleOnLine}`;
+    return `The line is currently: ${peopleOnLine}`;
   }
 }
