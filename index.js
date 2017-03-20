@@ -10,8 +10,7 @@ function nowServing(array) {
     return "There is nobody waiting to be served!";
   }
   else {
-    var firstInLine = array.shift()
-    return `Currently serving ${firstInLine}.`;
+    return `Currently serving ${array.shift()}.`;
   }
 }
 
