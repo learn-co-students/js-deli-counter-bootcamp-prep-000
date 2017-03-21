@@ -1,4 +1,4 @@
-// 1. takeANumber(): should accept the current line of people, `katzDeliLine`, 
+// 1. takeANumber(): accepts the current line of people, `katzDeliLine`,
 // along with the new person's name as parameters; should return their position
 // in line.
 function takeANumber (line, name){
@@ -6,7 +6,7 @@ function takeANumber (line, name){
   return `Welcome, ${name}. You are number ${line.length} in line.`;
 };
 
-// 2. nowServing(): should return the next person in line and then remove them
+// 2. nowServing(): returns the next person in line and then remove them
 // from the line.
 function nowServing(line) {
   if (line.length > 0){
