@@ -1,8 +1,6 @@
-var maizeAndBlueDeli = [];
-
-function takeANumber (maizeAndBlueDeli, name){
-  maizeAndBlueDeli.push(name);
-  return `Welcome, ${name}. You are number ${maizeAndBlueDeli.length} in line.`;
+function takeANumber (line, name){
+  line.push(name);
+  return `Welcome, ${name}. You are number ${line.length} in line.`;
 };
 
 function nowServing(line) {
