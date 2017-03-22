@@ -22,7 +22,7 @@ function currentLine(line) {
   var lineString = "The line is currently:";
 
   if (line.length > 0){
-    for (var i in line){
+    for (var i = 0, l = line.length; i<l; i++){
       lineString += ` ${parseInt(i)+1}. ${line[i]},`;
     };
   } else if (line.length === 0){
