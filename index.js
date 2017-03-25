@@ -1,3 +1,4 @@
+//Something to submit lesson....
 var line = [];
 
 function takeANumber(line, customer){
