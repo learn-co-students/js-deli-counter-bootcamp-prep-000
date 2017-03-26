@@ -1,9 +1,7 @@
-const katzDeli = [];
-
 function takeANumber( katzDeliLine, name ) {
-    // Push new Customer to DeliLine array
+
     katzDeliLine.push(name);
-    // Return msg to customer on their position in line, using .length
+
     return `Welcome, ${name}. You are number ${katzDeliLine.length} in line.`
 }
 
