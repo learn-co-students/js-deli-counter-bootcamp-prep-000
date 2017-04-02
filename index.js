@@ -29,8 +29,8 @@ var line = []; // Empty array to hold the current line of people statement
 function currentLine (katzDeliLine) {
   let i = 0;
   while (i < katzDeliLine.length) {
-    line.push (" " + [i+1] + ". " + katzDeliLine[i]);
-    i++
+    line.push (" " + [i+1] + ". " + katzDeliLine[i]); // loop to store the people
+    i++ // move on to the next one
   }
   if (katzDeliLine.length === 0) {
     return "The line is currently empty.";
@@ -38,17 +38,3 @@ function currentLine (katzDeliLine) {
     return "The line is currently:" + line
   }
 }
-
-/*  function currentLine (katzDeliLine) {
-    var i = 0;
-    for (i = 0; i<katzDeliLine.length; i++) {
-      line.push ([i+1] + ". " + katzDeliLine[i] + ", ");
-      return line
-    }
-    if (katzDeliLine.length === 0) {
-      return "The line is currently empty.";
-    } else {
-      return "The line is currently: " + line
-    }
-    }
-*/
