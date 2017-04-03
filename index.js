@@ -40,7 +40,7 @@ function currentLine(katzDeliLine)
       var name = katzDeliLine[ii]
       var numberName = `${lineNumber}. ${name}`
       var currentCountName = numberName
-      if (deliLineLength-1 > ii)
+      if (lineNumber < deliLineLength)
       {
         lineMakeup = lineMakeup + currentCountName +", "
       }
