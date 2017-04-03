@@ -1,11 +1,11 @@
+var katzDeli = [];
 var katzDeliLine = [];
-var newCustomer = "";
 
-function takeANumber(katzDeliLine,newCustomer){
+function takeANumber(katzDeliLine, newCustomer){
 
   katzDeliLine.push(newCustomer);
 
-return console.log("Welcome," + newCustomer + ". You are number " + katzDeliLine.length + "in line.");
+return console.log("Welcome," + newCustomer + ". You are number " + katzDeli.length + " in line. ");
 
 } // end of function takeANumber
 
