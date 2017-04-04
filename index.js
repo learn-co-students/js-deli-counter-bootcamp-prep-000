@@ -16,14 +16,15 @@ function nowServing(line){
   }
 }
 function currentLine(line){
-    var linepairs=[]
-    var i=0
-  if(line.length!==0){
+  var i=0
+  var mockline=[]
+  if (line.length!==0){
     for (i=0;i<line.length;i++){
-        linepairs[i]=` ${i+1}. ${line[i]}`}
-    return `The line is currently:${linepairs}`
+      mockline[i]=` ${i+1}. ${line[i]}`
+    }
+    return `The line is currently:${mockline}`
   }
   else {
-  return "The line is currently empty."
-}
+    return `The line is currently empty.`
+  }
 }
