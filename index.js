@@ -2,7 +2,7 @@ var katzDeli = [];
 var katzDeliLine = [];
 var otherDeli = ["Steven", "Blake", "Avi"];
 var newCustomer = "";
-var line = ['Bill','Jane','Ann'];
+var line = ["Bill","Jane","Ann"];
 
 function takeANumber(katzDeliLine, newCustomer){
 
@@ -23,13 +23,12 @@ if(otherDeli.length == 0){
 
    return "There is nobody waiting to be served!";
 
-}else {
+} else {
+  var currentName = otherDeli[0];
 
-  return "Currently serving " + otherDeli[0] + ".";
-
-  otherDeli.shift();
-
-  return otherDeli;
+  otherDeli = otherDeli.shift();
+  
+  return "Currently serving " + currentName + ".";
 
 } // end of if-else statement
 
@@ -37,18 +36,25 @@ if(otherDeli.length == 0){
 
 function currentLine(line){
 var i = 0;
-var lineNumber = (line.index + 1);
+var newline = [];
 
 if (line.length == 0) {
 
   return "The line is currently empty."
 
-}else {return "The line is currently: "
+}else {
 
-while (i < line.length){
+    while (i < line.length){
 
- return lineNumber + ". " + line[i] + ", ";
-  i ++;
-} // end of while loop
+      var lineNumber = (i + 1);
+
+      newline.push(" "+ lineNumber + ". " + line[i]);
+
+      i++; //increment counter
+
+    } // end of while loop
+
+    return "The line is currently:" + newline;
+
 } // end of else statment
 } // end of function currentLine
