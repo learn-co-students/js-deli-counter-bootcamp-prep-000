@@ -22,9 +22,11 @@ function currentLine(line){
   else
   {
   var announce = "The line is currently: "
-  for(var i=0; i<line.length; i++) {
-    line.push((i+1) + " " + line[i])
+  var red = line.length
+  for(var i=0; i<red; i++) {
+    announce += ((i+1) + ". " + line[i] + ", ")
   }
-  return announce + line
+    announce = announce.slice(0, -2)
+    return announce
   }
 }
