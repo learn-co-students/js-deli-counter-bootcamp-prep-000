@@ -27,7 +27,7 @@ if(otherDeli.length == 0){
   var currentName = otherDeli[0];
 
   otherDeli = otherDeli.shift();
-  
+
   return "Currently serving " + currentName + ".";
 
 } // end of if-else statement
@@ -35,7 +35,6 @@ if(otherDeli.length == 0){
 } // end of function nowServing
 
 function currentLine(line){
-var i = 0;
 var newline = [];
 
 if (line.length == 0) {
@@ -44,15 +43,13 @@ if (line.length == 0) {
 
 }else {
 
-    while (i < line.length){
+    for (var i = 0; i < line.length; i++){
 
       var lineNumber = (i + 1);
 
       newline.push(" "+ lineNumber + ". " + line[i]);
 
-      i++; //increment counter
-
-    } // end of while loop
+    } // end of for loop
 
     return "The line is currently:" + newline;
 
