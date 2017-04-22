@@ -11,9 +11,10 @@ function nowServing(line){
 //and shifts the line
 // returns the line is empty when no on is on line
   if (line.length > 0) {
-    var currentlyServing = line[0];
-    line.shift(); //why isn't this working?
-    return `Currently serving ${currentlyServing}.`;
+    return `Currently serving ${line.shift()}.`
+    /*var currentlyServing = line[0];
+    line.shift();
+    return `Currently serving ${currentlyServing}.`;*/
   }
   else
     return 'There is nobody waiting to be served!';
