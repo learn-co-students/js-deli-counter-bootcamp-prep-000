@@ -18,7 +18,13 @@ function currentLine(line){
   }else{
     var list = "The line is currently:";
     for(var i = 0; i<line.length; i++){
-      list = list + line[i];
+      if(i == line.length-1) {
+        list = list+` ${i+1}. ${line[i]}`;
+      }
+      else {
+        list = list+` ${i+1}. ${line[i]},`;
+      }
     }
     return list;
+}
 }
