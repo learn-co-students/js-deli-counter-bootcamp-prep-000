@@ -24,11 +24,21 @@ function nowServing(katzDeliLine){
 
 function currentLine(line){
   var waiting=[];
-  for (let i=line.length; i<1; i-- ){
-    if(i<0){
-      return ('The line is currently: '+ i +'. '+ waiting[i])
-    } else if (i=0){
-      return ('The line is currently empty.')
+  if (line.length===0) {
+    return ('The line is currently empty.')
+  } else {
+    for (var I=0; I<line.length; I++){
+      waiting.push( I+1 +'. ' + line[I])
     }
+    return ('The line is currently: ' + waiting.join(', '))
   }
+  // var waiting=[];
+  // do{
+  //   return('The line is currently: ')
+  // }while (waiting.length>0){}
+  //     // This line is in progres and needs to be addressed/completed
+  //   waiting.push(array[waiting.length] +
+  //   }
+  //   return waiting
+  // }
 }
