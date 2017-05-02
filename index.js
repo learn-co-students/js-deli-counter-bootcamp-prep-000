@@ -1,5 +1,34 @@
-var katzDeli=[];
+// This is a series of functions designed to simulate a deli counter. There is a funciton for taking a number, calling who is next in line, and also telling you who is currently in line.
+var katzDeli
+
 var katzDeliLine=[];
+
+//When someone enters the deli and takes a number, their name is added to the end of the katzDeliLine array. The computer then returns the phrase listed including their name and the number they are in line.
 function takeANumber(katzDeliLine, name){
-  return (katzDeliLine.length+1)
+  katzDeliLine.push(name)
+  return ('Welcome, '+ name +'. You are number ' + (katzDeliLine.length)+ ' in line.')
+}
+
+//nowServing function is designed to call out who is next in line. It defines a new array called next. This array (if the length of katzDeliLine is equal to 0) will say nobody is waiting to be served. Else it will pull (unshift) the first person in katzDeliLine, and then delete (shift) that person from katzDeliLine. Then it returns Currently serving (name). and the function ends.
+function nowServing(katzDeliLine){
+  var next=[];
+  if (katzDeliLine.length===0){
+    return ('There is nobody waiting to be served!')
+  }else {
+    next.unshift(katzDeliLine[0])
+    katzDeliLine.shift()
+    return ('Currently serving ' + next[0]+ '.')
+  }
+}
+
+
+function currentLine(line){
+  var waiting=[];
+  for (let i=line.length; i<1; i-- ){
+    if(i<0){
+      return ('The line is currently: '+ i +'. '+ waiting[i])
+    } else if (i=0){
+      return ('The line is currently empty.')
+    }
+  }
 }
