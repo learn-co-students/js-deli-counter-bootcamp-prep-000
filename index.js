@@ -2,15 +2,13 @@ var katzDeli = [];
 var otherDeli = [];
 
 function takeANumber(katzDeli,name) {
-  while (katzDeli.length > 0) {
-    otherDeli = [...otherDeli, name];
-  var position = otherDeli.length;
+  katzDeli.push(name);
+  var position = katzDeli.length;
   return `Welcome, ${name}. You are number ${position} in line.`;
-  }
 }
 
 function nowServing(deliLine){
-  if (otherDeli.length > 1) {
+  if (deliLine.length > 1) {
   for (var i=0; i < (deliLine.length -1); i++) {
   var name = deliLine[i];
   deliLine.shift();
@@ -18,16 +16,17 @@ function nowServing(deliLine){
     }
   } else {
     return 'There is nobody waiting to be served!'
-  } 
+  }
 }
 
 function currentLine(otherDeli){
+  var nowInLine = [];
   if(otherDeli.length > 0){
     for (var i = 0; i <= (otherDeli.length - 1); i++){
       var position = i + 1;
-      var currentLine = [...currentLine,` ${position}. ${otherDeli[i]}`];
+      nowInLine.push(` ${position}. ${otherDeli[i]}`);
     }
-    return `The line is currently: ${currentLine}`;
+    return `The line is currently:${nowInLine}`;
   } else {
     return "The line is currently empty."
   }
