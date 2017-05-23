@@ -1,5 +1,5 @@
 var katzDeli = [];
-
+var justAChange = "To get the submit working";
 var takeANumber = function(katzDeli, name){
   katzDeli.push(name);
   var pos = katzDeli.length;
