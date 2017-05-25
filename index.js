@@ -18,6 +18,27 @@ function nowServing(katzDeliLine){
 }
 
 function currentLine(katzDeliLine){
+  var lineList = []
+  if (katzDeliLine.length===0){
+    return "The line is currently empty."
+  }
+  else { // use .join()
+    for( var i = 0; i < katzDeliLine.length; i++){
+      var currentPerson = ` ${i+1}. ${katzDeliLine[i]}`
+      lineList.push(currentPerson)
+    }
+    var lineStr = lineList.join(",")
+    return `The line is currently:${lineStr}`
+  }
+}
+
+
+
+/*
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+var energy = fruits.join();
+
+function currentLine(katzDeliLine){
   var lineList = ""
   if (katzDeliLine.length===0){
     return "The line is currently empty."
@@ -29,8 +50,9 @@ function currentLine(katzDeliLine){
         lineList = lineList + ","
       }
       lineList = lineList + str
-
     }
     return `The line is currently:${lineList}`
   }
 }
+
+*/
