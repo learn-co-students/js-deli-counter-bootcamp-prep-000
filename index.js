@@ -28,10 +28,15 @@ function currentLine(line)
     return "The line is currently empty.";
   }
   else {
-    var returnString = "";
+    var returnString = "The line is currently: ";
     for(var i = 0; i < line.length; i++)
     {
-      returnString += line[i];
+      var leadingNumber = (i + 1).toString();
+      returnString += leadingNumber + ". " + line[i];
+      if(i < line.length - 1)
+      {
+        returnString += ", "
+      }
     }
     return returnString;
   }
