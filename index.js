@@ -32,6 +32,6 @@ it should return `"The line is currently empty."`
        nameLine.push(` ${i+1}. ` + katzDeli[i]);
        i++;
      }
-     return theLineIs + nameLine;
+     return theLineI + nameLine;
    }
  }
