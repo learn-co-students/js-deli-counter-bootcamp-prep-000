@@ -4,7 +4,7 @@ describe('deli', () => {
   describe('takeANumber', () => {
     var katzDeli;
     var otherDeli;
-
+ 
     beforeEach(() => {
       katzDeli = [];
       otherDeli = ["Steven", "Blake", "Avi"];
