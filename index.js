@@ -9,18 +9,22 @@ function nowServing(a) {
     return `There is nobody waiting to be served!`
   }
   else {
-    return `Currently serving ${a[0]}`
-    a.shift()
+    var b = a[0]
+    a.splice(0,1)
+    return `Currently serving ${b}.`
   }
 }
 
 function currentLine(a) {
   if (a.length === 0){
-    return `The line is currntly empty`
+    return `The line is currently empty.`
   }
   else {
-    for (let i = 1; i < a.length; i++) {
-      return `The line is currently: ${i} ${a[i],}`
+    var b = []
+    for (let i = 0; i < a.length; i++) {
+       b.push(`${i+1}. ${a[i]}`)
+       var c = b.join(", ")
     }
+    return `The line is currently: ${c}`
   }
 }
