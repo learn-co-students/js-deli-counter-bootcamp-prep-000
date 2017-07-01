@@ -1,20 +1,23 @@
 var katzDeliLine = [];
 
+// Adds a new name to the line and welcomes them
 function takeANumber(katzDeliLine, name) {
   katzDeliLine.push(name);
   return "Welcome, " + name + ". You are number " + katzDeliLine.length + " in line.";
 }
 
+// Serves the first name in line and removes them from line
 function nowServing(katzDeliLine) {
-  var firstInLine = katzDeliLine[0];
-  katzDeliLine.splice(0, 1);
   if (katzDeliLine.length > 0) {
+    var firstInLine = katzDeliLine[0];
+    katzDeliLine.splice(0, 1);
     return "Currently serving " + firstInLine + ".";
   } else {
     return "There is nobody waiting to be served!";
   }
 }
 
+// Returns the names of people in line
 function currentLine(katzDeliLine) {
   var i = 0
   var whosInLine = [];
