@@ -4,10 +4,12 @@ function takeANumber(katzDeliLine, customername){
   katzDeliLine.push (customername)
   return `Welcome, ${customername}. You are number ${katzDeliLine.length} in line.`
 }
-
-
-//function nowServing (line){
-// console.log(); the next person in line and remove it from the line
-
- //return "There is nobody waiting to be served!"
-//}
+var nowServing = function(katzDeliLine) {
+  if (katzDeliLine.length > 0) {
+    var serving = katzDeliLine[0];
+    katzDeliLine.shift();
+    return "Currently serving " + serving + ".";
+  } else {
+    return "There is nobody waiting to be served!"
+  }
+}
