@@ -19,13 +19,11 @@ function nowServing(line) {
 
 // Returns the names of people in line
 function currentLine(line) {
-  var i = 0
-  var whosInLine = [];
-  while(i < line.length) {
-     whosInLine.push(" " + (i + 1) + ". " + line[i]);
-     i++;
-  }
   if (line.length > 0) {
+      var whosInLine = [];
+      for (let i = 0; i < line.length; i++) {
+        whosInLine.push(" " + (i + 1) + ". " + line[i]);
+      }
     return "The line is currently:" + whosInLine;
   } else {
     return "The line is currently empty.";
