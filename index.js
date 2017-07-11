@@ -16,10 +16,9 @@ function nowServing(katzDeliLine) {
 function currentLine(katzDeliLine) {
   if(katzDeliLine.length > 0){
     var arr = [];
-    arr.push(1 + ". " + katzDeliLine[0]);
-    for(var i = 1; i < katzDeliLine.length; i++){
+    for(var i = 0; i < katzDeliLine.length; i++){
       arr.push(" "+ (i+1) + ". " + katzDeliLine[i]);
-    } return "The line is currently: " + arr.toString();
+    } return "The line is currently:" + arr.toString();
   } else {
     return "The line is currently empty.";
   }
