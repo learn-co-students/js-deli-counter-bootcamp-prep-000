@@ -19,8 +19,6 @@ function nowServing(katzDeliLine) {
 
 function currentLine(katzDeliLine) {
   if (katzDeliLine.length > 0) {
-
-    // start debug
     var lineOrder = []
 
     for (let i = 0; i < katzDeliLine.length; i++) {
@@ -28,7 +26,6 @@ function currentLine(katzDeliLine) {
     }
 
     return `The line is currently:${lineOrder}`
-    // end debug
 
   } else {
     return `The line is currently empty.`
