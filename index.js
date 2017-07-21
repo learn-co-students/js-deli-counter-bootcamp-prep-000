@@ -21,9 +21,6 @@ function currentLine(katzDeliLine) {
   } else {
     var allPeople = [];
     for (var i = 0; i < katzDeliLine.length; i++) {
-      if (i == katzDeliLine.length - 1) {
-        allPeople.push(' ' + (i + 1) + '. ' + katzDeliLine[i])
-      } else {
         allPeople.push(' ' + (i + 1) + '. ' + katzDeliLine[i])
       }
     }
