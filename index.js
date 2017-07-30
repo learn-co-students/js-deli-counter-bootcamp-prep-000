@@ -3,7 +3,7 @@ var katzDeli = [];
 function takeANumber(array, name) {
   array.push(name);
   // return ('Welcome, '+ name +". You are number "+ array.length + " in line.")
-  return 'Welcome, ${name}. You are number ${array.length} in line.'
+  return `Welcome, ${name}. You are number ${array.length} in line.`
 }
 
 function nowServing(array) {
@@ -11,9 +11,8 @@ function nowServing(array) {
     return "There is nobody waiting to be served!"
   }
   else {
-
     var head = array.shift();
-    return 'Currently serving ' + head + '.';
+    return `Currently serving ${head}.`
   }
 }
 
@@ -25,9 +24,11 @@ function currentLine(line) {
   else {
     for (let i=0; i<line.length; i++) {
       if(i === line.length -1) {
-        whoinline = whoinline + (i+1) +". "+ line[i];
+        // whoinline = whoinline + (i+1) +". "+ line[i];
+        whoinline = whoinline + `${i+1}. ${line[i]}`
       } else {
-        whoinline = whoinline + (i+1) +". " + line[i] + ", ";
+        // whoinline = whoinline + (i+1) +". " + line[i] + ", ";
+        whoinline = whoinline + `${i+1}. ${line[i]}, `
       }
     }
     return whoinline;
