@@ -1,27 +1,30 @@
-var katzDeli = []
+var katzDeli = [];
 
-function takeANumber(line, name){
-line.push(name)
-  return (`Welcome, ${name}. You are number ${line.length} in line.`)
+function takeANumber(katzDeliLine, name){
+  katzDeliLine.push(name);
+  return (`Welcome, ${name}. You are number ${katzDeliLine.length} in line.`);
 }
 
-function nowServing(line){
-if (line.length === 0){
-  return ("There is nobody waiting to be served!")
-}
-
-return (`Currently serving ${line.shift()}.`)
-
-}
-
-
-function currentLine(line) {
-  if (line.length === 0){
-    return ("The line is currently empty.")
+function nowServing(katzDeliLine){
+  if(katzDeliLine.length == 0){
+    return "There is nobody waiting to be served!";
+  } else{
+  return  `Currently serving ${katzDeliLine.shift()}.`;
+  //
   }
-const katzDeliLine = []
-  for (let i = 0, l = line.length; i < l; i++){
-  katzDeliLine.push(`${i + 1}. ${line[i]}`)
-  }
-  return (`The line is currently: ${katzDeliLine.join(', ')}`)
+}
+
+
+function currentLine(katzDeliLine){
+  var line = [];
+if (katzDeliLine.length === 0){
+  return "The line is currently empty.";
+}
+for (var i = 0; i < katzDeliLine.length; i++){
+
+line.push (`${i + 1}. ${katzDeliLine[i]}`);
+
+}
+return `The line is currently: ${line.join(', ')}`;
+//MAKE SURE return statement is outside for loop!!!!
 }
