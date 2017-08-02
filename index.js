@@ -32,13 +32,13 @@ function currentLine(katzDeliLine){
   }
 }*/
 
-/*/*Returns the Next in line as a array with join, refactored from above */
-function currentLine(KatzDeliLine){
-    if (katzDeliLine.length ===0){
+/*/*Returns the Next in line as a array with join, refactored from above - Did not know join... pretty handy */
+function currentLine(line){
+    if (line.length ===0){
         return "The line is currently empty."
     }
-    var line=[]
-    for (i = 0; i < katzDeliLine.length; i++){
-        line.push(`${i + 1}.${katzDeliLine[i]}`)}
-    return `The line is currently: ${line.join(', ')}`
+    var lineNumbers=[]
+    for (var i = 0; i < line.length; i++){
+        lineNumbers.push(`${i + 1}. ${line[i]}`)}
+    return `The line is currently: ${lineNumbers.join(', ')}`
 }
