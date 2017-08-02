@@ -15,7 +15,7 @@ function nowServing(katzDeliLine){
   }
 }
 
-/* */
+/*Returns the Next in line as a string
 function currentLine(katzDeliLine){
  if (katzDeliLine.length === 0) {
    return "The line is currently empty."
@@ -30,4 +30,15 @@ function currentLine(katzDeliLine){
     }
     return line
   }
+}*/
+
+/*/*Returns the Next in line as a array with join, refactored from above */
+function currentLine(KatzDeliLine){
+    if (katzDeliLine.length ===0){
+        return "The line is currently empty."
+    }
+    var line=[]
+    for (i = 0; i < katzDeliLine.length; i++){
+        line.push(`${i + 1}.${katzDeliLine[i]}`)}
+    return `The line is currently: ${line.join(', ')}`
 }
