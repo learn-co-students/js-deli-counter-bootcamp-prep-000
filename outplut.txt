@@ -1,0 +1,177 @@
+
+> js-deli-counter@0.1.0 test /home/mariahrndz14-107760/code/labs/js-deli-counter-bootcamp-prep-000
+> mocha -R mocha-multi --reporter-options nyan=-,json=.results.json
+
+ 0
+ 0
+ 0
+
+[4A[5C-
+[5C-
+[5C-
+[5C-
+[4A[6C_,------,
+[6C_|   /\_/\ 
+[6C^|__( - .-) 
+[6C  ""  "" 
+[4AWelcome, Ada. You are number 1 in line.
+ 0
+ 1
+ 0
+
+[4A[5C-_
+[5C-_
+[5C-_
+[5C-_
+[4A[7C_,------,
+[7C_|  /\_/\ 
+[7C~|_( x .x) 
+[7C ""  "" 
+[4AWelcome, Grace. You are number 4 in line.
+ 0
+ 2
+ 0
+
+[4A[5C-_-
+[5C-_-
+[5C-_-
+[5C-_-
+[4A[8C_,------,
+[8C_|   /\_/\ 
+[8C^|__( x .x) 
+[8C  ""  "" 
+[4AWelcome, Ada. You are number 1 in line.
+Welcome, Grace. You are number 1 in line.
+Welcome, Kent. You are number 1 in line.
+ 0
+ 3
+ 0
+
+[4A[5C-_-_
+[5C-_-_
+[5C-_-_
+[5C-_-_
+[4A[9C_,------,
+[9C_|  /\_/\ 
+[9C~|_( x .x) 
+[9C ""  "" 
+[4AThere is nobody waiting to be served!
+ 1
+ 3
+ 0
+
+[4A[5C-_-_-
+[5C-_-_-
+[5C-_-_-
+[5C-_-_-
+[4A[10C_,------,
+[10C_|   /\_/\ 
+[10C^|__( x .x) 
+[10C  ""  "" 
+[4AThere is nobody waiting to be served!
+ 1
+ 4
+ 0
+
+[4A[5C-_-_-_
+[5C-_-_-_
+[5C-_-_-_
+[5C-_-_-_
+[4A[11C_,------,
+[11C_|  /\_/\ 
+[11C~|_( x .x) 
+[11C ""  "" 
+[4AThe line is currently empty.
+ 2
+ 4
+ 0
+
+[4A[5C-_-_-_-
+[5C-_-_-_-
+[5C-_-_-_-
+[5C-_-_-_-
+[4A[12C_,------,
+[12C_|   /\_/\ 
+[12C^|__( x .x) 
+[12C  ""  "" 
+[4AThe line is currently: 1. Bill, 2. Jane, 3. Ann
+ 3
+ 4
+ 0
+
+[4A[5C-_-_-_-_
+[5C-_-_-_-_
+[5C-_-_-_-_
+[5C-_-_-_-_
+[4A[13C_,------,
+[13C_|  /\_/\ 
+[13C~|_( x .x) 
+[13C ""  "" 
+[4A
+
+
+
+
+  3 passing (3s)
+  4 failing
+
+  1) deli takeANumber adds a person to the line:
+
+      Error: Expected [] to equal [ 'Ada' ]
+      + expected - actual
+
+      -[]
+      +[
+      +  "Ada"
+      +]
+      
+      at assert (node_modules/expect/lib/assert.js:29:9)
+      at Expectation.toEqual (node_modules/expect/lib/Expectation.js:81:30)
+      at Context.it (test/index-test.js:15:24)
+
+  2) deli takeANumber appends the person the end of the line if there are already people on it:
+
+      Error: Expected [ 'Steven', 'Blake', 'Avi' ] to equal [ 'Steven', 'Blake', 'Avi', 'Grace' ]
+      + expected - actual
+
+       [
+         "Steven"
+         "Blake"
+         "Avi"
+      +  "Grace"
+       ]
+      
+      at assert (node_modules/expect/lib/assert.js:29:9)
+      at Expectation.toEqual (node_modules/expect/lib/Expectation.js:81:30)
+      at Context.it (test/index-test.js:20:25)
+
+  3) deli takeANumber properly handles multiple people being added:
+
+      Error: Expected [] to equal [ 'Ada', 'Grace', 'Kent' ]
+      + expected - actual
+
+      -[]
+      +[
+      +  "Ada"
+      +  "Grace"
+      +  "Kent"
+      +]
+      
+      at assert (node_modules/expect/lib/assert.js:29:9)
+      at Expectation.toEqual (node_modules/expect/lib/Expectation.js:81:30)
+      at Context.it (test/index-test.js:28:24)
+
+  4) deli nowServing returns an announcement about the person it is serving, and shifts the line:
+
+      Error: Expected 'There is nobody waiting to be served!' to equal 'Currently serving Steven.'
+      + expected - actual
+
+      -There is nobody waiting to be served!
+      +Currently serving Steven.
+      
+      at assert (node_modules/expect/lib/assert.js:29:9)
+      at Expectation.toEqual (node_modules/expect/lib/Expectation.js:81:30)
+      at Context.it (test/index-test.js:39:36)
+
+
+
