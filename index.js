@@ -33,7 +33,5 @@ function currentLine(katzDeliLine) {
       }
 
   }
-
-  newStr = waitingStr.slice(0, -2);
-  return newStr;
+  return waitingStr.slice(0, -2);
 }
