@@ -11,19 +11,19 @@ function nowServing(line) {
 }
 
 function currentLine(line) {
+  let greeting = 'The line is currently';
+
   if (line.length === 0) {
-    return 'The line is currently empty.';
+    greeting += ' empty.';
   } else {
-    var lineList = 'The line is currently: '
+    greeting += ': ';
 
     for (let i = 0; i < line.length; i++) {
-      if (i + 1 < line.length) {
-        lineList += `${i + 1}. ${line[i]}, `;
-      } else {
-        lineList += `${i + 1}. ${line[i]}`;
-      }
+      greeting += `${i + 1}. ${line[i]}`;
+      if (i + 1 < line.length)
+        greeting += ', ';
     }
-
-    return lineList;
   }
+  
+  return greeting;
 }
