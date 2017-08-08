@@ -1,25 +1,33 @@
-function currentLine(line){
-  //check if current line is empty
-  if(!line.length){
-    return "The line is currently empty."
-  }
-// names and numers array to be worked with
-  var namesAndNumbers = [];
 
-  for (var i = 0, people = line.length; i < people; i++){
-    namesAndNumbers.push(`${i + 1}. ${line[i]}`);
-  }
-  return `The line is currently: ${namesAndNumbers.join(', ')}`
+
+function takeANumber(deliLine, name){
+  deliLine.push(name);
+  return `Welcome, ${name}. You are number ${deliLine.length} in line.`;
 }
 
-function nowServing(line){
-  if(!line.length){
+
+
+function nowServing(deliLine){
+  if(!deliLine.length){
     return "There is nobody waiting to be served!";
+  } else {
+    return `Currently serving ${deliLine.shift()}.`
   }
-  return `Currently serving ${line.shift()}.`;
 }
 
-function takeANumber(line, name){
-  line.push(name);
-  return `Welcome, ${name}. You are number ${line.length} in line.`;
+function currentLine(deliLine){
+  if(!deliLine.length){
+    return "The line is currently empty."
+  } else {
+
+    var namesAndNumbers = [];
+
+    for(var i = 0, people = deliLine.length; i < people; i++){
+      namesAndNumbers.push(`${i + 1}. ${deliLine[i]}`);
+    }
+
+    return `The line is currently: ${namesAndNumbers.join(', ')}`;
+
+
+  }
 }
