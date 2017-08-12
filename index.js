@@ -24,17 +24,10 @@ function currentLine(katzDeliLine) {
     return "The line is currently empty."
   }
   else {
-    var currentLine = "The line is currently:"
+    let customers = []
     for (let i = 0; i < katzDeliLine.length; i++) {
-      let index = i + 1
-      let customer = katzDeliLine[i]
-      if (i < katzDeliLine.length - 1) {
-        currentLine = `${currentLine} ${index}. ${customer},`
-      }
-      else {
-        currentLine = `${currentLine} ${index}. ${customer}`
-      }
+      customers.push(`${i+1}. ${katzDeliLine[i]}`)
     }
-    return currentLine
+    return `The line is currently: ${customers.join(',')}`
   }
 }
