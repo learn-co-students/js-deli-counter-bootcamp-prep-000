@@ -1,0 +1,35 @@
+[33m379fa75[m Add virtual console [31m(Charles Pletcher, 1 year, 1 month ago)[m
+[33md409b06[m Remove extra index.js [31m(Charles Pletcher, 1 year, 1 month ago)[m
+[33m161d06c[m Update for new tests [31m(Charles Pletcher, 1 year, 1 month ago)[m
+[33m07c9ecf[m Merge pull request #11 from learn-co-curriculum/move-tests-master [31m(Charles Pletcher, 1 year, 1 month ago)[m
+[33m16c8713[m Re-arrange test order [31m(Avidor Turkewitz, 1 year, 1 month ago)[m
+[33m21f99ed[m Don't forget to eval the tests [31m(Charles Pletcher, 1 year, 3 months ago)[m
+[33maa882da[m Add solution [31m(Charles Pletcher, 1 year, 3 months ago)[m
+[33m9c6bd74[m Merge branch 'master' into solution [31m(Charles Pletcher, 1 year, 3 months ago)[m
+[33m868c2ed[m Rewrite to use new tests [31m(Charles Pletcher, 1 year, 3 months ago)[m
+[33m85edb45[m merge [31m(vicfriedman, 1 year, 7 months ago)[m
+[33m4889a19[m optimize learn link [processing skip] [31m(Adam Jonas, 1 year, 7 months ago)[m
+[33m8bddd9f[m deli spec file [31m(vicfriedman, 1 year, 7 months ago)[m
+[33ma0aa52f[m contributing and lisence [31m(vicfriedman, 1 year, 7 months ago)[m
+[33m07cb872[m remove comments [31m(vicfriedman, 1 year, 7 months ago)[m
+[33m225460f[m tests [31m(vicfriedman, 1 year, 7 months ago)[m
+[33mf50bebd[m function declaration [31m(vicfriedman, 1 year, 7 months ago)[m
+[33m6e5fcbb[m single file solution and test [31m(vicfriedman, 1 year, 7 months ago)[m
+[33m46da02f[m no more console.log [31m(vicfriedman, 1 year, 7 months ago)[m
+[33m64219c0[m single file tests [31m(vicfriedman, 1 year, 7 months ago)[m
+[33me060e39[m removed app.js [31m(vicfriedman, 1 year, 7 months ago)[m
+[33m6069c3b[m add learn link [processing skip] [31m(Adam Jonas, 1 year, 8 months ago)[m
+[33mb73171f[m Add content license [31m(Jess Rudder, 2 years ago)[m
+[33md5ba599[m add hint to the readme [31m(Joseph Rosenberg, 2 years, 1 month ago)[m
+[33m518c980[m Add index and app files [31m(Joseph Rosenberg, 2 years, 1 month ago)[m
+[33m010d54e[m Update readme to include return instructions. [31m(Joseph Rosenberg, 2 years, 1 month ago)[m
+[33mf36feb3[m Add an index file to the solution so we can see the effects of the js [31m(Joseph Rosenberg, 2 years, 1 month ago)[m
+[33me317c16[m Update README.md [31m(Deniz Unat, 2 years, 1 month ago)[m
+[33ma327de9[m Update README.md [31m(Deniz Unat, 2 years, 1 month ago)[m
+[33md00791f[m add solution [31m(Katie Hoffman, 2 years, 3 months ago)[m
+[33m675c229[m convert from grunt to learn format for spec [31m(Katie Hoffman, 2 years, 3 months ago)[m
+[33mfb954f4[m dot learn added by fs-lms-bot [31m(Beyonce Jabroni, 2 years, 5 months ago)[m
+[33ma6c8c3a[m Update README.md [31m(Steven Nunez, 3 years, 3 months ago)[m
+[33m322a0b1[m Update error in test [31m(Steven Nunez, 3 years, 3 months ago)[m
+[33mcda259c[m Remove temporary check [31m(Steven Nunez, 3 years, 3 months ago)[m
+[33m2a5f9c7[m Initial Commit [31m(Steven Nunez, 3 years, 3 months ago)[m
