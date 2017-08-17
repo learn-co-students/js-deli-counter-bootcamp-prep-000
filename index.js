@@ -11,18 +11,16 @@ function nowServing(katzDeli) {
   else
   return "There is nobody waiting to be served!"}
 
-function currentLine(line) {
-  var numbers = []
-  if (line.length === 0){
-    return "The line is currently empty."
-  }
-  else {
-    for (var i = 0; i < line.length; i++) {
-      // 1. John
-      numbers.push(`${i+1}. ${line[i]}`)
+  function currentLine(line) {
+    var emptyArray = []
+    var returnStr = "The line is currently: "
+    if (line.length === 0)
+      return "The line is currently empty."
+    else {
+        for (var i = 0; i < line.length; i++) {
+          returnStr = returnStr + (i+1) + ". " + (line[i]);
+          if (i != line.length-1) returnStr = returnStr + ", "
+        }
     }
-    // "The line is currently: 1. Bill, 2. Jane, 3. Ann"
-    return `The line is currently: ${numbers.join(', ')}`
+    return returnStr
   }
-
-}
