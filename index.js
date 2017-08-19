@@ -20,10 +20,12 @@ function currentLine(line) {
     return "The line is currently empty."
   } else {
     let string = "The line is currently: ";
-    for (let i=0; i < line.length - 1; i++) {
-      string += (i+1) + ". " + line[i] + ", ";
+    for (let i=0; i < line.length; i++) {
+      string += (i+1) + ". " + line[i];
+      if (i < line.length - 1) {
+        string += ", ";
+      }
     }
-    string += line.length + ". " + line[line.length - 1];
     return string;
   }
 }
