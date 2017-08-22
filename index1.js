@@ -1,9 +1,8 @@
-var katzDeliLine = [];
+// var katzDeliLine = [];
 var lastServed = 0;
 
 var takeANumber = function(katzDeliLine){
-  lastServed++;
-  console.log("Your number is "+lastServed+ ".");
+  console.log("You are "+lastServed+1+ "in line.")
   katzDeliLine.push(lastServed);
   // var position = katzDeliLine.length;
   // return "Welcome, "+name+". You are number " +position+ " in line.";
@@ -13,7 +12,8 @@ var nowServing = function(katzDeliLine){
   if(katzDeliLine.length <= 0){
     return "There is nobody waiting to be served!";
   } else {
-    return "Currently serving " + katzDeliLine.shift() + ".";
+    lastServed = katzDeliLine.shift()
+    return "Currently serving " + lastServed + ".";
   }
 }
 
