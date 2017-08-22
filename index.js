@@ -21,6 +21,6 @@ function currentLine(array){
       newArr.push(` ${i+1}. ${array[i]}`);
     }
     var newStr = newArr.toString();
-    return `The line is currently: ${newStr}`;
+    return `The line is currently:${newStr}`;
   }
 }
