@@ -1,9 +1,7 @@
-function takeANumber(katzDeliLine, name) {
-  katzDeliLine = katzDeliLine.push(name);
-  var position = katzDeliLine.length;
-  if(katzDeliLine <= 1) {return `Welcome, ${name}. You are number 1 in line.`}
-  else{return position}//`Welcome, ${name}. You are number ${position} in line`;}
-  //make it return welcome NAME you are number NUMBER in line.
+function takeANumber(line, name) {
+  line.push(name)
+
+  return `Welcome, ${name}. You are number ${line.length} in line.`
 }
 function nowServing(katzDeliLine) {
   if(katzDeliLine.length < 1) {return 'There is nobody waiting to be served!';}
