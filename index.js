@@ -4,10 +4,10 @@ function takeANumber(waitingLine, name) {
 }
 
 function nowServing(waitingLine) {
-  const current = waitingLine.shift()
   if (waitingLine.length === 0) {
     return 'There is nobody waiting to be served!'
   } else {
+    const current = waitingLine.shift()
     return `Currently serving ${current}.`
   }
 }
