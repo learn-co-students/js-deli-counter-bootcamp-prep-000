@@ -8,15 +8,12 @@ function takeANumber(line, name) {
 function nowServing(line) {
   if (line.length === 0) {
     return "There is nobody waiting to be served!"
-
   }
   else {
     var serving = `Currently serving ${line[0]}.`
     line.shift()
     return serving
-
   }
-
 }
 
 function currentLine(line) {
@@ -30,18 +27,7 @@ function currentLine(line) {
       if (i < line.length - 1) {
         lineSentence += `, `
       }
-      console.log(lineSentence)
     }
   }
-  console.log(lineSentence)
   return lineSentence
 }
-
-takeANumber(katzDeli, 'Ada')
-takeANumber(katzDeli, 'Jon')
-takeANumber(katzDeli, 'Joe')
-nowServing(katzDeli)
-nowServing(katzDeli)
-nowServing(katzDeli)
-nowServing(katzDeli)
-currentLine(katzDeli)
