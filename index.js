@@ -22,7 +22,6 @@ function currentLine(line) {
     for (var i = 0; i < line.length; i++) {
       lineList.push(` ${i + 1}. ${line[i]}`)
     }
-    console.log(lineList)
     return `The line is currently:${lineList}`
   }
 }
