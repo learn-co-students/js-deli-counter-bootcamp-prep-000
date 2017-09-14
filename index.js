@@ -1,7 +1,6 @@
 // INSTRUCTIONS
 // A pretty important deli needs somebody to program the "Take a Number" feature for their counter.
-// At the beginning of the day, the deli is empty and is represented by an empty array, e.g.,
-// var katzDeli = [];
+// At the beginning of the day, the deli is empty and is represented by an empty array, e.g., var katzDeli = [];
 var katzDeliLine = [];
 
 // Build a function that a new customer will use when entering the deli.
@@ -29,6 +28,7 @@ function nowServing(line) {
 
   var currentCustomer = line.slice(0, 1);
   line.shift();
+
   return `Currently serving ${currentCustomer}.`;
 }
 
@@ -48,19 +48,9 @@ function currentLine(line) {
     var currentCustomer = line[i];
     var customerLinePlace = i + 1;
 
-    // message += isNotAtEnd
-    // ? `${customerLinePlace}. ${currentCustomer}, `
-    // : `${customerLinePlace}. ${currentCustomer}`;
-
     message += `${customerLinePlace}. ${currentCustomer}`;
 
     message += isNotAtEnd ? ", " : "";
-
-    // if (isNotAtEnd) {
-    //   message += `${customerLinePlace}. ${currentCustomer}, `
-    // } else {
-    //   message += `${customerLinePlace}. ${currentCustomer}`
-    // }
   }
 
   return message;
