@@ -16,12 +16,17 @@ function nowServing(katzDeliLine) {
   }
 }
 
-// function currentLine(katzDeliLine){
-//   if(katzDeliLine.length == 0) {
-//     return "The line is currently empty."
-//   } else {
-//     for(var i =0; i < katzDeliLine.length; i++) {
-//        katzDeliLine.push('The line is currently:' + name[i])
-//     }
-//   }
-// }
+function currentLine(katzDeliLine){
+  if(katzDeliLine.length == 0) {
+    return "The line is currently empty."
+  } else {
+    var names = []
+    for(var i =0; i < katzDeliLine.length; i++) {
+       names.push(`${i+1}. ${katzDeliLine [i]}` )
+    }
+    
+    // names === ["1. Bill", "2. Jane", "3. Ann"]
+    // "
+    return `The line is currently: ${names.join(', ')}`
+  }
+}
