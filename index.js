@@ -16,13 +16,10 @@ function nowServing(katzdeli) {
   if (katzdeli.length === 0) {
     return "There is nobody waiting to be served!";
   }
-  if (katzDeli.length > 0)  {
+  else  {
   return "Currently serving " + katzDeli.shift() + ".";
 }
 }
-
-
-
 
 function currentLine(katzDeli) {
   if (katzDeli.length === 0) {
