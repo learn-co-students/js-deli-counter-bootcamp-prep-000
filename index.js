@@ -29,7 +29,7 @@ function currentLine(arr) {
     for(var i = 0; i < arr.length; i++) {
       if(i < arr.length - 1) {
         visitorStatus += `${(i + 1)}. ${arr[i]}, `;
-      } else{
+      } else {
         visitorStatus += `${(i + 1)}. ${arr[i]}`;
       }
     }
