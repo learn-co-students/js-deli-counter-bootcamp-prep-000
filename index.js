@@ -23,7 +23,7 @@ function nowServing(arr) {
 function currentLine(arr) {
   var visitorStatus = `The line is currently empty.`;
 
-  if(arr.length >= 1) {
+  if(arr.length > 0) {
     visitorStatus = `The line is currently: `;
 
     for(var i = 0; i < arr.length; i++) {
