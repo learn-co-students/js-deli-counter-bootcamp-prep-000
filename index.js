@@ -28,15 +28,9 @@ function currentLine(katzDeliLine){
       var count = 1;
 
       for (var i = 0; i < katzDeliLine.length; i++) {
-        //if (count === 1) {
-          array.push(count++ + "." + " " + katzDeliLine[i]);
-        // }
-        // else {
-        //   array.push(" " + count++ + "." + " " + katzDeliLine[i]);
-        // }
+          array.push(`${count++}. ${katzDeliLine[i]}`);
       }
 
-        //katz = `The line is currently: ${array + ""}`;
         katz = `The line is currently: ${array.join(", ")}`;
     }
 
