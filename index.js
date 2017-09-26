@@ -1,3 +1,4 @@
+
 var katzDeliLine = [];
 
 function takeANumber(katzDeliLine, newCustomer){
@@ -25,3 +26,4 @@ function currentLine(line){
     return `The line is currently:${newArray}`;
   }
 }
+
