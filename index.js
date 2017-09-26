@@ -14,25 +14,26 @@ function nowServing(arr) {
 
   if(arr.length >= 1) {
     msg = 'Currently serving ' + arr[0] + '.';
-    arr = arr.shift();
+    arr.shift();
   }
 
   return msg;
 }
 
 function currentLine(arr) {
-  var string = 'The line is currently empty.';
+  var visitorStatus = 'The line is currently empty.';
 
   if(arr.length >= 1) {
-    string = 'The line is currently: '
+    visitorStatus = 'The line is currently: ';
+
     for(var i = 0; i < arr.length; i++) {
       if(i < arr.length - 1) {
-        string += (i + 1) + '. ' + arr[i] + ', ';
+        visitorStatus += (i + 1) + '. ' + arr[i] + ', ';
       } else{
-        string += (i + 1) + '. ' + arr[i];
+        visitorStatus += (i + 1) + '. ' + arr[i];
       }
     }
   }
 
-  return string;
+  return visitorStatus;
 }
