@@ -2,7 +2,6 @@ function takeANumber(arr, name) {
   arr.push(name)
 
   for (var i = 0; i <= arr.length; i++) {
-
     if(arr[i] === name) {
       return `Welcome, ${name}. You are number ${arr.indexOf(name) + 1} in line.`;
     }
