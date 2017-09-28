@@ -17,20 +17,15 @@ function nowServing(katzDeliLine) {
 }
 
 function currentLine(katzDeliLine) {
-  var linePosition = katzDeliLine.length;
-
+  var lineSpot = katzDeliLine.length;
     var customer = "";
+
     for(var i = 0; i < katzDeliLine.length; i++){
         customer +=  `${i + 1}. ${katzDeliLine[i]}, `;
-        if (i == katzDeliLine.length - 1) {
-        customer.trim(',');
-        var str = str.replace(/,\s*$/, "");
-    }
   }
-  if(linePosition == 0) {
-    return "The line is currently empty."
-  }
-      else {
-   return `The line is currently: ${customer}`
-}
+  if(lineSpot === 0) {
+    return "The line is currently empty.";
+  } else {
+   return `The line is currently: ${customer}`.slice(0, -2);
+ }
 }
