@@ -10,12 +10,24 @@ function nowServing(katzDeliLine) {
     return "There is nobody waiting to be served!";
   }
   else if (katzDeliLine.length > 0) {
-    var frontOfLine = katzDeliLine[0];
-    katzDeliLine.shift();
+    var frontOfLine = katzDeliLine.shift();
     return `Currently serving ${frontOfLine}.`;
   }
 }
 
+// Refactored solution:
+function currentLine(katzDeliLine) {
+    if (katzDeliLine.length == 0) {
+      return "The line is currently empty.";
+    }
+    else {
+    	return "The line is currently: " + katzDeliLine.map(function(name, index) {
+    		return `${index + 1}. ${name}`;
+    	}).join(', ');
+    }
+	}
+
+/* Original solution:
 function currentLine(katzDeliLine) {
   var numbersAndNames = [];
     if (katzDeliLine.length == 0) {
@@ -28,3 +40,4 @@ function currentLine(katzDeliLine) {
   return `The line is currently: ${numbersAndNames.join(', ')}`;
 }
 }
+*/
