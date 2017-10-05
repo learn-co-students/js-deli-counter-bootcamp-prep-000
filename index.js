@@ -16,17 +16,27 @@ function nowServing(customerList){
   }
 }
 
-function currentLine(theLine){
-  if(theLine > 0){
-    var statement = 'The line is currently: '
-    var lineNumber = 1
-    for(let i = 0; i < theLine.length; i++){
-      statement = statement + lineNumber + '. ' + theLine[i] + ', ';
-      lineNumber++;
-    }
+
+function currentLine(array){
+  if(array.length === 0){
+    return 'The line is currently empty.';
   }
 
-  else {
+  else{
+    var counter = 0;
+    var message = 'The line is currently: ';
+    var listArray = [];
 
+    for(let i = 0; i < array.length; ++i){
+      counter = i +1;
+      if(i === array.length - 1){
+        message = message + `${counter}. ${array[i]}`;
+      }
+      else{
+        message = message + `${counter}. ${array[i]}, `;
+      }
+    }
+
+    return message;
   }
 }
