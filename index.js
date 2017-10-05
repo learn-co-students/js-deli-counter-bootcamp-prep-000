@@ -19,7 +19,7 @@ function nowServing(katzDeliLine) {
   }
 }
 
-
+/*
 function currentLine(katzDeliLine) {
   var str = " ";
   if (katzDeliLine.length === 0) {
@@ -31,4 +31,9 @@ function currentLine(katzDeliLine) {
   }
 return (`The line is currently:${str}`);
 }
+}
+*/
+
+function currentLine(katzDeliLine) {
+  console.log (!katzDeliLine.length);
 }
