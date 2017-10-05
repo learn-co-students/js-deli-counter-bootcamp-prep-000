@@ -19,7 +19,7 @@ function nowServing(katzDeliLine) {
   }
 }
 
-/*
+/*  //version 1
 function currentLine(katzDeliLine) {
   var str = " ";
   if (katzDeliLine.length === 0) {
@@ -35,5 +35,16 @@ return (`The line is currently:${str}`);
 */
 
 function currentLine(katzDeliLine) {
-  console.log (!katzDeliLine.length);
+  console.log (katzDeliLine, !katzDeliLine.length);
+
+  if ( !katzDeliLine.length ) {
+  return "The line is currently empty." ;
+  }
+
+  var temp = [];
+  for ( let i = 0; i < katzDeliLine.length; i++) {
+    temp.push(` ${i+1}. ${katzDeliLine[i]}`);
+  }
+  return (`The line is currently:${temp}`)
+
 }
