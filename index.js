@@ -18,9 +18,14 @@ function currentLine(array){
   if (array.length === 0){
     return "The line is currently empty."
   }
-  else{
+  var peopleInLine = []
+  for (let i = 0; i < array.length; i++ ){
+    peopleInLine.push(`${i+1}. ${array[i]}`)
+  }
+  return `The line is currently: ${peopleInLine.join(`, `)}`
+  /*else{
     for (var i = 0; i < 1; i++){
       return ("The line is currently: "+`${i+1}. ${array[i]},`+` ${i+2}. ${array[i+1]},`+` ${i+3}. ${array[i+2]}`)
     }
-  }
+  }*/
 }
