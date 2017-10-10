@@ -18,9 +18,14 @@ function currentLine(a){
     return "The line is currently empty."
   } else {
     for (let i=0; i<a.length; i++){
-      a[i]= i+1 + ". " + a[i]
+      if (i ===0 ){
+        a[i]= i+1 + ". " + a[i]
+      } else {
+        a[i]= ` ${i+1}. ${a[i]}`
+      }
     }
 
     return `The line is currently: ${a}`
   }
+
 }
