@@ -8,10 +8,9 @@ function takeANumber(line, newPerson){
 function currentLine(line){
   console.log ("The line is currently:");
   if (line.length > 0){
-    for (i = 0; i <line.length-1; i++){
+    for (i = 0; i <line.length; i++){
       console.log (`${i+1}. ${line[i]},`);
     };
-    console.log (`${line.length}. ${line[i]}.`);
   }else{
     console.log("The line is currently empty.");
   };
