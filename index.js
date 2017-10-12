@@ -1,13 +1,13 @@
-var deliLine = []
+// var deliLine = []
 
 function takeANumber(deliLine, name) {
-  deliLine.push(name);
+  deliLine.push(name)
   return `Welcome, ${name}. You are number ${deliLine.length} in line.`
 }
 
 function nowServing(deliLine) {
   if (deliLine.length === 0) {
-    return "There is nobody waiting to be served!";
+    return "There is nobody waiting to be served!"
   } else {
     let announce = `Currently serving ${deliLine[0]}.`
     deliLine.shift();
@@ -17,9 +17,9 @@ function nowServing(deliLine) {
 
 function currentLine(deliLine) {
   if (deliLine.length === 0) {
-    return "The line is currently empty.";
+    return "The line is currently empty."
   } else {
-    let announce = `The line is currently: 1. ${deliLine[0]}`;
+    let announce = `The line is currently: 1. ${deliLine[0]}`
     for (let i = 1; i < deliLine.length; i++) {
       announce += `, ${i+1}. ${deliLine[i]}`
     }
