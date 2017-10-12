@@ -1,16 +1,18 @@
-// var deliLine = []
+var ticketNumber = 0
 
-function takeANumber(deliLine, name) {
-  deliLine.push(name)
-  return `Welcome, ${name}. You are number ${deliLine.length} in line.`
+function takeANumber(deliLine) {
+  deliLine.push(ticketNumber)
+  let announce = `Welcome, your ticket is number ${ticketNumber}.`
+  ticketNumber += 1
+  return announce
 }
 
 function nowServing(deliLine) {
   if (deliLine.length === 0) {
     return "There is nobody waiting to be served!"
   } else {
-    let announce = `Currently serving ${deliLine[0]}.`
-    deliLine.shift();
+    let announce = `Currently serving ticket ${deliLine[0]}.`
+    deliLine.shift()
     return announce
   }
 }
