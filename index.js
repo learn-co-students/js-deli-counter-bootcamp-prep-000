@@ -17,19 +17,13 @@ function nowServing(katzDeliLine){
    }
 }
 function currentLine(katzDeliLine) {
-
-  if (katzDeliLine.length >0){
-    var  lines=""
-    for(let i=0 ; i<= katzDeliLine.length-1; i++){
-      if (i==0){
-        lines="The line is currently: "+(i+1)+". "+katzDeliLine[i]
-      }else{
-      lines =lines +", "+(i+1)+". "+katzDeliLine[i]
-      }
-    }
-    return lines
-  }else {
+  if (!katzDeliLine.length) {
     return "The line is currently empty."
   }
+  const numAndName =[]
 
-}
+    for(let i=0 ; i< katzDeliLine.length; i++){
+      numAndName.push(`{i+1}. {katzDeliLine[i]}`)
+    }
+    return  "The line is currently: `{numAndName.join(', ')}`"
+  }
