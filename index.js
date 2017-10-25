@@ -2,14 +2,14 @@ var katzDeli = [];
 
 function takeANumber(currentLine, ...newPerson) {
     var resultArray = [...currentLine];
+    var catter = resultArray.concat(newPerson);
     var greeting;
     var index;
     for (var i = 0; i < newPerson.length; i++) {
-        resultArray.push(newPerson[i]);
-        index = resultArray.indexOf(newPerson[i]) + 1;
-        console.log("Welcome, " + newPerson[i] + ". You are number " + index + " in line." );
+        index = catter.indexOf(newPerson[i]) + 1;
+        console.log("Welcome, " + newPerson[i] + ". You are number " + index + " in line.");
     }
-    return resultArray;
+    return catter;
 }
 
 function nowServing(currentLine){
