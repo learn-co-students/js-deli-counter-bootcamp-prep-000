@@ -9,11 +9,11 @@ function takeANumber(line,name){
 function nowServing(line,name){
 
   if(line.length === 0){
-    var line = "There is nobody waiting to be served!"
+    var queue = "There is nobody waiting to be served!"
   }else{
-    line = "Currently serving " + line.shift() + "."
+    queue = "Currently serving " + line.shift() + "."
   }
-  return line
+  return queue
 }
 
 
