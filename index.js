@@ -30,9 +30,7 @@ function currentLine(line){
     for (var i = 0; i<line.length-1; i++){
 
       var lineString = (i+1) + ". " + line[i] + ", "
-      // creates a string from the lineName and linePlace variables
       middleItems += lineString
-      //adds the newest string from the present [i] to the existing string
 
     }
     return "The line is currently: " + middleItems + lastItem
