@@ -2,6 +2,7 @@ var katzDeliLine = new Array()
 
 function takeANumber(line, name) {
   line.push(name)
+<<<<<<< HEAD
   return `Welcome, ${name}. You are number ${line.length} in line.`
 }
 
@@ -23,4 +24,7 @@ function currentLine(line) {
       }
     return "The line is currently:" + array
   }
+=======
+  return `Welcome ${name} you are number ${line.length} in line`
+>>>>>>> 3cc0c995bd04348a85956c7af2a0f8b61282e2d6
 }
