@@ -1,5 +1,3 @@
-var customerLine = [];
-
 function takeANumber(customerLine, name) {
   return `Welcome, ${name}. You are number ${customerLine.push(name)} in line.`;
 }
