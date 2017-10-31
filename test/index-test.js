@@ -2,30 +2,30 @@
 
 describe('deli', () => {
   describe('takeANumber', () => {
-    var katzDeli;
-    var otherDeli;
+    var customerLine;
+    var otherLine;
 
     beforeEach(() => {
-      katzDeli = [];
-      otherDeli = ["Steven", "Blake", "Avi"];
+      customerLine = [];
+      otherLine = ["Steven", "Blake", "Avi"];
     });
 
     it('adds a person to the line', () => {
-      expect(takeANumber(katzDeli, 'Ada')).toEqual("Welcome, Ada. You are number 1 in line.");
-      expect(katzDeli).toEqual(['Ada']);
+      expect(takeANumber(customerLine, 'Ada')).toEqual("Welcome, Ada. You are number 1 in line.");
+      expect(customerLine).toEqual(['Ada']);
     });
 
     it('appends the person the end of the line if there are already people on it', () => {
-      expect(takeANumber(otherDeli, 'Grace')).toEqual("Welcome, Grace. You are number 4 in line.");
-      expect(otherDeli).toEqual(["Steven", "Blake", "Avi", "Grace"]);
+      expect(takeANumber(otherLine, 'Grace')).toEqual("Welcome, Grace. You are number 4 in line.");
+      expect(otherLine).toEqual(["Steven", "Blake", "Avi", "Grace"]);
     });
 
     it("properly handles multiple people being added", () => {
-      takeANumber(katzDeli, 'Ada');
-      takeANumber(katzDeli, 'Grace');
-      takeANumber(katzDeli, 'Kent');
+      takeANumber(customerLine, 'Ada');
+      takeANumber(customerLine, 'Grace');
+      takeANumber(customerLine, 'Kent');
 
-      expect(katzDeli).toEqual(["Ada", "Grace", "Kent"]);
+      expect(customerLine).toEqual(["Ada", "Grace", "Kent"]);
     });
   });
 
