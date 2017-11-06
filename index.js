@@ -17,13 +17,12 @@ var array = ["The line is currently:"];
 function currentLine(line) {
   for (let i = 0; i < line.length; i++) {
     if (line.length >= 0) {
-      var string = (i + 1) + ". " + line[i]
-      string.slice(beginIndex[, endIndex])
+      var string = (i + 1) + ". " + line[i] + ","
       array.push(string)
     } else {
       var otherStr = 'The line is currently empty.'
       array.push(otherStr)
     }
   }
-  return array.join(" ")
+  return array.join(" ").slice(0, -1)
 }
