@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 var katzDeliLine = [];
 
 // Build a function takeANumber, should accept the current line of people, katzDeliLine,
@@ -42,3 +43,6 @@ function currentLine(line) {
  }
  return `The line is currently:${peopleCurrentlyInLine}`;
 }
+=======
+
+>>>>>>> a35838333b8b554b69892c751788934e5886bcab
