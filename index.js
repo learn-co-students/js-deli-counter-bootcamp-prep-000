@@ -10,19 +10,20 @@ function nowServing (katzDeliLine) {
     return "There is nobody waiting to be served!"
   }
 }
-/* function currentLine (katzDeliLine) {
+ /* function currentLine (katzDeliLine) {
   var i = 0
   if (katzDeliLine.length > 0) {
-    console.log("The line is currently: ")
+    return "The line is currently: "
     for (i=0; i <= katzDeliLine.length; i++){
-      console.log(`${i+1}. ${katzDeliLine[i]}`);
+      return`${i+1}. ${katzDeliLine[i]}`;
     }
   } else {
       return "The line is currently empty."
     }
 }
 */
-function currentLine (katzDeliLine) {
+
+ function currentLine (katzDeliLine) {
   var emptyArray = [];
   var i = 0;
   for (i=0; i<katzDeliLine.length; i++) {
