@@ -21,8 +21,15 @@ function currentLine (katzDeliLine){
     return "The line is currently empty."
   }
 
+  var sentence = "The line is currently: "
   for (var i = 0 ; i < katzDeliLine.length; i++){
-    return `The line is currently: ${}`
+
+  var currentPersonInLine = katzDeliLine[i];
+  var positionInLine = i + 1; // what number they are in line
+
+  var newText = ` ${positionInLine}. ${currentPersonInLine}`
+
+  setence += newText //take sentence add new text to it
   }
 
 }
