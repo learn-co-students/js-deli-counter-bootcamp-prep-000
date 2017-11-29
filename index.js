@@ -1,19 +1,28 @@
 function takeANumber (katzDeliLine, newPerson){
   katzDeliLine.push(newPerson);
-  return takeANumber;
+  let positionInLine = katzDeliLine.length;
+
+  return `Welcome, ${newPerson}. You are number ${positionInLine} in line.`
 }
 
-function nowServing () {
-  do {
-    katzDeliLine.shift();
-    i++
-  } while (katzDeliLine[0]);
+function nowServing (katzDeliLine) {
+  if (katzDeliLine.length === 0){
+    return "There is nobody waiting to be served!"
+  }
 
-  let i = 0
-  while (i < katzDeliLine.length) {
-  return ("There is nobody waiting to be served!");
+  let firstPerson = katzDeliLine[0];
+  katzDeliLine.shift()
+
+  return `Currently serving ${firstPerson}.`
 }
+
+function currentLine (katzDeliLine){
+  if (katzDeliLine.length === 0){
+    return "The line is currently empty."
+  }
+
+  for (var i = 0 ; i < katzDeliLine.length; i++){
+    return `The line is currently: ${}`
+  }
+
 }
-//first person in line
-//remove that person form the line
-//If no one in line, return"Nobody in line"
