@@ -36,6 +36,9 @@ function currentLine(array){
     var lastPerson = array[array.length - 1];
 
     return lineOrder + `${lastPlace}. ` + lastPerson;
+
+    // return lineOrder + array.length + ". " + array[array.length - 1]
+
   }else{
     return "The line is currently empty."
   }
