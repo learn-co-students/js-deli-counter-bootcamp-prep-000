@@ -18,11 +18,16 @@ function nowServing(katzDeliLine) {
 }
 
 function currentLine(katzDeliLine) {
-  var output = "";
   var addOn = "";
   for (var i = 0; i < katzDeliLine.length; i++) {
     var x = i + 1;
-    addOn = addOn + x + "." + katzDeliLine[i] + ", "
+
+    if (i === katzDeliLine.length - 1) {
+      addOn = addOn + x + ". " + katzDeliLine[i]
+    }
+    else {
+      addOn = addOn + x + ". " + katzDeliLine[i] + ", "
+    }
   }
 
   if (katzDeliLine.length > 0) {
