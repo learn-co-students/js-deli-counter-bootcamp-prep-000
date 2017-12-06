@@ -15,5 +15,5 @@ function nowServing(katzDeliLine) {
 }
 
 function currentLine(katzDeliLine) {
-  if 
+
 }
