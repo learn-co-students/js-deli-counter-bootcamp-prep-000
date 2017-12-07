@@ -21,7 +21,7 @@ function currentLine(katzDeliLine) {
     for (let i = 0; i < katzDeliLine.length; i++) {
     current = current + (i + 1) + ". " + katzDeliLine[i] + ", ";
     if (i == katzDeliLine.length - 1) {
-      current = current + (i + 1) + ". " + katzDeliLine[i];
+      current = (i + 1) + ". " + katzDeliLine[i];
       }
     }
   } else {
