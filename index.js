@@ -1,4 +1,4 @@
-var katzDeliLine = []
+var katzDeliLine = [Steven, Greta]
 
 function takeANumber(katzDeliLine, nPerson) {
   katzDeliLine.push(nPerson)
@@ -7,8 +7,8 @@ function takeANumber(katzDeliLine, nPerson) {
 takeANumber(Ada)
 
 function nowServing(katzDeliLine) {
-  if (katzDeliLine.length === 0) { 'The line is currently empty.'}
-  else {katzDeliLine.slice(0,1)}
-  katzDeliLine.shift
+  if (katzDeliLine.length == 0) { return 'There is nobody waiting to be served!'}
+  //console.log(`Currently serving ${katzDeliLine.slice(1)}.`)
+  return `Currently serving ${katzDeliLine.shift()}.`
 }
 nowServing()
