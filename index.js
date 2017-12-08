@@ -1,4 +1,4 @@
-var katzDeliLine = [Steven, Greta]
+var katzDeliLine = ['Steven', 'Bill', 'Greta', 'Allen']
 
 function takeANumber(katzDeliLine, nPerson) {
   katzDeliLine.push(nPerson)
@@ -19,8 +19,8 @@ function currentLine(katzDeliLine) {
 
   var linePosition = []
 
-  for (let i = 0; katzDeliLine.length < i; i++)
-    {linePosition.push(`The line is currently: ${i+1}. ${katzDeliLine[i]},`)}
+  for (let i = 0; katzDeliLine.length > i; i++)
+    {linePosition.push(`The line is currently: ${i+1}. ${katzDeliLine[i]}, `)}
   return linePosition
 }
 currentLine()
