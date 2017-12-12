@@ -1,5 +1,4 @@
 var katzDeli = [];
-var otherDeli = ["Steven", "Blake", "Avi"];
 
 function takeANumber(katzDeliLine, newCustomer) {
   let i = 0
