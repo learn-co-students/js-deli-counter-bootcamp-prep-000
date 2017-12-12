@@ -4,14 +4,13 @@ return 'Welcome, ' + NewPerson + '. You are number '+ katzDeliLine.length + ' in
 }
 
 function nowServing(katzDeliLine){
-  for (var i = 0; i < katzDeliLine.length; i++){ 
-    katzDeliLine.shift(i)
+  var CurrentCustomer = katzDeliLine.shift()
+  if(katzDeliLine.length > 0){
   
-  }
-   return 'currently serving ' + katzDeliLine.shift(i) +'.' ;
+   return 'currently serving ' + CurrentCustomer +'.' ;
 }
   if(katzDeliLine.length === 0){
-  return 'There is nobdy waiting to be served!';
+  return 'There is nobody waiting to be served!';
   }
 }
 
