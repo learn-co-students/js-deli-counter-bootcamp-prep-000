@@ -3,8 +3,11 @@ var katzDeli = [];
 function takeANumber(katzDeliLine, newCustomer) {
   let i = 0
   katzDeliLine.push(newCustomer)
-    if (katzDeliLine.length > 0) {
-        return "Welcome, " + newCustomer + ". You are number " + (newCustomer.length) + " in line."
+  if (katzDeliLine.length === 1) {
+    return "Welcome, " + newCustomer + ". You are number " + [i+1] + " in line."
+  }
+  else if (katzDeliLine.length > 0) {
+        return "Welcome, " + newCustomer + ". You are number " + (newCustomer.length-1) + " in line."
   }
 }
 
