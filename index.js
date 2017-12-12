@@ -5,9 +5,7 @@ function takeANumber(katzDeliLine, newCustomer) {
   newCustomer = "Ada"
   let i = 0
   return "Welcome, " + newCustomer[i] + ". You are number " + [i+1] + " in line."
-  if (otherDeli.length > 0) {
-    otherDeli.push(newCustomer)
-    return "Welcome, " + newCustomer[i] + ". You are number " + [i+1] + " in line."
+  
   }
 }
 
