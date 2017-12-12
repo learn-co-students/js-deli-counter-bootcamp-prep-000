@@ -2,13 +2,12 @@ var katzDeli = [];
 var otherDeli = ["Steven", "Blake", "Avi"];
 
 function takeANumber(katzDeliLine, newCustomer) {
-  newCustomer = "Ada"
   let i = 0
-  return "Welcome, " + newCustomer[i] + ". You are number " + [i+1] + " in line."
-  
+  katzDeliLine.push(newCustomer)
+    if (katzDeliLine.length > 0) {
+        return "Welcome, " + newCustomer + ". You are number " + (newCustomer.length) + " in line."
   }
 }
-
 
 function nowServing(katzDeliLine) {
   var currentCustomer = katzDeliLine.shift()
