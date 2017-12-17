@@ -2,21 +2,21 @@ var katzDeliLine = [];
 
 function takeANumber(array, name){
   array.push(name);
-  return `Welcome, ${name}. You are number ${array.length + 1} in line.`;
+  return `Welcome, ${name}. You are number ${array.length} in line.`;
 }
 
 function currentLine(array) {
   if (array.length ==0) {
-    return `There is nobody in line.`;
+    return `The line is currently empty.`;
   }
 }
 
 function nowServing(array) {
   if (array.length==0){
-    return ``;
-  } else {
-    return `Currently serving ${array[0].}`;
-    array.shift();
-    return array;
+    return `There is nobody waiting to be served!`;
   }
+  return `Currently serving ${array[0]}.`;
+  array.shift();
+  return array;
+
 }
