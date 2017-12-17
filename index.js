@@ -23,9 +23,14 @@ function nowServing(array) {
   if (array.length == 0) {
     return `There is nobody waiting to be served!`;
   }
-  return `Currently serving ${array[0]}.`;
+  return `Currently serving ${array.shift()}.`;
   //array.shift();
-  array.splice(0, 1);
+  //array.splice(0, 1);
+
+  //delete array[0];
+  //array.splice(0, 1);
+  //array.shift();
+  //return array;
 
   //delete array[0];
   return array;
