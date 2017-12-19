@@ -9,9 +9,8 @@ function nowServing (katzDeliLine) {
   }
   var nameOrder = [];
   function currentLine(katzDeliLine) {
-    for( var i=0; i<katzDeliLine.length; i++) if(i===0){ nameOrder.push(`${i+1}. ${katzDeliLine[i]}`)}
-    else {nameOrder.push(` ${i+1}. ${katzDeliLine[i]}`);
+    for( var i=0; i<katzDeliLine.length; i++){nameOrder.push(` ${i+1}. ${katzDeliLine[i]}`);
     }
     if (katzDeliLine.length ===0) {return "The line is currently empty."}
-    else {return `The line is currently: ${nameOrder}`}
+    else {return `The line is currently:${nameOrder}`}
   }
