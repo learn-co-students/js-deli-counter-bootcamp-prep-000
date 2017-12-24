@@ -11,10 +11,11 @@ function nowServing(line,name){
 function currentLine(line, name){
 var peopleOnLine = ""
 if (line.length !== 0){
-  for (let i = 0; i < line.length; i++){
-    (peopleOnLine +=  `${i}. ${line[i]} `)
+  for (let i = 0; i < line.length - 1; i++){
+    (peopleOnLine += `${i + 1}. ${line[i]}`)
     }
-    return `The line is currently ${peopleOnLine} `
+    
+    return `The line is currently: ${peopleOnLine} ${line.length}. line[line.length]`
 }
   else {
   return "The line is currently empty."
