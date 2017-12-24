@@ -8,6 +8,16 @@ function nowServing(line,name){
   }
   return "There is nobody waiting to be served!"
 }
-function currentLine(){
-  return "nothing"
+function currentLine(line, name){
+var peopleOnLine = ""
+if (line.length !== 0){
+  for (let i = 0; i < line.length; i++){
+    (peopleOnLine +=  `${i}. ${line[i]} `)
+    }
+    return `The line is currently ${peopleOnLine} `
+}
+  else {
+  return "The line is currently empty."
+  
+  }
 }
