@@ -8,5 +8,14 @@ function nowServing(katzDeliLine) {
   return (`There is nobody waiting to be served!`)
   else
   return (`Currently serving ${katzDeliLine.shift()}.`)
- 
+  katzDeliLine.shift()
+}
+function currentLine (katzDeliLine) {
+   if (katzDeliLine[0] === undefined)
+   return (`The line is currently empty.`)
+   else 
+   var line = []
+   for  (let i = 0; i < katzDeliLine.length; i++)
+   line.push(`${i+1}. ${katzDeliLine[i]}`)
+   return (`The line is currently: ${line.join(', ')}`)
 }
