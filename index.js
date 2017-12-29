@@ -22,9 +22,13 @@ function currentLine(katzDeliLine) {
     message = 'The line is currently: ';
     for (var i = 0; i < katzDeliLine.length; i++) {
       message += `${i + 1}. ${katzDeliLine[i]}, `;
-      message = message.slice(0, message.length - 1)
     }
+    message = message.slice(0, message.length - 2);
+    console.log(message);
   }
   return message;
 
 }
+
+test = ['son', 'duy', 'tin']
+currentLine(test);
