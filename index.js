@@ -33,9 +33,9 @@ function currentLine(katzDeliLine){
       var currentlyServing = "The line is currently: ";
       for (var i = 0; i < katzDeliLine.length; i++){
         if (i === 0){
-          currentlyServing = currentlyServing + `${i + 1}. ${katzDeliLine[i]}`;
+          currentlyServing += `${i + 1}. ${katzDeliLine[i]}`;
         } else {
-          currentlyServing = currentlyServing + `, ${i + 1}. ${katzDeliLine[i]}`;  
+          currentlyServing += `, ${i + 1}. ${katzDeliLine[i]}`;  
         }
         
     }
