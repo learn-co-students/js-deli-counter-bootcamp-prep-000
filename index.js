@@ -21,11 +21,13 @@ function currentLine(katzDeliLine) {
 if (katzDeliLine.length<1) {
 return "The line is currently empty."
 } else { 
-var i=1
+var i=0
+var newArray = []
 while (i<katzDeliLine.length){
-    katzDeliLine[i] = " " +parseInt(i+1)+ ". " +katzDeliLine[i]
+    newArray.push(i+1 +". "+ katzDeliLine[i])
     i++
 }
-return "The line is currently: 1. " + katzDeliLine
+return "The line is currently: " + newArray.join(", ")
+
 }
 }
