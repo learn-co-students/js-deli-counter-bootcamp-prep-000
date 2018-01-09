@@ -3,5 +3,6 @@ function takeANumber(katzDeliLine) {
   var nextGuest = ['Ada', 'Grace', 'Kent'];
   for (var i = 1; i < katzDeli.length; i++);
   katzDeli.push(nextGuest);
-  return ('Welcome, ${nextGuest}. You are number ' + i + ' in line.');
+  return ('Welcome,' + nextGuest + '. You are number ' + i + ' in line.');
+
 }
