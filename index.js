@@ -1,6 +1,6 @@
-function takeANumber(katzDeliLine, name) {
+function takeANumber(katzDeliLine) {
   var katzDeli = [];
   for (var i = 1; i < katzDeli.length; i++);
-  katzDeli.push(Ada);
-  return (katzDeli);
+  katzDeli.push(katzDeliLine);
+  return ('Welcome, ${katzDeliLine}. You are number ' + i + 'in line.');
 }
