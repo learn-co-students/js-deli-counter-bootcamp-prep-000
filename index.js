@@ -1,6 +1,7 @@
 function takeANumber(katzDeliLine) {
   var katzDeli = [];
+  var nextGuest = ['Ada', 'Grace', 'Kent'];
   for (var i = 1; i < katzDeli.length; i++);
-  katzDeli.push(katzDeliLine);
-  return ('Welcome, Ada. You are number ' + i + ' in line.');
+  katzDeli.push(nextGuest);
+  return ('Welcome, ${nextGuest}. You are number ' + i + ' in line.');
 }
