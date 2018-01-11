@@ -16,14 +16,13 @@ function nowServing(line) {
 
 function currentLine(line) {
   var output = "The line is currently";
-  //var original = output;
   if (line.length === 0) {
     output = output + " empty..";
   }
   else {
     output = output + ":";
     for (let i = 0; i < line.length; i++) {
-      output = output + ` ${i+1}. ${line[i]},`
+      output = output + ` ${i+1}. ${line[i]},`;
     }
   }
   return output.slice(0,-1);
