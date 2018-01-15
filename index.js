@@ -9,7 +9,7 @@ function takeANumber(line, name) {
 function nowServing(line) {
   if (line.length > 0) {
     var name = line.shift();
-    return `Currently serving ${name}`  ;
+    return `Currently serving ${name}.`  ;
   } else {
     return "There is nobody waiting to be served!";
   }
@@ -29,6 +29,7 @@ function currentLine(line) {
         message += ",";
       }
     }
+    return message;
   }
 }
 
