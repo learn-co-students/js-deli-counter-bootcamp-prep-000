@@ -3,15 +3,21 @@ var katzDeliLine = [];
 
 function takeANumber(line, name) {
   line.push(name);
-  return `Welcome, ${name}. You are number ${line.length} in line.`
+  return `Welcome, ${name}. You are number ${line.length} in line.`;
 }
 
 function nowServing(line) {
-  return `Currently serving ${line.shift}`
+  if (line.length > 0) {
+    var name = line.shift;
+    return `Currently serving ${name}`  ;
+  } else {
+    return "There is nobody waiting to be served!";
+  }
+  
 }
 
 function currentLine(line) {
-  var message = "The line is currently"
+  var message = "The line is currently "
   if (line.length < 1) {
     return message += "empty";
     
