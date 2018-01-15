@@ -24,8 +24,9 @@ function currentLine(line) {
     
     for (var i = 0; i < line.length; i++) {
       
-      message += `${i}. ${line[i]}`;
-      if (i <= line.length - 1) {
+      message += `${i + 1}. ${line[i]}`;
+      
+      if (i <= line.length) {
         message += ",";
       }
     }
