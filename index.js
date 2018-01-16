@@ -21,10 +21,10 @@ function currentLine(line){
   }
 
   else {
-    let indexNames = [];
+    let indexAndNames = [];
     for (let i = 0; i < line.length; i++) {
-      indexNames.push(`${i + 1}. ${line[i]}`);
+      indexAndNames.push(`${i + 1}. ${line[i]}`);
     }
-    return `The line is currently: ${indexNames.join(`, `)}`
+    return `The line is currently: ${indexAndNames.join(`, `)}`
   }
 }
