@@ -19,13 +19,17 @@ function currentLine(katzDeliLine) {
     return 'The line is currently empty.';
   } else {
     var lineList = 'The line is currently: ';
+    var customerArray = [];
     for (let i = 0; i < katzDeliLine.length; i++) {
-      if (i === 0) {
+      customerArray.push(`${i+1}. ${katzDeliLine[i]}`);
+/*      if (i === 0) {
         lineList += `${i+1}. ${katzDeliLine[i]}`;
       } else {
         lineList += `, ${i+1}. ${katzDeliLine[i]}`;  
       }
+*/
     }
+    lineList += customerArray.join(', ');
     return lineList;
   }
 }
