@@ -33,5 +33,4 @@ function currentLine(katzDeliLine){
     }
       return str
   }
-    
 }
