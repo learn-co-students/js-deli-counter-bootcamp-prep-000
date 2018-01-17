@@ -2,20 +2,22 @@ var katzDeliLine = [];
 
 function takeANumber(katzDeliLine, name) {
   katzDeliLine.push(name);
-  return katzDeliLine.indexOf(name) + 1;
+  var numberInLine = katzDeliLine.indexOf(name) + 1;
+  return `Welcome, ${name}. You are number ${numberInLine} in line.`;
 }
 
-function nowServing() {
-  if (katzDeliLine.length == 0) {
+function nowServing(katzDeliLine) {
+  if (katzDeliLine.length < 1) {
     return "There is nobody waiting to be served!";
   }
   else {
-    return katzDeliLine.shift();
+    var serving = katzDeliLine.shift();
+    return `Currently serving ${serving}.`;
   }
 }
 
-function currentLine() {
-  if (katzDeliLine.length == 0) {
+function currentLine(katzDeliLine) {
+  if (katzDeliLine.length < 1) {
     return "The line is currently empty."
   }
   else {
@@ -23,10 +25,10 @@ function currentLine() {
     for (var i = 0; i < katzDeliLine.length; i++) {
       var count = i + 1;
       if (i < katzDeliLine.length-1) {
-        s = s + `${i}. ${katzDeliLine[i]},`;
+        s = s + `${count}. ${katzDeliLine[i]}, `;
       }
       else {
-        s = s + `${i}. ${katzDeliLine[i]}`;
+        s = s + `${count}. ${katzDeliLine[i]}`;
       }
     }
     return s;
