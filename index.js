@@ -32,7 +32,7 @@ function currentLine(katzDeliline)
   {
     for(var x = 1; x<= katzDeliline.length; x++)
     {
-      line= line+" "+x+ ". "+katzDeliline[x-1]+(x==0||x==katzDeliline.length ?"":",");
+      line= line+" "+x+ ". "+katzDeliline[x-1]+(x===0||x==katzDeliline.length ?"":",");
     }
   }
   return line;
