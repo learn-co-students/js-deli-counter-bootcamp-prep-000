@@ -1,20 +1,20 @@
-function takeANumber(katzDeliLine, name){
+function takeANumber(line, name){
 
-  katzDeliLine.push(name);
+  line.push(name);
 
-  return `Welcome, ${name}. You are number ${katzDeliLine.length} in line.`
+  return `Welcome, ${name}. You are number ${line.length} in line.`
 
 }
 
-function nowServing(katzDeliLine){
+function nowServing(line){
 
-  if (katzDeliLine.length !== 0){
+  if (line.length !== 0){
 
-    let currentCustomer = katzDeliLine[0];
+    let name = line[0];
 
-    katzDeliLine.shift();
+    line.shift();
 
-    return `Currently serving ${currentCustomer}.`
+    return `Currently serving ${name}.`
 
   } else {
 
@@ -24,20 +24,20 @@ function nowServing(katzDeliLine){
 }
 
 
-function currentLine(katzDeliLine) {
+function currentLine(line) {
 
-  if (katzDeliLine.length !== 0) {
+  if (line.length !== 0) {
 
     let lineList = "The line is currently: ";
 
-    for (let i = 0; i < katzDeliLine.length; i++) {
-      if (i === katzDeliLine.length - 1) {
+    for (let i = 0; i < line.length; i++) {
+      if (i === line.length - 1) {
 
-        lineList += `${i + 1}. ${katzDeliLine[i]}`;
+        lineList += `${i + 1}. ${line[i]}`;
 
       } else {
 
-        lineList += `${i + 1}. ${katzDeliLine[i]}, `;
+        lineList += `${i + 1}. ${line[i]}, `;
 
       }
     }
