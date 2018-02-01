@@ -1,14 +1,14 @@
 var katzDeliLine = [];
 
-function takeANumber(array, name){
-  array.push(name);
-  return "Welcome, " + name + ". You are number " + array.length + " in line.";
+function takeANumber(katzDeliLine, name){
+  katzDeliLine.push(name);
+  return "Welcome, " + name + ". You are number " + katzDeliLine.length + " in line.";
 }
 
-function nowServing(array){
-  if(array.length > 0) {
-    let serving = "Currently serving " + array[0] + ".";
-    array.splice(0,1);
+function nowServing(katzDeliLine){
+  if(katzDeliLine.length > 0) {
+    let serving = "Currently serving " + katzDeliLine[0] + ".";
+    katzDeliLine.splice(0,1);
     return serving;
   }
   else {
@@ -16,15 +16,15 @@ function nowServing(array){
   }
 }
 
-function currentLine(array){
+function currentLine(katzDeliLine){
   let line = "The line is currently: ";
-  if(array.length > 0){
-    for(let i = 0; i<array.length; i++){
-      if(i<array.length-1){
-        line += (i+1 + ". " + array[i] + ", ");
+  if(katzDeliLine.length > 0){
+    for(let i = 0; i<katzDeliLine.length; i++){
+      if(i<katzDeliLine.length-1){
+        line += (i+1 + ". " + katzDeliLine[i] + ", ");
       }
       else {
-        line += (i+1 + ". " + array[i]);
+        line += (i+1 + ". " + katzDeliLine[i]);
       }
     }  
   }
