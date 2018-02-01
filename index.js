@@ -51,13 +51,13 @@ function currentLine(line){
 
   } else {
 
-    const numbersAndNames = [];
+    const lineList = [];
 
       for (let i = 0; i < line.length; i++) {
-        numbersAndNames.push(`${i + 1}. ${line[i]}`);
+        lineList.push(`${i + 1}. ${line[i]}`);
       }
 
-      return `The line is currently: ${numbersAndNames.join(', ')}`;
+      return `The line is currently: ${lineList.join(', ')}`;
       // can use array.join(); to add the ", " between each of the array elements when returned, so no need to do that if/else within the for loop
   }
 
