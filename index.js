@@ -1,4 +1,3 @@
-const katzDeli = [];
 
 function takeANumber(katzDeli, newPerson) {
     //Welcome message for each new person added to the array
@@ -18,14 +17,27 @@ function nowServing(deliLine) {
 
 function currentLine(deliLine){
   if (deliLine.length > 0){
-    //let orderedCustomers = deliLine.toString
-    let signIntro = `The line is currently: `
-    deliLine.forEach(function(item, index, array){
-    let orderedLine = `${index+1}. ${item}`;
-    let signShow = signIntro + orderedLine;
-    return signShow
-    })
+    const orderedLine = []
+    for (let i = 0, l = deliLine.length; i < l; i++) {
+      orderedLine.push(`${i + 1}. ${deliLine[i]}`)
+    }
+    return `The line is currently: ${orderedLine.join(', ')}`
   } else {
     return `The line is currently empty.`
   }
 }
+
+// --------
+// function currentLine(line) {
+//   if (!line.length) {
+//     return "The line is currently empty."
+//   }
+//
+//   const numbersAndNames = []
+//
+//   for (let i = 0, l = line.length; i < l; i++) {
+//     numbersAndNames.push(`${i + 1}. ${line[i]}`)
+//   }
+//
+//   return `The line is currently: ${numbersAndNames.join(', ')}`
+// };
