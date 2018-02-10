@@ -19,8 +19,8 @@ var numberedArray=[];
     return "The line is currently empty.";
   }else{
    for (let i=0; i<katzDeliLine.length; i++){
-     array.push(` ${i+1}. ${katzDeliLine[i]}`);
+     numberedArray.push(` ${i+1}. ${katzDeliLine[i]}`);
    }
-   return `The line is currently:${array}`;
+   return `The line is currently:${numberedArray}`;
   }
 }
