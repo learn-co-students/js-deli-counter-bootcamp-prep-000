@@ -1,16 +1,13 @@
 var katzDeli = [];
 
-function takeANumber(katzDeliLine, person){
-  katzDeliLine.push(person);
-  return `Welcome, ${person}. You are number ${katzDeliLine.length} in line.`;
-}
+const takeANumber = (katzDeliLine, person) => `Welcome, ${katzDeliLine[katzDeliLine.push(person)-1]}. You are number ${katzDeliLine.length} in line.`;
 
-function currentLine(katzDeliLine){
-  if (katzDeliLine.length === 0) return "The line is currently empty.";
-  return 'The line is currently: ' + katzDeliLine.map((x,y)=>y+1 + ". " + x).join(", ");
-}
 
-function nowServing(katzDeliLine) {
-  if (katzDeliLine.length === 0) return "There is nobody waiting to be served!"
-  return "Currently serving " + katzDeliLine.shift() + ".";
-}
+const currentLine = (katzDeliLine) => katzDeliLine.length ===  0 ? 
+    "The line is currently empty."  :
+    `The line is currently: ${katzDeliLine.map((x,y)=>y+1 + ". " + x).join(", ")}`;
+
+
+const nowServing =  katzDeliLine => katzDeliLine.length === 0 ? 
+`There is nobody waiting to be served!` :
+`Currently serving ${katzDeliLine.shift()}.`;
