@@ -22,19 +22,16 @@ function currentLine(array)
   if(array.length > 0)
   {
     var tempArray = [];
-    var position = 1;
     for(var i = 0; i < array.length; i++)
     {
       if(i === 0)
       {
-        var lineQue = `${position}. ${array[i]}`;
+        tempArray.push(`${i+1}. ${array[i]}`);
       }
       else
       {
-         lineQue = ` ${position}. ${array[i]}`;
+        tempArray.push(` ${i+1}. ${array[i]}`);
       }
-      position++;
-      tempArray.push(lineQue);
     }
     return `The line is currently: ${tempArray}`;
   }
