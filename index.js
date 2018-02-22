@@ -8,12 +8,12 @@ return 'Welcome, ' + name + '. You are number ' + line.length + ' in line.';
 }
 
 function nowServing(line) {
-if(!line.length) {
+if(line.length === 0) {
   console.log ("There is nobody waiting to be served!");
   return "There is nobody waiting to be served!";
 }
 else {
-  return "Currently serving " + line.shift() + ".";
+  return `Currently serving ${line.shift}.`;
 }
 }
 
