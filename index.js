@@ -28,7 +28,7 @@ function nowServing(katzDeliLine){
   } else {
     text = `Currently serving ${katzDeliLine.shift()}.`;
   }
-  return text
+  return text;
 }
 
 
@@ -36,21 +36,21 @@ function nowServing(katzDeliLine){
 // ============
 //console.log(nowServing(katzDeliLine));
 
+//currentLine(katzDeliLine);
+
+//let announce = takeANumber(katzDeliLine, "Bill");
+//let announce2 = takeANumber(katzDeliLine, "Jane");
+//console.log(katzDeliLine);
 currentLine(katzDeliLine);
 
-let announce = takeANumber(katzDeliLine, "Bill");
-let announce2 = takeANumber(katzDeliLine, "Jane");
-console.log(katzDeliLine);
-currentLine(katzDeliLine);
+//let announce3 = takeANumber(katzDeliLine, "Ann");
 
-let announce3 = takeANumber(katzDeliLine, "Ann");
-
-console.log(katzDeliLine);
+//console.log(katzDeliLine);
 //console.log(announce);
 //console.log(nowServing(katzDeliLine));
 
 
-currentLine(katzDeliLine);
+//currentLine(katzDeliLine);
 
 
 //console.log(katzDeliLine);
