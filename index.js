@@ -22,19 +22,16 @@ function nowServing(katzDeliLine){
 
 
 function currentLine(katzDeliLine){
-    var newArray=[];
     var str="";
 
-    if(katzDeliLine.length === 0){
+    if (katzDeliLine.length === 0){
         return "The line is currently empty.";
-    }else{
-        for(var i=0; i<katzDeliLine.length; i++){
-            str= str + ` ${i+1}. ${katzDeliLine[i]},`;
-        }
-
     }
-    
-    newArray.push(str.slice(1,str.length-1));
-
-    return "The line is currently: "+newArray;
+    else {
+      
+      for(var i=0; i<katzDeliLine.length; i++){
+        str= str + ` ${i+1}. ${katzDeliLine[i]},`;
+      }
+    } 
+    return "The line is currently: "+ str.slice(1,str.length-1);
 }
