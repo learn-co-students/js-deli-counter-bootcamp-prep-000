@@ -22,7 +22,7 @@ function currentLine(array){
         name+=(i+1)+'. '+array[i];
       }
       else{
-        name+=(i+1)+'. '+array[i]+ ', ';;
+        name+=(i+1)+'. '+array[i]+ ', ';
       }
     }
     return 'The line is currently: '+name;
