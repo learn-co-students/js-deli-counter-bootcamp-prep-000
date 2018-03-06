@@ -3,25 +3,42 @@
 var katzDeliLine = []
 
 
-function takeANumber(katzDeliLine, name){
+// function takeANumber(katzDeliLine, name){
+//
+//   katzDeliLine.push(name); //we're adding the customer names to que array (line)
+//
+//   var number = 1 + (katzDeliLine.indexOf(name));
+//   // (grabbing the index and because arrays and strings are zero indexed we add 1 to give customer actual number in que)
+//   return 'Welcome, '+ name + '. You are number ' + number + ' in line.';
+// }
 
-  katzDeliLine.push(name); //we're adding the customer names to que array (line)
+var count = 0;
 
-  var number = 1 + (katzDeliLine.indexOf(name));
-  // (grabbing the index and because arrays and strings are zero indexed we add 1 to give customer actual number in que)
-  return 'Welcome, '+ name + '. You are number ' + number + ' in line.'
+function takeANumber(){
+  count++;
+
+  return 'Welcome!. You are number ' + count + ' in line.';
 }
 
+var currentCustomer = 1;
 
-function nowServing(katzDeliLine){
+function nowServing(){
 
-  if(katzDeliLine.length === 0){ //checking if line empty
-    return "There is nobody waiting to be served!";
-  } else {
-  return "Currently serving " + katzDeliLine.shift()+ "."; // if not we return first element from beginning of array and shift it out
-  }
+  var beingServed = currentCustomer;
+  currentCustomer = currentCustomer + 1
+  return beingServed;
 
 }
+
+// function nowServing(katzDeliLine){
+//
+//   if(katzDeliLine.length === 0){ //checking if line empty
+//     return "There is nobody waiting to be served!";
+//   } else {
+//   return "Currently serving " + katzDeliLine.shift()+ "."; // if not we return first element from beginning of array and shift it out
+//   }
+//
+// }
 
 
 function currentLine(katzDeliLine){
