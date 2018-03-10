@@ -10,8 +10,8 @@ function nowServing(line){
 function currentLine(line){
   var hjh = []
   for(var i=0; i< line.length; i++){
-   hjh.push(` ${i+1}. ${line[i]}`);
+   hjh.push(`${i+1}. ${line[i]}`);
 
   }
-  return line.length === 0 ? "The line is currently empty." : `The line is currently:${hjh}`;
+  return line.length === 0 ? "The line is currently empty." : `The line is currently: ${hjh.join(", ")}`;
 }
