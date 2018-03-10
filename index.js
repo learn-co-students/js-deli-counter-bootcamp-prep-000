@@ -11,20 +11,26 @@ function takeANumber (katzLine, name) {
 //Time to Serve the person of the number
 //Using ${katzLine.shift() works because the output is going to be that deleted person.
 function nowServing(katzLine) {
-  if (katzLine.length === 0) {
-    return "There is nobody waiting to be served!";
+  if (0 < katzLine.length) {
+    return `Currently serving ${katzLine.shift()}.`;
   } else {
-    return `Currently serving ${katzLine.shift()}`;
+    return "There is nobody waiting to be served!";
   }
 }
 
+
+//the symbol |variable += string/number'| adds whatever after to the variable  
 function currentLine(katzLine) {
   if (katzLine.length === 0) {
-    return "The line is currently empty";
+    return "The line is currently empty.";
+    
   } else {
-    var message = `The line is currently: 1. ${katzLine[0]}`;
-    for (var i = 1; i < katzLine.length; i++) {
-    message += `, ${i+1} ${katzLine[i]}`;
-    }
+      var message = `The line is currently: 1. ${katzLine[0]}`;
+    
+      for (var i = 1; i < katzLine.length; i++) {
+      message += `, ${i+1}. ${katzLine[i]}`;
+    
+      }
+       return message;
   }
 }
