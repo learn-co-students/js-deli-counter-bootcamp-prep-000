@@ -3,31 +3,31 @@
 
 
 // task1
-function takeANumber(line, name) {
-  line.push(name)
+function takeANumber(katzDeliLine, name) {
+  katzDeliLine.push(name)
 
-  return `Welcome, ${name}. You are number ${line.length} in line.`
+  return `Welcome, ${name}. You are number ${katzDeliLine.length} in line.`
 };
 //task2
-function nowServing(line) {
-  if (!line.length) {
+function nowServing(katzDeliLine) {
+  if (!katzDeliLine.length) {
     return "There is nobody waiting to be served!"
   }
 
-  return `Currently serving ${line.shift()}.`
+  return `Currently serving ${katzDeliLine.shift()}.`
 };
 
 //task3
-function currentLine(line) {
-  if (!line.length) {
+function currentLine(katzDeliLine) {
+  if (!katzDeliLine.length) {
     return "The line is currently empty."
   }
 
-  const numbersAndNames = []
+  const  katzDeli = [];
 
-  for (let i = 0, l = line.length; i < l; i++) {
-    numbersAndNames.push(`${i + 1}. ${line[i]}`)
+  for (let i = 0, l = katzDeliLine.length; i < l; i++) {
+    katzDeli.push(`${i + 1}. ${line[i]}`)
   }
 
-  return `The line is currently: ${numbersAndNames.join(', ')}`
+  return `The line is currently: ${katzDeli.join(', ')}`
 };
