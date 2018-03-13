@@ -1,34 +1,32 @@
 
-var katzDeliLine = [];
-function takeANumber(katzDeliLine, name) {
-  katzDeliLine.push(name)
+//Re-committed being inspired by the solution
 
-  return (`Welcome, ${name}. You are number ${katzDeliLine.indexOf(name) + 1} in line.`)
-}
-function nowServing(katzDeliLine) {
+// task1
+function takeANumber(line, name) {
+  line.push(name)
 
-  if (katzDeliLine.length == 0 || katzDeliLine == null) {
-    return ("There is nobody waiting to be served!");
+  return `Welcome, ${name}. You are number ${line.length} in line.`
+};
+//task2
+function nowServing(line) {
+  if (!line.length) {
+    return "There is nobody waiting to be served!"
   }
-  else {
-      return (`Currently serving ${katzDeliLine.splice(0, 1)}.`);
+
+  return `Currently serving ${line.shift()}.`
+};
+
+//task3
+function currentLine(line) {
+  if (!line.length) {
+    return "The line is currently empty."
   }
-}
 
+  const numbersAndNames = []
 
-function currentLine(katzDeliLine) {
-  var x;
-
-  if (katzDeliLine.length == 0 || katzDeliLine == null) {
-    return("The line is currently empty.");
+  for (let i = 0, l = line.length; i < l; i++) {
+    numbersAndNames.push(`${i + 1}. ${line[i]}`)
   }
-  else {
-    var text = [];
-      for (x = 0; x < katzDeliLine.length; x++) {
-            text.push(` ${x + 1}. ${katzDeliLine[x]}`);
 
-          }
-        }
-
-  return "The line is currently:" + text.join(",");
-}
+  return `The line is currently: ${numbersAndNames.join(', ')}`
+};
