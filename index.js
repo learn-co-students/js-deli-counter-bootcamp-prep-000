@@ -1,5 +1,6 @@
+// I haven't saw a deli counter for real. It took me 2 days to understand it.
+//I didn't like my messy code. Re-committed being inspired by the solution.
 
-//Re-committed being inspired by the solution
 
 // task1
 function takeANumber(line, name) {
