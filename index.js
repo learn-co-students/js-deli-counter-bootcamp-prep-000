@@ -15,7 +15,7 @@ function nowServing(katzDeliLine) {
   }
 }
 
-//Function to return current line. "The line is currently: 1. Ada, 2. Grace"
+
 function currentLine(katzDeliLine) {
   var x;
 
