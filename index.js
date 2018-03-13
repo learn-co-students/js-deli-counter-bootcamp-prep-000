@@ -26,7 +26,7 @@ function currentLine(katzDeliLine) {
   const  katzDeli = [];
 
   for (let i = 0, l = katzDeliLine.length; i < l; i++) {
-    katzDeli.push(`${i + 1}. ${line[i]}`)
+    katzDeli.push(`${i + 1}. ${katzDeliLine[i]}`)
   }
 
   return `The line is currently: ${katzDeli.join(', ')}`
