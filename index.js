@@ -11,8 +11,6 @@ function nowServing(line){
   }
 }
 function currentLine(katzDeliLine){
-  // hard coded, needs revision
-  // "The line is currently: 1. Bill, 2. Ada, 3. Anne"
   var DeliLine = [];
   for (var i = 0; i < katzDeliLine.length; i++) {
       DeliLine.push(' ' + [i + 1] +'. ' + katzDeliLine[i]);
