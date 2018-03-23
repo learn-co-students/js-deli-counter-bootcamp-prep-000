@@ -1,9 +1,22 @@
 var katzDeli = [];
-var customerName = [];
 
 function takeANumber(katzDeli, customerName) {
-  for (let i = 0; i < 10; i++) {
-    katzDeli.push(customerName);
+  katzDeli.push(customerName);
+  return "Welcome, " + customerName + ". You are number " + katzDeli.length + " in line."
+}
+
+function nowServing() {
+  for (i = 0; i < katDeli.length; i++) {
+    return katzDeli[i];
+
   }
-  return customerName+1;
+
+  return katzDeli[0];
+  katzDeli.shift;
+}
+  function endOfLine() {
+  if (katzDeli.length = 0) {
+    return "There is nobody waiting to be served!"
+  } else {nowServing()}
+
 }
