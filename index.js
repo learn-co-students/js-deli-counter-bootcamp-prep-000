@@ -20,3 +20,10 @@ function nowServing() {
   } else {nowServing()}
 
 }
+
+function currentLine(katzDeli) {
+
+  for (let i = 0, l = katzDeli.length; i <= l; i++) {
+  return "The line is currently: " + i + "." + katzDeli[i] + ","
+  }
+}
