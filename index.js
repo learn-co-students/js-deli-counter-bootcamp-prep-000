@@ -1,4 +1,4 @@
-var katzDeli = [];
+const katzDeli = [];
 
 function takeANumber(katzDeli, customerName) {
   katzDeli.push(customerName);
@@ -6,21 +6,20 @@ function takeANumber(katzDeli, customerName) {
 }
 
 function nowServing() {
-
-  if (katzDeli.length < 1) {
-    return "There is nobody waiting to be served!";
-  } else {
+  if (katzDeli.length >= 1) {
     return "Currently serving " + katzDeli.shift() + ".";
+  } else {
+    return "There is nobody waiting to be served!";
   }
 }
 
 function currentLine(katzDeli) {
+  const lineState = [];
+  var i;
   if (katzDeli.length < 1) {
-    return "The line is currently empty."
-  } else {
-    for (i = 0, len = katzDeli.length, text = "The line is currently: ", i < len, i++) {
-      text += (i + 1) + ". " + katzDeli[i] + ", ";
-    }
+    return "The line is currently empty.";}
+    for (i = 0; i < katzDeli.length; i++) {
+      lineState.push(` ${i + 1}. ${katzDeli[i]}`)
   }
-  return text
+  return "The line is currently:" + lineState;
 }
