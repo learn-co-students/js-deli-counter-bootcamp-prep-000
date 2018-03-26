@@ -24,9 +24,3 @@ function currentLine(katzDeli) {
   }
   return text
 }
-
-//function endOfLine() {
-//  if (katzDeli.length = 0) {
-//  return "There is nobody waiting to be served!"
-//} else {nowServing()}
-//}
