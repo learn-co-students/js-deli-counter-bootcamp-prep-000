@@ -6,24 +6,23 @@ function takeANumber(katzDeli, customerName) {
 }
 
 function nowServing() {
-  for (i = 0; i < katDeli.length; i++) {
-    return katzDeli[i];
 
+  if (katzDeli.length < 1) {
+    return "There is nobody waiting to be served!";
+  } else {
+    return "Currently serving " + katzDeli.shift() + ".";
   }
-
-  return katzDeli[0];
-  katzDeli.shift;
-}
-  function endOfLine() {
-  if (katzDeli.length = 0) {
-    return "There is nobody waiting to be served!"
-  } else {nowServing()}
-
 }
 
 function currentLine(katzDeli) {
-
-  for (let i = 0, l = katzDeli.length; i <= l; i++) {
-  return "The line is currently: " + i + "." + katzDeli[i] + ","
+  for (let i = 0, l = katzDeli.length; text = "The line is: "; i < l; i++) {
+return katzDeli[i];
   }
 }
+//  return "The line is currently: " + i + "." + katzDeli[i] + ","
+
+//function endOfLine() {
+//  if (katzDeli.length = 0) {
+//  return "There is nobody waiting to be served!"
+//} else {nowServing()}
+//}
