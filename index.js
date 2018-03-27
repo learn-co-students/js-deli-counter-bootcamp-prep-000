@@ -7,9 +7,9 @@ function takeANumber(katzDeliLine, person){
 
 function nowServing(theLine){
    if(theLine.length > 0){
-     return "There is nobody waiting to be served!";
+    return `Currently serving ${theLine.shift()}.`;
 }else{
-    return `Currenty serving ${theLine.shift()}.`;
+     return "There is nobody waiting to be served!";
 }
 
 }
