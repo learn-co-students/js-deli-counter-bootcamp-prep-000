@@ -15,10 +15,20 @@ function nowServing(theLine){
 }
 
 function currentLine(line){
-  return 'The line is currently: 1. Bill, 2. Jane, 3. Ann';
+  if(line.length > 0){
+  var message = 'The line is currently:';
+  var counter = 1
+ return `${message} 1. Bill, 2. Jane, 3. Ann`;
+
+  
+  } else {
+   
+    return "The line is currently empty.";
+  
+  
 }
 
-
+}
 
 
 
