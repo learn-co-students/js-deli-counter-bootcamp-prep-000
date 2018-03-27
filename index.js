@@ -1,5 +1,3 @@
-var katzDeli = []
-
 function takeANumber(katzDeliLine, name){
   while (katzDeliLine){
     katzDeliLine.push(name)
@@ -18,16 +16,16 @@ function nowServing(katzDeliLine){
   }
 }
 
-function currentLine(line) {
-  if (line.length === 0){
+function currentLine(katzDeliLine) {
+  if (katzDeliLine.length === 0){
     return 'The line is currently empty.'
   }
   else {
     let i = 1
     let n = 2
-    let lineReport = [`${1}. ${line[0]}`]
-    while (line[i]){
-      lineReport.push(` ${n}. ${line[i]}`)
+    let lineReport = [`${1}. ${katzDeliLine[0]}`]
+    while (katzDeliLine[i]){
+      lineReport.push(` ${n}. ${katzDeliLine[i]}`)
       i++
       n++
     }
