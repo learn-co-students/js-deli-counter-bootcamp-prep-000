@@ -13,13 +13,14 @@ function nowServing(katzDeliLine){
   }
 }
 function currentLine(katzDeliLine){
+  var line = [];
   if (katzDeliLine === 0){
-  return "The line is currently empty."
+  return "The line is currently empty.";
   } else {
     for(var i = 0; i < katzDeliLine.length; i++){
-      var numberName = [];
-      numberName.push((i+1) + ". " + katzDeliLine[i] + " ,");
-    return "The line is currently: " + numberName;
+      line.push(" " + (i+1) + ". " + katzDeliLine[i]);
+  }
+  return "The line is currently:" + line ;
   }
 }
 
@@ -29,5 +30,3 @@ function currentLine(katzDeliLine){
   //would return "The line is currently: 1. Ada, 2. Grace"
   //if nobody in line
   //return "The line is currently empty."
-  
-}
