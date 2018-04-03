@@ -22,7 +22,6 @@ function currentLine(katzDeliLine) {
   
   var formatted = [];
   var counter = 0;
-  
   while (katzDeliLine.length > counter) {
     if (counter === 0) {
       var texty = `${counter + 1}. ${katzDeliLine[counter]}`;
@@ -34,7 +33,6 @@ function currentLine(katzDeliLine) {
     
     counter++
   }
-  
   var line = formatted.toString();
   
   return `The line is currently: ${line}`;
