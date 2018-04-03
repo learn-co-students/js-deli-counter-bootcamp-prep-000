@@ -1,3 +1,4 @@
+
 var katzDeliLine = [];
 
 function takeANumber(katzDeliLine, person) {
@@ -38,7 +39,3 @@ function currentLine(katzDeliLine) {
   
   return `The line is currently: ${line}`;
 }
-
-
-
-// spacing
