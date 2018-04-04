@@ -13,12 +13,13 @@ function nowServing(katzDeliLine) {
  return "There is nobody waiting to be served!"}
 }
 
-var whosNext = []
-function currentLine(katzDeliLine) {
+
+function currentLine(katzDeliLine) { 
+  var whosNext = []
   if (katzDeliLine.length === 0){return "The line is currently empty."
   } else {
     for (let i = 0; i < katzDeliLine.length; i++) {
-      whosNext.push((i+1) + ". " + katzDeliLine[i] + ", ")}
-      return "The line is currently: " + whosNext
+      whosNext.push(" " + (i+1) + ". " + katzDeliLine[i])}
+      return "The line is currently:" + whosNext
     }
 }
