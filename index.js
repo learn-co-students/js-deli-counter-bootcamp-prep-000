@@ -1,16 +1,17 @@
+var katzDeli = [];
+
 function takaANumber(katDeli, katzDeliLine, name){
-  if(katzDeli.length > 0){
-    
-  }
-  else{
-    return("The line is currently empty.");
-  }
+  katzDeli.push(`${name}`);
+  return(`Welcome, ${name}. You are number ${katzDeli.length} in line.`);
 }
 
 function nowServing(){
-  
+  let i = 0;
+  while (i < katzDeli.length){
+    i++;
+  }
 }
 
-function currentLine(){
+function currentLine(katzDeliLine){
   
 }
