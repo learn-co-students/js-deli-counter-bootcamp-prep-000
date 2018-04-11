@@ -14,7 +14,7 @@ function takeANumber(katzDeliLine, name){
   var position = katzDeliLine.indexOf(name);
   return `Welcome, ${name}. You are number ${position + 1} in line.`;
 }
-// Considering indexOf returns the FIRST matching index in an array, what if we use a duplicate name?
+// Considering indexOf returns the FIRST matching index in an array we will have issues using this if we have duplicate names.
 */
 
 function nowServing(katzDeliLine){
