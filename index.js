@@ -1,19 +1,21 @@
 var katzDeliLine = [];
 
-/*Another way to return position
+
 
 function takeANumber(katzDeliLine, name){
   katzDeliLine.push(name);
   return `Welcome, ${name}. You are number ${katzDeliLine.length} in line.`
 }
 
-*/
 
+/*
 function takeANumber(katzDeliLine, name){
   katzDeliLine.push(name);
   var position = katzDeliLine.indexOf(name);
   return `Welcome, ${name}. You are number ${position + 1} in line.`;
 }
+// Considering indexOf returns the FIRST matching index in an array, what if we use a duplicate name?
+*/
 
 function nowServing(katzDeliLine){
   if(katzDeliLine.length === 0){
@@ -35,20 +37,8 @@ function currentLine(katzDeliLine){
     }str += line.join(', ');
     return str;
   }
-}*/
-/*Not looping correctly
-function currentLine(katzDeliLine){
-  var str = `The line is currently: 1. ${katzDeliLine[0]}`;
-  if(katzDeliLine.length === 0){
-    return `The line is currently empty.`
-  }else if(katzDeliLine.length === 1){
-    return `${str}`;
-  }else if(katzDeliLine.length > 1){
-    for(let i = 0; i < katzDeliLine.length; i++){
-      return `${str}, ${i+1}. ${katzDeliLine[i+1]}`
-    }
-  }
-}*/
+}
+*/
 function currentLine(katzDeliLine){
   if(katzDeliLine.length === 0){
     return `The line is currently empty.`;
@@ -57,5 +47,6 @@ function currentLine(katzDeliLine){
   for(let i = 1; i < katzDeliLine.length; i++){
     str += `, ${i + 1}. ${katzDeliLine[i]}`;
   }
-  return str
+  return str;
 }
+
