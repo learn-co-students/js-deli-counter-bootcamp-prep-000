@@ -2,14 +2,16 @@ var katzDeli = [];
 
 function takeANumber(katzDeli, katzDeliLine){
   katzDeli.push(`${katzDeliLine}`);
-  return(`Welcome, ${katzDeliLine}. You are number ${katzDeli.length} in line.`);
+  return (`Welcome, ${katzDeliLine}. You are number ${katzDeli.length} in line.`);
 }
 
-function nowServing(){
-  let i = 0;
-  while (i < katzDeli.length){
-    i++;
+function nowServing(katzDeliLine){
+  let i = katzDeliLine.length;
+  while (i > 0){
+    return (`Currently serving ${katzDeliLine[0]}.`);
   }
+  katzDeliLine.shift();
+  return ("There is nobody waiting to be served!");
 }
 
 function currentLine(katzDeliLine){
