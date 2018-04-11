@@ -7,11 +7,12 @@ function takeANumber(katzDeli, katzDeliLine){
 
 function nowServing(katzDeliLine){
   let i = katzDeliLine.length;
-  while (i > 0){
+  if (i > 0){
     return (`Currently serving ${katzDeliLine[0]}.`);
   }
-  katzDeliLine.shift();
+  else{
   return ("There is nobody waiting to be served!");
+  }
 }
 
 function currentLine(katzDeliLine){
