@@ -1,17 +1,24 @@
-var katzDeliLine = [];
+var katzDeli = [];
 
 function takeANumber(katzDeliLine, person) {
   katzDeliLine.push(name);
-  
-  var deliLinePosition = katzDeliLine.length + 1;
-  console.log("Welcome," + `${name}` + ". You are number " + `${deliLinePosition}` +" in line.")
+
+  console.log("Welcome," + `${name}` + ". You are number " + `${katzDeliLine.length}` +" in line.")
 }
 
 function nowServing() {
-  if (katzDeliLine.length < 1) {
+  if (katzDeli.length < 1) {
     console.log("There is nobody waiting to be served!");
   } else {
-    console.log(katzDeliLine[0]);
-    delete katzDeliLine[0];
+    console.log(katzDeli[0]);
+    delete katzDeli[0];
+  }
+}
+
+function currentLine() {
+  if (katzDeli.length < 1) {
+    console.log("The line is currently empty.");
+  } else {
+  console.log("The line is currently: " + katzDeli.join(", "));
   }
 }
