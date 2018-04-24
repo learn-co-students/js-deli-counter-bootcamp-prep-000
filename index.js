@@ -21,8 +21,8 @@ function currentLine(deliLine) {
   } else {
     var stg = [];
     for (var i = 0; i < deliLine.length; i++) {
-      stg.push((i+1) + ". " + deliLine[i]);
+      str.push((i+1) + ". " + deliLine[i]);
     }
-    return "The line is currently: " + stg.join(", ");
+    return "The line is currently: " + str.join(", ");
   }
 }
