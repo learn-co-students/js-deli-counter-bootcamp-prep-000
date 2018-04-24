@@ -10,18 +10,19 @@ function nowServing(katzDeliLine) {
     return 'There is nobody waiting to be served!';
   } 
   else {
-    return `Currently serving ${katzDeliLine.shift()}.`
+    return `Currently serving ${katzDeliLine.shift()}.`;
   }
 }
 
 function currentLine(katzDeliLine) {
   if(katzDeliLine.length === 0) {
-    return 'The line is currently empty.'
+    return 'The line is currently empty.';
   }
   else {
+    var whosInLine = [];
     for(let i = 0; i < katzDeliLine.length; i++) {
-       katzDeliLine.push(` `+[i+1]+`. `  + katzDeliLine[i]);
+       whosInLine.push(` `+[i+1]+`. `  + katzDeliLine[i]);
     }
-    return 'The line is currently:' + katzDeliLine;
+    return 'The line is currently:' + whosInLine;
   }
 }
