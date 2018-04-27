@@ -23,7 +23,7 @@ function currentLine(line){
       return "The line is currently empty.";
     }
     else{
-      for (i = 0; i < line.length; i++){
+      for (let i = 0; i < line.length; i++){
         array.push(`${i + 1}. ${line[i]}`);
       }
       return "The line is currently: " + array.join(", ");
