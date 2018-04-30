@@ -1,4 +1,3 @@
-
 //Accepts existing line of people(array) and name of the new person(string) as parameters and returns a welcoming string with the new persons place in the line.//
 const takeANumber = (katzDeliLine, newPerson) => {
   katzDeliLine.push(newPerson);
@@ -25,16 +24,10 @@ const currentLine = (katzDeliLine) => {
     
     for (let i = 0; i<katzDeliLine.length; i++){
       let currentNumberInLine = i + 1;
-      
-      if(i === katzDeliLine.length - 1){
-      line = `${line} ${currentNumberInLine}. ${katzDeliLine[i]}`;
-      }
-      else{
-        line = `${line} ${currentNumberInLine}. ${katzDeliLine[i]},`;
-      }
+      line = `${line} ${currentNumberInLine}. ${katzDeliLine[i]},`;
     }
    
-    return `The line is currently:${line}`;
+    return `The line is currently:${line}.`;
   }
   
   return 'The line is currently empty.';
