@@ -27,7 +27,7 @@ const currentLine = (katzDeliLine) => {
       line = `${line} ${currentNumberInLine}. ${katzDeliLine[i]},`;
     }
    
-    return `The line is currently:${line}.`;
+    return `The line is currently:${line.slice(0,-1)}`;
   }
   
   return 'The line is currently empty.';
