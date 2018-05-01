@@ -1,37 +1,36 @@
 var katzDeliLine = [];
-var otherDeli = ["Steven", "Blake", "Avi"];
-var testLine =[];
+
 function takeANumber (array, name){
-  //
-
-  // value of index and destructively  adds a new client Name at the end
-  //of the katzDeli array and otherDeli array
-  var x = array.push(name);
-
-  return console.log('Welcome ' + name + '. You are number ' + x + ' in line.' )
-
-
+  // destructively  adds a new client Name at the end
+  array.push(name);
+  //Concant print screen text + name in array by the length of the array index
+  return console.log('Welcome ' + name + '. You are number ' + array.length + ' in line.' )
 }
+
 function currentLine(array){
-  var test = array.length;
+  var test = array.length;//gets the length of the array
+  var currentLineMembersPlusNumbers = [];//test array to store temp data
   if (test === 0){
-    //true
-    console.log("The line is currently empty.");
-  } else{//false
+    //true if no one is in the line print this
+    return "The line is currently empty.";
+  } else{//false if somebody is in the line print this
   for (var i = 0; i <= array.length; i++){
-   console.log("The current line is currently: " + (i+1) +". " + (array));
+    currentLineMembersPlusNumbers.push(i+1 + ". " + array[i]);
+   //console.log("The current line is currently: " + (i+1) +". " + (array[i]));
   }
+  //joins line number plus name separated by comma
+  return "The line is currently: " + currentLineMembersPlusNumbers.join(', ');
 }
 }
 function nowServing(array){
   //const newAddArray = array.slice(1);
-  array.pop();
-  var test = array.length;
+  var test = array.length;//gets the length of the array
   if (test === 0){
     //true
-    console.log("There is nobody waiting to be served!");
+    //console.log("There is nobody waiting to be served!");
+    return "There is nobody waiting to be served!";
 } else {//false
-    console.log("Currently serving: " + (array[0]))
-  //return newAddArray;
+    //console.log("Currently serving: " + (array[0])) not good
+    return "Currently serving: " + array.shift();//removes the first item of the array and prints array
 }
 }
