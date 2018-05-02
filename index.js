@@ -19,7 +19,7 @@ function currentLine(line) {
   } else if (line.length !== 0) {
     for (let lineIndex = 0; lineIndex < line.length; lineIndex++) 
 		lineArray.push(`${lineIndex + 1}. ${line[lineIndex]}`);
-		return `The line is currently: ${lineArray}`
+		return `The line is currently: ${lineArray.join(', ')}`
     }
 }
    
