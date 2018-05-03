@@ -19,16 +19,15 @@ function currentLine(katzDeliLine) {
   let lineLength = katzDeliLine.length;
   if (lineLength === 1) {
       return 'The line is currently: 1. '+ katzDeliLine[i] + '.'
-    } else if (lineLength > 1) {
-      for ( var i = 0; i < lineLength; i++) {
-    let n = katzDeliLine.indexOf(katzDeliLine[i+1])
-    let arr = []
-    let names = n + '. ' + katzDeliLine[i]
-    let lastName = n
-    arr.push(names)
-    return 'The line is currently: ' + arr
+    } 
+    else if (lineLength > 1) {
+      const arr = []
+      for ( let i = 0; i < lineLength; i++) {
+    arr.push(`${i+1}. ${katzDeliLine[i]}`);
+    } 
+    return "The line is currently: " + arr.join(', ')
   } 
-  } else {
+    else {
     return "The line is currently empty."
   }
 }
