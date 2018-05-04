@@ -17,18 +17,12 @@ function nowServing(katzDeliLine) {
 
 function currentLine(katzDeliLine) {
   if (katzDeliLine.length > 0) {
-    var lineDescription = "The line is currently:"
+    var line = []
     for (var i = 0; i < katzDeliLine.length ; i++) {
-      // special casing the last name in list
-      if (i === katzDeliLine.length - 1) {
-        lineDescription += ` ${i+1}. ${katzDeliLine[i]}`
-      } else {
-        lineDescription += ` ${i+1}. ${katzDeliLine[i]},` 
-      }
-  }
-  return lineDescription
-  } 
-  else {
+        line.push(`${i+1}. ${katzDeliLine[i]}`)
+    }
+  return `The line is currently: ${line.join(", ")}`
+  } else {
   return "The line is currently empty."
   }
 }
