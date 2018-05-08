@@ -1,6 +1,6 @@
-var katzDeliLine=["Ada", "Grace", "Ben"];
+var katzDeliLine=["Ada", "Grace", "Ben"];                   //Current Guests already waiting in line
 
-function takeANumber(katzDeliLine,name="Guest"){
+function takeANumber(katzDeliLine,name="Guest"){            //
     katzDeliLine.push(name)
     console.log(`Welcome, ${name}. You are number ${katzDeliLine.length} in line.`)
     return `Welcome, ${name}. You are number ${katzDeliLine.length} in line.`
@@ -22,7 +22,10 @@ function currentLine(line){
     //return "The line is currently empty."
   }else{
     var newLine = [];
-    line.forEach(function(item,index){newLine.push(` ${index+1}. ${item}`)} )
+    //line.forEach(function(item,index){newLine.push(` ${index+1}. ${item}`)} )
+    for(var i=0; i<line.length; i++){
+      newLine.push(` ${i}. ${line[i]}`)
+    }
     console.log(`The line is currently:${newLine}`)
     return `The line is currently:${newLine}`
   }
