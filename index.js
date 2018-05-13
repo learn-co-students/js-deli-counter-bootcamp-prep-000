@@ -30,8 +30,6 @@ function takeANumber(array, name) {
 }
 
 
-
-
 function nowServing(array) {
   var arrayLength = array.length
   if (arrayLength > 0) {
@@ -40,11 +38,10 @@ function nowServing(array) {
   } else if (arrayLength === 0) {
     return "There is nobody waiting to be served!"
     array.shift();
+    array
   }
   
 }
-
-
 
 
 var line = [];
