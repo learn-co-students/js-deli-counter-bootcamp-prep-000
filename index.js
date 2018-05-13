@@ -30,17 +30,14 @@ function takeANumber(array, name) {
 }
 
 
+
 function nowServing(array) {
-  var arrayLength = array.length
+  var arrayLength = array.length;
   if (arrayLength > 0) {
-    var person = array[0];
-    return "Currently serving " + person + ".";
+    return "Currently serving " + array.shift() + ".";
   } else if (arrayLength === 0) {
-    return "There is nobody waiting to be served!"
-    array.shift();
-    array
+    return "There is nobody waiting to be served!";
   }
-  
 }
 
 
