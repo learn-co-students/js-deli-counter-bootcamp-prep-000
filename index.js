@@ -3,9 +3,9 @@ var katzDeliLine = [];
 function takeANumber(line, name){
   line.push(name);
 
-  console.log("Welcome, you are number " + line.length + " in line.");
+  console.log("Welcome, " + name + ". You are number " + line.length + " in line.");
 
-  return "Welcome, you are number " + line.length + " in line."
+  return "Welcome, " + name + ". You are number " + line.length + " in line."
 }
 
 currentLine(katzDeliLine)
