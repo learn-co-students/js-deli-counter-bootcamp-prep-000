@@ -29,18 +29,18 @@ var name = []
 }
 
 function currentLine(katzDeliLine){
-  var name = []
+  var result = []
   
   if(katzDeliLine.length > 0){
     
     /*Use for loop to loop through each person in line and assign proper position and name*/
-    for(var i = 0, p = katzDeliLine.length; p > i; i++) {
+    for(let i = 0, p = katzDeliLine.length; p > i; i++) {
       
       /*add position and name to the end of array variable*/
-      name.push(` ${i+1}. ${katzDeliLine[i]}`) 
+      result.push(` ${i+1}. ${katzDeliLine[i]}`) 
       
     }
-    return `The line is currently:${name}`
+    return `The line is currently:${result}`
   } else{
     return "The line is currently empty."
   }
