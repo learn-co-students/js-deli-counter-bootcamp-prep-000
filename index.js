@@ -5,22 +5,28 @@ function takeANumber(katzDeliLine, name) {
   return 'Welcome, '+name+'. You are number '+katzDeliLine.length+' in line.'
 }
 
-function nowServing() {
-  if (katzDeliLine.length === 0) {
+function nowServing(katzDeliLine) {
+  var name = []
+  if (katzDeliLine.length == 0) {
     return 'There is nobody waiting to be served!'
+
   }
   else {
-    return 'Currently serving '+katzDeliLine[0]+'.'
-  }
+  name = katzDeliLine[0]
   katzDeliLine.shift()
-  return katzDeliLine
+  return 'Currently serving '+name+'.'
+  }
 }
 
-function currentLine() {
-  if (katzDeliLine.length === 0) {
+function currentLine(katzDeliLine) {
+  var name = []
+  if (katzDeliLine.length == 0) {
     return 'The line is currently empty.'
   }
   else {
-    return 'The line is currently: '+katzDeliLine.index+'. '+katzDeliLine[katzDeliLine.index]
+    for (var i = 0; i < katzDeliLine.length; i++) {
+      name.push(` ${i+1}. ${katzDeliLine[i]}`)
+    }
+    return 'The line is currently:'+name
   }
 }
