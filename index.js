@@ -28,7 +28,7 @@ function takeANumber(katzDeliLine , name){
        {
        line += (i + 1) + ". " + katzDeliLine[i] + ", "    
        }
-      
+      line = line.slice(0, line.length-2)
       return "The line is currently: " +  line
    
    } 
