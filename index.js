@@ -1,12 +1,22 @@
-var katzDeliLine = ['Mary', 'Mike', 'Kevin'];
+katzDeliLine = ['Mary', 'Mike', 'Kevin'];
  
-function takeANumber(katzDeliLine, newName) {
-  katzDeliLine = katzDeliLine.push(newName)
-  var position = katzDeliLine.indexOf(newName)
-  return `Welcome, ${newName}. You are number ${position + 1} in line`
+function takeANumber(katzDeliLine, name){
+  console.log(katzDeliLine)
+  console.log('5')
+  katzDeliLine.push(name)
+  console.log('7')
+  console.log(katzDeliLine)
+  position = katzDeliLine[-1]
+  console.log(katzDeliLine)
+  console.log(position)
+  //position = katzDeliLine.indexOf(name)
+  var sentence1 =  `Welcome, ${name}. You are number ${position} in line`
+  console.log(sentence1)
+  return sentence1
 }
 
 function nowServing(katzDeliLine){
+  console.log(katzDeliLine)
   if (katzDeliLine > 0) {
   return katzDeliLine.splice(0, 1) }
   else {
