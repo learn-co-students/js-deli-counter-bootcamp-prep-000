@@ -1,14 +1,8 @@
 katzDeliLine = ['Mary', 'Mike', 'Kevin'];
  
 function takeANumber(katzDeliLine, name){
-  console.log(katzDeliLine)
-  console.log('5')
   katzDeliLine.push(name)
-  console.log('7')
-  console.log(katzDeliLine)
-  position = katzDeliLine[-1]
-  console.log(katzDeliLine)
-  console.log(position)
+  position = katzDeliLine.length
   //position = katzDeliLine.indexOf(name)
   var sentence1 =  `Welcome, ${name}. You are number ${position} in line`
   console.log(sentence1)
@@ -16,9 +10,8 @@ function takeANumber(katzDeliLine, name){
 }
 
 function nowServing(katzDeliLine){
-  console.log(katzDeliLine)
   if (katzDeliLine > 0) {
-  return katzDeliLine.splice(0, 1) }
+    katzDeliLine.splice(1, 1) }
   else {
     return "There is nobody waiting to be served!"
   }
