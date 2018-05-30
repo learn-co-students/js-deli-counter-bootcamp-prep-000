@@ -2,7 +2,7 @@ otherDeli = ["Steven", "Blake", "Avi"]
 
 function takeANumber(katzDeliLine, name){
   katzDeliLine.push(name)
-  position = katzDeliLine.length
+  var position = katzDeliLine.length
   //position = katzDeliLine.indexOf(name)
   var sentence1 =  `Welcome, ${name}. You are number ${position} in line.`
   console.log(sentence1)
@@ -11,10 +11,11 @@ function takeANumber(katzDeliLine, name){
 
 function nowServing(line){
   if (line.length > 0) {
-    firstperson = line[0]
-    sentence2 = "Currently serving " + firstperson + "."
+    var firstperson = line[0]
+    var sentence2 = "Currently serving " + firstperson + "."
     console.log(sentence2)
-    return line.splice(0, 1)
+    line.splice(0, 1)
+    return sentence2
   }
   else {
     console.log("There is nobody waiting to be served!")
@@ -22,20 +23,20 @@ function nowServing(line){
   }
 }
 
-function currentLine (line){
+function currentLine(line){
    if (line.length > 0) {
-      sentenceList = []
-      num = 1
+      const sentenceList = []
+      var num = 1
       while (num <= line.length){
-        sentence = ' ' + num + '. ' + line[num - 1]
+        var sentence = ' ' + num + '. ' + line[num - 1]
         sentenceList.push(sentence)
         num += 1 }
-      finalsentence = "The line is currently:" + sentenceList.toString()
+      var finalsentence = "The line is currently:" + sentenceList.toString()
       console.log(finalsentence)
       return finalsentence
       }
   else {
-      empty = "The line is currenly empty"
+      var empty = "The line is currently empty."
       console.log(empty)
       return empty
     }
@@ -49,7 +50,7 @@ takeANumber(katzDeli, 'Ada');
 takeANumber(katzDeli, 'Grace');
 takeANumber(katzDeli, 'Kent');
 nowServing([])
-const deliLine = ["Steven", "Blake", "Avi"]
+const deliLine = ['Steven', "Blake", "Avi"]
 nowServing(deliLine)
 currentLine([])
 currentLine(['Bill', 'Jane', 'Ann'])
