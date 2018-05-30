@@ -1,5 +1,3 @@
-katzDeliLine = ['Mary', 'Mike', 'Kevin'];
- 
 function takeANumber(katzDeliLine, name){
   katzDeliLine.push(name)
   position = katzDeliLine.length
@@ -41,6 +39,14 @@ function currentLine (katzDeliLine){
     }
 }
 
-takeANumber(katzDeliLine, 'Cathy')
+var katzDeliLine = [];
+takeANumber(katzDeliLine, "Ada")
+takeANumber(katzDeliLine, "Grace")
+takeANumber(katzDeliLine, "Kent")
+currentLine(katzDeliLine)
+nowServing(katzDeliLine)
+currentLine(katzDeliLine)
+takeANumber(katzDeliLine, "Matz")
+currentLine(katzDeliLine)
 nowServing(katzDeliLine)
 currentLine(katzDeliLine)
