@@ -13,13 +13,11 @@ var nowServing = function(katzDeliLine) {
 };
 
 var currentLine = function(katzDeliLine) {
-  if (katzDeliLine.length === 0) {
-    return "There is nobody waiting to be served!";
-  } else {
-    var line_message = "The line is currently:";
-    for (let i = 0; i < katzDeliLine.length; i++) {
-      line_message += `${i === 0 ? '' : ','} ${i}. ${katzDeliLine[i]}`;
-    }
-    return line_message;
+  var line_message = "The line is currently";
+  line_message += katzDeliLine.length === 0 ? " empty." : ":";
+  
+  for (let i = 0; i < katzDeliLine.length; i++) {
+      line_message += `${i === 0 ? '' : ','} ${i+1}. ${katzDeliLine[i]}`;
   }
+  return line_message;
 };
