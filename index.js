@@ -11,8 +11,13 @@ function takeANumber(katzDeliLine, name){
 
 function nowServing(katzDeliLine){
   if (katzDeliLine.length > 0) {
-    console.log(katzDeliLine[0])
-    katzDeliLine.splice(0, 1) }
+    firstperson = katzDeliLine[0]
+    sentence2 = firstperson + " is the first person in line."
+    console.log(sentence2)
+    katzDeliLine.splice(0, 1) 
+    console.log(katzDeliLine)
+    return(firstperson)
+  }
   else {
     return "There is nobody waiting to be served!"
   }
