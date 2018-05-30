@@ -12,9 +12,7 @@ function nowServing(katzDeliLine){
     firstperson = katzDeliLine[0]
     sentence2 = "Currently serving " + firstperson + "."
     console.log(sentence2)
-    sentence2 = katzDeliLine.splice(0, 1)
-    console.log(sentence2)
-    return sentence2
+    return katzDeliLine.splice(0, 1)
   }
   else {
     return "There is nobody waiting to be served!"
