@@ -12,10 +12,9 @@ function takeANumber(katzDeliLine, name){
 function nowServing(katzDeliLine){
   if (katzDeliLine.length > 0) {
     firstperson = katzDeliLine[0]
-    sentence2 = firstperson + " is the first person in line."
+    sentence2 = "Currently serving " + firstperson + "."
     console.log(sentence2)
     katzDeliLine.splice(0, 1) 
-    console.log(katzDeliLine)
     return(firstperson)
   }
   else {
