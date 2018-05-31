@@ -23,20 +23,20 @@ function nowServing(deliLine){
 
 function currentLine(deliLine){
    if (deliLine.length > 0) {
-      const arrayElementList = []
-      var num = 1
-      while (num <= deliLine.length){
-        var arrayElement = ' ' + num + '. ' + deliLine[num - 1]
-        arrayElementList.push(arrayElement)
-        num += 1 }
-      var sentence3 = "The line is currently:" + arrayElementList.toString()
+      const positionNameList = []
+      var positionCounter = 1
+      while (positionCounter <= deliLine.length){
+        var positionName = ' ' + positionCounter + '. ' + deliLine[positionCounter - 1]
+        positionNameList.push(positionName)
+        positionCounter += 1 }
+      var sentence3 = "The line is currently:" + positionNameList.toString()
       console.log(sentence3)
       return sentence3
       }
   else {
-      var emptyArray = "The line is currently empty."
-      console.log(emptyArray)
-      return emptyArray
+      var emptyLineSentence = "The line is currently empty."
+      console.log(emptyLineSentence)
+      return emptyLineSentence
     }
 }
 
