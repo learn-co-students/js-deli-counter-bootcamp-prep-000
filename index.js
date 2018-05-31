@@ -40,7 +40,20 @@ function currentLine(deliLine){
     }
 }
 
-otherDeli = ["Steven", "Blake", "Avi"]
+var katzDeli = []
+takeANumber(katzDeliLine, "Ada")
+takeANumber(katzDeliLine, "Grace")
+takeANumber(katzDeliLine, "Kent")
+currently(katzDeliLine)
+nowServing(katzDeliLine)
+currentLine(katzDeliLine)
+takeANumber(katzDeliLine, "Matz")
+currentLine(katzDeliLine)
+nowServing(katzDeliLine)
+currentLine(katzDeliLine)
+
+
+/*otherDeli = ["Steven", "Blake", "Avi"];
 var katzDeli = [];
 takeANumber(katzDeli, "Ada")
 takeANumber(otherDeli, "Grace")
@@ -52,4 +65,4 @@ nowServing([])
 const deliLine = ['Steven', "Blake", "Avi"]
 nowServing(deliLine)
 currentLine([])
-currentLine(['Bill', 'Jane', 'Ann'])
+currentLine(['Bill', 'Jane', 'Ann']) */
