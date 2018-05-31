@@ -41,13 +41,14 @@ function currentLine(deliLine){
 }
 
 var katzDeliLine = []
-takeANumber(katzDeliLine, "Ada")
-takeANumber(katzDeliLine, "Grace")
-takeANumber(katzDeliLine, "Kent")
+takeANumber(katzDeliLine, "Mary")
+takeANumber(katzDeliLine, "Michael")
+takeANumber(katzDeliLine, "Kevin")
 currentLine(katzDeliLine)
 nowServing(katzDeliLine)
 currentLine(katzDeliLine)
-takeANumber(katzDeliLine, "Matz")
+nowServing(katzDeliLine)
 currentLine(katzDeliLine)
 nowServing(katzDeliLine)
 currentLine(katzDeliLine)
+console.log("Finished printing code - wahoo!")
