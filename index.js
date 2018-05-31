@@ -15,9 +15,9 @@ function nowServing(deliLine){
     return sentence2
   }
   else {
-    var emptyArray = "There is nobody waiting to be served!"
-    console.log(emptyArray)
-    return emptyArray
+    var emptyLineSentence = "There is nobody waiting to be served!"
+    console.log(emptyLineSentence)
+    return emptyLineSentence
   }
 }
 
