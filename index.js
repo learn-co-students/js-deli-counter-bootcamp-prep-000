@@ -32,8 +32,8 @@ function currentLine(katzDeliLine)
   else 
   {
     
-    var i = 0;
-  for(i =0; i < katzDeliLine.length; i++)
+    
+  for(var i =0; i < katzDeliLine.length; i++)
     {
      
       currentLine.push(`${i+1}. ${katzDeliLine[i] }`)
