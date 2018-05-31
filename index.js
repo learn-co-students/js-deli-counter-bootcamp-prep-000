@@ -17,15 +17,14 @@ function nowServing(katzDeliLine){
 return "Currently serving " + katzDeliLine.shift() + ".";
 }
 
-var line = []
+var line = [];
 function currentLine(katzDeliLine) {
-  let i = 0;
-  while( i < katzDeliLine.length) {
-    line.push(` `+[i+1]+`. ` + katzDeliLine[i])
-      i--;
-  }
-  if (katzDeliLine.length === 0) {
-    return "The line is currently empty."
-  }
-  else return `The line is currently:` + line;
+   for (let i = 0; i < katzDeliLine.length; i++) {
+     line.push(` `+[i+1]+`. `  + katzDeliLine[i])
+   }
+   if (katzDeliLine.length === 0){
+     return "The line is currently empty.";
+   }
+   else
+   return(`The line is currently:` + line);
 }
