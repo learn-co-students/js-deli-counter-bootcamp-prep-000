@@ -40,29 +40,14 @@ function currentLine(deliLine){
     }
 }
 
-var katzDeli = []
+var katzDeliLine = []
 takeANumber(katzDeliLine, "Ada")
 takeANumber(katzDeliLine, "Grace")
 takeANumber(katzDeliLine, "Kent")
-currently(katzDeliLine)
+currentLine(katzDeliLine)
 nowServing(katzDeliLine)
 currentLine(katzDeliLine)
 takeANumber(katzDeliLine, "Matz")
 currentLine(katzDeliLine)
 nowServing(katzDeliLine)
 currentLine(katzDeliLine)
-
-
-/*otherDeli = ["Steven", "Blake", "Avi"];
-var katzDeli = [];
-takeANumber(katzDeli, "Ada")
-takeANumber(otherDeli, "Grace")
-var katzDeli = [];
-takeANumber(katzDeli, 'Ada');
-takeANumber(katzDeli, 'Grace');
-takeANumber(katzDeli, 'Kent');
-nowServing([])
-const deliLine = ['Steven', "Blake", "Avi"]
-nowServing(deliLine)
-currentLine([])
-currentLine(['Bill', 'Jane', 'Ann']) */
