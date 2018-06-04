@@ -8,22 +8,16 @@ function nowServing(line) {
     return (`Currently serving ${line.shift()}.`)
   }
   return ("There is nobody waiting to be served!")
-  }
+
 }
 
 function currentLine(line){
-  if (line.length > 0) {
-    var curLine = new String("The line is currently:");
-    var str1 = ""
+  if (line.length) {
+    var curLine = [];
     for (var i = 0; i < line.length; i++ ){
-      if (i != line.length - 1) {
-        str1 = `${i+1}. ${line[i]},`
-      } else {
-        str1 = `${i+1}. ${line[i]}`
-      }
-      curLine = `${curLine} ${str1}`
-  }
-    return curLine;
+      curLine.push(`${i+1}. ${line[i]}`);
+    }
+    return (`The line is currently: ${curLine.join(', ')}`);
   } else {
     return ("The line is currently empty.")
   }
