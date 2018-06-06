@@ -27,9 +27,25 @@ remove that individual from the line. If there is nobody in line, it should retu
 is nobody waiting to be served!"
 */
 
-function nowServing()
+function nowServing(katzDeliLine)
 {
-  
+  // check if anyone is in the queue
+  if(katzDeliLine.length > 0)
+  {
+    // first grab the first element in the queue
+    var personBeingServed = katzDeliLine[0]
+    
+    // take them off the queue
+    katzDeliLine.shift()
+    
+    // report who is being served
+    return `Currently serving ${personBeingServed}.`
+  } 
+  else 
+  {
+    // when the queue is empty
+    return "There is nobody waiting to be served!"
+  }
 }
 
 /*
