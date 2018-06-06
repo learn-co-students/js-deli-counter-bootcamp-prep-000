@@ -12,11 +12,9 @@ are number 6 in line.
 
 function takeANumber(katzDeliLine, name)
 {
-  var queueNumber = 0
-  
   katzDeliLine.push(name)
   
-  queueNumber = katzDeliLine.length
+  var queueNumber = katzDeliLine.length
   
   return `Welcome, ${name}. You are number ${queueNumber} in line.`
 }
