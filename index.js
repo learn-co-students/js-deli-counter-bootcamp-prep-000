@@ -14,9 +14,7 @@ function takeANumber(katzDeliLine, name)
 {
   katzDeliLine.push(name)
   
-  var queueNumber = katzDeliLine.length
-  
-  return `Welcome, ${name}. You are number ${queueNumber} in line.`
+  return `Welcome, ${name}. You are number ${katzDeliLine.length} in line.`
 }
 
 /*
