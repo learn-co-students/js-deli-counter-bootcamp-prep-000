@@ -16,18 +16,19 @@ function nowServing(katzDeliLine) {
 }
 
 function currentLine(katzDeliLine) {
-  var current = "The line is currently: ";
+  var currentLine = "The line is currently: ";
   if (katzDeliLine.length > 0) {
     for (let i = 0; i < katzDeliLine.length; i++) {
+      let currentCustomer = katzDeliLine[i];
     if (i < katzDeliLine.length - 1) {
-    current = current + (i + 1) + ". " + katzDeliLine[i] + ", ";
+    currentLine = currentLine + (i + 1) + ". " + currentCustomer + ", ";
     }
-    if (i == katzDeliLine.length - 1) {
-      current = current +(i + 1) + ". " + katzDeliLine[i];
+    if (i === katzDeliLine.length - 1) {
+      currentLine = currentLine +(i + 1) + ". " + currentCustomer;
       }
     }
   } else {
     return "The line is currently empty."
   }
-  return current;
+  return currentLine;
 }
