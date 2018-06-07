@@ -10,14 +10,21 @@ function takeANumber(line,name){
   }
 }
 
-function nowServing(){
-  while (katzDeliLine.length>0){
-    return `Currently serving ${katzDeliLine[0]}`;
-    katzDeliLine.pop();
+function nowServing(line){
+  while (line.length>0){
+    var current = line[0];
+    line.shift();
+    return `Currently serving ${current}.`;
   }
   return 'There is nobody waiting to be served!'
 }
 
-function currentLine(){
-  
+function currentLine(line){
+    if (line.length>0){
+      for (i=1;i<=line.length;i++){
+        lines = [...lines,`${i}. ${line[i-1]}`];
+      }
+    return `The line is currently:  ${lines}.`;
+  }
+  return 'The line is currently empty'
 }
