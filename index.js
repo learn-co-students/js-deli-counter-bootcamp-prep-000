@@ -18,15 +18,16 @@ function takeANumber(katzDeline, newName) {
   }
 }
 
+
 //3
-function currentLine(katzDeline) {
-  var empty = [];
-  if (katzDeline.length === 0) {
-    return 'The line is currently empty.'
-  } else {
-    for (var i = 0; i < katzDeline.length; i++) {
-    empty.push ( `${katzDeline.indexOf(katzDeline[i]) + 1 }. ${katzDeline[i]} ` )
-    }
-    return 'The line is currently: ' + empty
-  }
+  function currentLine(katzDeline) {
+	var empty = [];
+	if (katzDeline.length === 0) {
+		return 'The line is currently empty.'
+	} else {
+		for (var i = 0; i < katzDeline.length; i++) {
+			empty.push(` ${katzDeline.indexOf(katzDeline[i]) + 1}. ${katzDeline[i]}`)
+		}
+		return "The line is currently:" + empty
+		}
 }
