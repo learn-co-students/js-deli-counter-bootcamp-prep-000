@@ -2,8 +2,8 @@ var katzDeli= []
 
 function takeANumber(katzDeliLine, name) {
   katzDeliLine.push(name)
-  let n = katzDeliLine.indexOf(name)
-  return `Welcome, ${name}. You are number ${parseInt(n) + 1} in line.`
+  let n = katzDeliLine.length
+  return `Welcome, ${name}. You are number ${n} in line.`
 }
 
 function nowServing(katzDeliLine) {
