@@ -27,6 +27,6 @@ function currentLine(katzDeline) {
     for (var i = 0; i < katzDeline.length; i++) {
     empty.push ( `${katzDeline.indexOf(katzDeline[i]) + 1 }. ${katzDeline[i]} ` )
     }
-    return `The line is currently: ${empty} `
+    return 'The line is currently: ' + empty
   }
 }
