@@ -11,13 +11,24 @@ function nowServing(katzDeliLine){
  }
  else {
    for (var i = 0; i < katzDeliLine.length; i++){
-     return (`Currently serving ${katzDeliLine[0]}.`)
+     var currentPerson = katzDeliLine.shift();
+     return (`Currently serving ${currentPerson}.`)
+  }
     
- 
-   }
-    katzDeliLine.shift();
 }
 } 
+
+function currentLine(katzDeliLine){
+  if (katzDeliLine.length === 0){
+   return ('The line is currently empty.')
+ }
+ else{
+   for (var i = 0; i < katzDeliLine.length; i++){
+     katzDeliLine.splice(i, 1,` ${i+1}. ${katzDeliLine[i]}`)
+   }
+   return (`The line is currently:${katzDeliLine}`)
+ }
+}
   
 
   
