@@ -1,21 +1,28 @@
-var katzDeliLine = ["Ada", "Grace", "Kent", "Matz"]
-
-function takeANumber(katzDeliLine){
-var number1 = ["Ada"];
-var number2 = ["Grace"];
-var number3 = ["Kent"];
-var number4 = ["Matz"]; 
-return array;
+function currentline(line){
+  if (!line.length){
+    return "The line is empty."
+    }
+  
+  const numbersAndNames =[]
+  
+  for (let i = 0, 1 = line.length; i < 1; i++) {
+    numbersAndNames.push('${i + 1}. ${line[i]')
+  }
+  
+   return `The line is currently: ${numberAndNames.join(', ')}`
 }
 
-currentLine(katzDeliLine);
+function nowServing(line) {
+  if (!lin.length) {
+    return "There is nobody waiting to be served"
+  }
+  
+  return `Currently Serving ${line.shift()}`
+}
 
-nowServing(katzDeliLine);
+function takeANumber(line, name) {
+  line.push(name){
 
-currentLine(katzDeliLine);
-
-takeANumber(katzDeliLine, "Matz");
-
-nowServing(katzDeliLine);
-
-currentLine(katzDeliLine);
+retunr `Welcom, ${name}.  You are number ${line.length} in line.`    
+  }
+}
