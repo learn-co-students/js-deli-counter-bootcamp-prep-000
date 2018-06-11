@@ -37,10 +37,10 @@ function currentLine(katzDeliLine){
     //prepare beginning of message to be returned
     var currentStr = "The line is currently: ";
 
-
-    var addedStr = ""; //string storing information about a person on line
-    var position = 0;  //integer storing person's place on line for addedStr
-    var linePerson = ""; //string storing name of person for addedStr
+    //initialize the changing for-loop variables
+    var addedStr; //string storing information about a person on line
+    var position;  //integer storing person's place on line for addedStr
+    var linePerson; //string storing name of person for addedStr
 
     //iterate through kayzDeliLine to record information about people on line
     for (var i=0; i<katzDeliLine.length; i++){
