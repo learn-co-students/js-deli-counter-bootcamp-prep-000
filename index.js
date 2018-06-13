@@ -19,11 +19,10 @@ function nowServing(line) {
 function currentLine(line) {
   var d = line.length
   if (d === 0) { return "The line is currently empty."} else {
-    var t = 1
-    console.log(`The line is currently: ${t}. ${line[t]}")
-    while (t <= d) {
-      t++
-      console.log(`, ${t}. ${line[t]})
+   var a = `The line is currently: ${1}. ${line[0]}`
+    for(let i = 1; i < d; i++) {
+      a += `, ${i+1}. ${line[i]}`
     }
+    return a
   }
 }
