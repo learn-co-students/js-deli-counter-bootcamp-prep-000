@@ -16,13 +16,19 @@ function nowServing(line){
 }
 
 function currentLine(line){
+  console.log(line);
   var n = 1;
-  var arr = ["The line is currently: "]
+  var st ="The line is currently: "
   if(line.length > 0){
     for(var i = 0; i<line.length; i++){
-      arr.push(n++ + ". " + line[i] + " ")
+      if(i === line.length-1){
+        st =`${st}${n++}. ${line[i]}`;
+      }
+      else{
+        st =`${st}${n++}. ${line[i]}, `;
+      }
     }
-    return arr
+    return st;
   }
   else{
     return ("The line is currently empty.")
