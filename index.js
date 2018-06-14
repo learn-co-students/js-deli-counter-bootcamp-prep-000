@@ -17,8 +17,8 @@ function nowServing(katzDeliLine){
   }else{
     //else since there must be someone on the line...
 
-    var firstPerson = katzDeliLine[0]; //record first person on line
-    katzDeliLine.shift(); //remove first person from line; they are to be served
+    var firstPerson = katzDeliLine.splice(0,1); //record first person on line
+     //remove first person from line; they are to be served
 
     /*return message stating who the first person on line
       person being served is*/
