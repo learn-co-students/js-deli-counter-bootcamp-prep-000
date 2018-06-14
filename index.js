@@ -1,5 +1,4 @@
 var katzDeliLine = []
-var counter = 0
 
 const takeANumber = (katzDeliLine, name) => {
   katzDeliLine.push(name)
