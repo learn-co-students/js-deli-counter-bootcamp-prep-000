@@ -15,17 +15,15 @@ function nowServing(katzDeliLine){
     //if no one is on the  line
     return "There is nobody waiting to be served!";
   }
-    //else since there must be someone on the line...
+  //else since there must be someone on the line...
 
-    /*starting at index 0, return 1 person, and
-    remove first person from line; they are to be served*/
-    var firstPerson = katzDeliLine.splice(0,1);
+  /*starting at index 0, return 1 person, and
+  remove first person from line; they are to be served*/
+  var firstPerson = katzDeliLine.splice(0,1);
 
-    /*return message stating who the first person on line
-      person being served is*/
-    return `Currently serving ${firstPerson}.`;
-  
-
+  /*return message stating who the first person on line
+    person being served is*/
+  return `Currently serving ${firstPerson}.`;
 }
 
 function currentLine(katzDeliLine){
