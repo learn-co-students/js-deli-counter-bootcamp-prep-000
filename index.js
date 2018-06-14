@@ -31,38 +31,38 @@ function currentLine(katzDeliLine){
     //if there is no one on the line
     return "The line is currently empty.";
   }
-    //else since there must be someone on the line...
+  //else since there must be someone on the line...
 
-    //prepare beginning of message to be returned
-    var currentStr = "The line is currently: ";
+  //prepare beginning of message to be returned
+  var currentStr = "The line is currently: ";
 
-    //initialize the changing for-loop variables
-    var addedStr; //string storing information about a person on line
-    var position;  //integer storing person's place on line for addedStr
-    var linePerson; //string storing name of person for addedStr
+  //initialize the changing for-loop variables
+  var addedStr; //string storing information about a person on line
+  var position;  //integer storing person's place on line for addedStr
+  var linePerson; //string storing name of person for addedStr
 
-    //iterate through kayzDeliLine to record information about people on line
-    for (var i=0; i<katzDeliLine.length; i++){
+  //iterate through kayzDeliLine to record information about people on line
+  for (var i=0; i<katzDeliLine.length; i++){
 
-      position = i+1; //position of person being identified in this iteration
-      linePerson = katzDeliLine[i]; //name of person ""
+    position = i+1; //position of person being identified in this iteration
+    linePerson = katzDeliLine[i]; //name of person ""
 
-      //prepare the string to add to currentStr
-      if (i === katzDeliLine.length - 1){
-        //if person identified in this iteration is last in line
+    //prepare the string to add to currentStr
+    if (i === katzDeliLine.length - 1){
+      //if person identified in this iteration is last in line
 
-        //omit comma and space in string since no one else needs to be identified
-        addedStr = `${position}. ${linePerson}`;
-      }else{
-        //if person identified in this iteration is not last in line
+      //omit comma and space in string since no one else needs to be identified
+      addedStr = `${position}. ${linePerson}`;
+    }else{
+      //if person identified in this iteration is not last in line
 
-        //add comma and space in string since someone else will be identified
-        addedStr = `${position}. ${linePerson}, `;
-      }
-
-      //append, to message to be returned, information about the person identified
-      currentStr = `${currentStr}${addedStr}`;
+      //add comma and space in string since someone else will be identified
+      addedStr = `${position}. ${linePerson}, `;
     }
+
+    //append, to message to be returned, information about the person identified
+    currentStr = `${currentStr}${addedStr}`;
+  
     return currentStr;
   }
 }
