@@ -66,4 +66,3 @@ function currentLine(katzDeliLine){
 
     return currentStr;
   }
-}
