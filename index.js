@@ -19,16 +19,13 @@ const nowServing = (katzDeliLine) => {
 const currentLine = (katzDeliLine) => {
   var line = []
   var counter = 0
-  var finalLine = []
-  
   if(katzDeliLine.length === 0) {
     return "The line is currently empty."
   } else {
     while (counter < katzDeliLine.length) {
       line.push(`${counter+1}. ${katzDeliLine[counter]}`)
-      finalLine = line.join(', ')
       counter += 1
     }
   }
-  return `The line is currently: ${finalLine}`
+  return `The line is currently: ${line.join(', ')}`
 }
