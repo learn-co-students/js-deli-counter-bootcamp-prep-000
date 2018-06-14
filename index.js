@@ -62,7 +62,7 @@ function currentLine(katzDeliLine){
 
     //append, to message to be returned, information about the person identified
     currentStr = `${currentStr}${addedStr}`;
-  
+
     return currentStr;
   }
 }
