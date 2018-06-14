@@ -59,10 +59,11 @@ function currentLine(katzDeliLine){
       //add comma and space in string since someone else will be identified
       addedStr = `${position}. ${linePerson}, `;
     }
-  }
-
     //append, to message to be returned, information about the person identified
     currentStr = `${currentStr}${addedStr}`;
+  }
+
+    
 
     return currentStr;
   }
