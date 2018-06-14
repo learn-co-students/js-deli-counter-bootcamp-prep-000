@@ -63,7 +63,5 @@ function currentLine(katzDeliLine){
     currentStr = `${currentStr}${addedStr}`;
   }
 
-    
-
     return currentStr;
   }
