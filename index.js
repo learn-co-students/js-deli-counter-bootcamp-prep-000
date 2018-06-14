@@ -30,7 +30,7 @@ function currentLine(katzDeliLine){
   if (katzDeliLine.length === 0){
     //if there is no one on the line
     return "The line is currently empty.";
-  }else{
+  }
     //else since there must be someone on the line...
 
     //prepare beginning of message to be returned
