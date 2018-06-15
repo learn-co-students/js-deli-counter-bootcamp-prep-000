@@ -6,11 +6,10 @@ const takeANumber = (katzDeliLine, name) => {
 }
 
 const nowServing = (katzDeliLine) => {
-  var person = katzDeliLine.shift()
-
   if (katzDeliLine.length === 0) {
     return "There is nobody waiting to be served!";
   } else {
+    var person = katzDeliLine.shift()
     return `Currently serving ${person}.`
   }
 }
