@@ -12,16 +12,16 @@ function nowServing(katzDeliLine) {
   return "Currently serving " + oneServing + "."
 }
 
-function currentLine(katzDeliLine){
+ function currentLine(katzDeliLine){
   var i = 0
-  var KatzNewDeliLine = []
-
-  while(katzDeliLine.length>0){
-    katzNewDeliLine.push(i=+1, katzDeliLine[i]);
+  var katzNewDeliLine = []
+  
+  while(i<katzDeliLine.length){
+    katzNewDeliLine.push( i+1+". " + katzDeliLine[i]);
     i++;
-  }
+}
   if(katzDeliLine.length === 0)
-  return "The line is currently empty"
+  return "The line is currently empty."
   else
-  return "The line is currently:" KatzNewDeliLine
+  return "The line is currently: " + katzNewDeliLine.join(", ") 
 }
