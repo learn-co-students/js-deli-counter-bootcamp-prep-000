@@ -1,9 +1,6 @@
-function takeANumber(katzDeliLine, name){
-var katzDeli = [];
-i=0
-while( name[i]<katzDeliLine[i]){  
-  KatzDeliLine.push(1);
-  i++;
+function takeANumber(line, name){
+  
+{ line.push(name);
 }  
-  return KatzDeli[i]
+  return line.length
 }
