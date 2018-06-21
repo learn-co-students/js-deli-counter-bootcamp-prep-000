@@ -12,12 +12,24 @@ function currentLine(katzDeliLineArray){
   var outString="";
   for (var i=0;i<=katzDeliLineArray.length-1;i++){
     if (i>0) outString = outString + ',';
-    if (i=0) {
-      outString=`${i+1}. ${katzDeliLineArray[i]}`;
-    }else{
+    if (i===0) {
+      outString=`The line is currently: ${i+1}. ${katzDeliLineArray[i]}`;
+    } else {
       outString=`${outString} ${i+1}. ${katzDeliLineArray[i]}`;
     }
   }
   return outString;
 }
 var katzDeli = [];
+
+
+console.log(currentLine(katzDeli));
+console.log(takeANumber(katzDeli,"Joe Blow"));
+console.log(takeANumber(katzDeli,"Joe Blow2"));
+console.log(JSON.stringify(katzDeli));
+console.log(currentLine(katzDeli));
+console.log(nowServing(katzDeli))
+console.log(currentLine(katzDeli));
+console.log(currentLine(katzDeli));
+console.log(nowServing(katzDeli))
+console.log(currentLine(katzDeli));
