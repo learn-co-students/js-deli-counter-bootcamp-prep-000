@@ -1,14 +1,14 @@
 
 var katzDeliLine =[];
 
-
-function takeANumber(katzDeliLine, customer)
+var takeANumber=(katzDeliLine, customer) =>
 {
   katzDeliLine.push(`${customer}`)
   return `Welcome, ${customer}. You are number ${katzDeliLine.length} in line.`
 }
 
-function nowServing(katzDeliLine)
+
+var nowServing=(katzDeliLine)=>
 {
   if(katzDeliLine.length===0)
   {
@@ -21,7 +21,7 @@ function nowServing(katzDeliLine)
 
 
 
-function currentLine(katzDeliLine)
+var currentLine=(katzDeliLine)=>
 {
     var line=[]
   
