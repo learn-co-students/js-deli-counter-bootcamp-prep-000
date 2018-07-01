@@ -9,3 +9,14 @@ function nowServing(deliLine) {
   }
   else {return `Currently serving ${deliLine.shift()}.`}
 }
+
+function currentLine(deliLine) {
+    if (deliLine[0] === undefined) {
+        return "The line is currently empty.";
+    }
+    else {
+        for (var i = 0; i < deliLine.length - 1; i++) {
+            return `The line is currently: ${i + 1}. ${deliLine[i]},`;
+        }
+    }
+}
