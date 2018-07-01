@@ -1,9 +1,7 @@
-var katzDeli = [];
-var count = 0
-
-function takeANumber(katzDeliLine, newPerson, count) {
+//takes two arguments, one for an array and one for a person's name
+function takeANumber(katzDeliLine, newPerson) {
+//we need to use a method that will add a person to back of the array when called as argument
   katzDeliLine.push(newPerson)
-  count += 1
   return `Welcome, ${newPerson}. You are number ${katzDeliLine.length} in line.`
 }
 
@@ -28,6 +26,6 @@ function currentLine(line) {
     for (var i = 0; i < line.length; i++) {
       newArray.push(`${i + 1}. ${line[i]}`)
     }
-  } 
+  }
   return `The line is currently: ${newArray.join(", ")}`
 }
