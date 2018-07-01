@@ -2,14 +2,16 @@
 function takeANumber(katzDeliLine, newPerson) {
 //we need to use a method that will add a person to back of the array when called as argument
   katzDeliLine.push(newPerson)
+  //Find a way to get number of people in array.
   return `Welcome, ${newPerson}. You are number ${katzDeliLine.length} in line.`
 }
 
-function nowServing(line, count) {
+//create function that takes two parameters: an array and
+function nowServing(line) {
   if (line.length === 0) {
     return `There is nobody waiting to be served!`
   } else {
-    return `Currently serving ${line.shift()}, customer number ${count}`
+    return `Currently serving ${line.shift()}.`
   }
 }
 
