@@ -2,7 +2,7 @@
 
 function takeANumber(arr, s) {
   arr.push(s);
-  return "Welcome, " + s + ". You are number " + arr.length + " in line.";
+  return `Welcome, ${s}. You are number ${arr.length} in line.`;
 }
 
 function nowServing(arr) {
@@ -11,7 +11,7 @@ function nowServing(arr) {
   if(arr.length > 0) {
     s2 = arr[0];
     arr.shift();
-    return "Currently serving " + s2 + ".";
+    return `Currently serving ${s2}.`;
   }
   else{
     return s;
