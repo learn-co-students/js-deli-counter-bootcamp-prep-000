@@ -38,7 +38,7 @@ describe('deli', () => {
       expect(nowServing(deliLine)).toEqual("Currently serving Steven.");
       expect(deliLine).toEqual(["Blake", "Avi"]);
     });
-  });
+  }); //passed
 
   describe('currentLine(line)', () => {
     it('returns "The line is currently empty." if no one is in line', () => {
@@ -49,4 +49,4 @@ describe('deli', () => {
       expect(currentLine(["Bill", "Jane", "Ann"])).toEqual("The line is currently: 1. Bill, 2. Jane, 3. Ann");
     });
   });
-})
+}) // passed 
