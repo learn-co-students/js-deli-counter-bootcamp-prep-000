@@ -19,6 +19,6 @@ function currentLine(deliLine) {
     for (var i = 0; i < deliLine.length; i++) {
       line.push(" " + `${i + 1}. ${deliLine[i]}`);
     }
-    return ("The line is currently:" + line + " " );
+    return ("The line is currently:" + line + " ");
   }
 }
