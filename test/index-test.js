@@ -1,5 +1,4 @@
 /*global describe, it */
-
 describe('deli', () => {
   describe('takeANumber', () => {
     var katzDeli;
@@ -27,7 +26,7 @@ describe('deli', () => {
 
       expect(katzDeli).toEqual(["Ada", "Grace", "Kent"]);
     });
-  });
+  }); // passed
 
   describe('nowServing', () => {
     it('returns the line is empty when no one is on line', () => {
