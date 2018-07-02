@@ -11,12 +11,12 @@ function nowServing(deliLine) {
 }
 
 function currentLine(deliLine) {
-    if (deliLine[0] === undefined) {
+  if (deliLine[0] === undefined) {
         return "The line is currently empty.";
     }
-    else {
-        for (var i = 0; i < deliLine.length - 1; i++) {
-            return `The line is currently: ${i + 1}. ${deliLine[i]},`;
+  else {
+    for (var i = 0; i < deliLine.length -1; i++) {
+      return `The line is currently: ${i +1}. ${deliLine[i]},`;
         }
     }
 }
