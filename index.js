@@ -1,39 +1,39 @@
 
-var katzDeliLine =[];
+var katzDeli =[];
 
-var takeANumber=(katzDeliLine, customer) =>
+var takeANumber=(katzDeli, customerName) =>
 {
-  katzDeliLine.push(`${customer}`)
-  return `Welcome, ${customer}. You are number ${katzDeliLine.length} in line.`
+  katzDeli.push(customerName)
+  return `Welcome, ${customerName}. You are number ${katzDeli.length} in line.`
 }
 
 
-var nowServing=(katzDeliLine)=>
+var nowServing=(katzDeli)=>
 {
-  if(katzDeliLine.length===0)
+  if(katzDeli.length===0)
   {
     return `There is nobody waiting to be served!`
   }else
   {
-    return `Currently serving ${katzDeliLine.shift()}.`
+    return `Currently serving ${katzDeli.shift()}.`
   }
 }
 
 
 
-var currentLine=(katzDeliLine)=>
+var currentLine=(katzDeli)=>
 {
     var line=[]
   
-   if(katzDeliLine.length===0)
+   if(katzDeli.length===0)
    {
      return `The line is currently empty.`
    }
    else
    {
-     for(let i=0; i<katzDeliLine.length; i++)
+     for(let i=0; i<katzDeli.length; i++)
      {
-       line.push(` `+[i+1]+`. `+katzDeliLine[i])
+       line.push(` `+[i+1]+`. `+katzDeli[i])
      }
      
      return `The line is currently:`+ line
