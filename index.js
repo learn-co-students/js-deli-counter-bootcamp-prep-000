@@ -13,6 +13,6 @@ function nowServing (katzDeliLine, name){
 }
 
 function currentLine (katzDeliLine, name){
-  if (katzDeliLine){`The line is currently: ${katzDeliLine}`}
+  if (katzDeliLine){`The line is currently: ${katzDeliLine} ${name}`}
   else {"The line is currently empty"}
 }
