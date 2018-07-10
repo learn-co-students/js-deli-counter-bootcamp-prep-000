@@ -8,13 +8,13 @@ function takeANumber(line, name){
   
   function currentLine(line){
   let namePosition = [];
-  for (let lineIndex=0; lineIndex<line.length; lineIndex++){namePosition.push(lineIndex + 1+". "+ line[lineIndex]);
-  console.log("The line is currently: " + namePosition);
-  return("The line is currently: " + namePosition);
-  }
-  if (line.length!==0){
+  if (line.length===0){
     console.log("The line is currently empty.");
     return ("The line is currently empty.");
+  }
+  for (let lineIndex=0; lineIndex<line.length; lineIndex++){namePosition.push(lineIndex+1+". "+ line[lineIndex]);
+  console.log("The line is currently: " + namePosition.join(', '));
+  return("The line is currently: " + namePosition.join(', '));
   }
 }
   
