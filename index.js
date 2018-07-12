@@ -22,11 +22,11 @@ function currentLine(c) {
     return "The line is currently empty."
   } else{
       for (var i = 0; i < c.length; i++ ) {
-        currentline += (i + 1) + "." + c[1]
+        currentline.push(`${i + 1}.  ${c[i]}`)
         
       }
     
-  }return "The line is currently:" + ' ' + currentline
+  }return "The line is currently:" + ' ' + currentline.join(", ")
   
   
   
