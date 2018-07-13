@@ -1,6 +1,37 @@
 var katzDeliLine = [];
 var katzDeli = [];
 
+function takeANumber(katzDeliLine,name) {
+  katzDeliLine.push (name);
+  return (`Welcome, ${name}. You are number ${katzDeliLine.length} in line.`);
+}
+function nowServing(line){
+  if (line.length===0){
+    return "There is nobody waiting to be served!";
+  } else {
+    let first = line[0];
+    line.shift();
+    return `Currently serving ${first}.`;
+  } 
+}
+
+/* 3. Build a function `currentLine` that returns the current line. For example, if `katzDeliLine` is currently `["Ada", "Grace"]`, `currentLine(katzDeliLine)` would return `"The line is currently: 1. Ada, 2. Grace"`.  If there is nobody in line, it should return `"The line is currently empty." */
+
+function currentLine(line){
+  var current = [];
+  if (line.length>0) {
+    for (let i=0; i<line.length;i++) {
+      current.push(` ${i+1}. ${line[i]}`);
+    } return (`The line is currently:${current}`);
+    } else {
+      return (`The line is currently empty.`);
+    }
+  }
+
+
+
+
+/*old code below for reference
 function takeANumber (katzDeliLine, name){
  katzDeliLine.push (name);
  var lineNumber = katzDeliLine.length
@@ -31,7 +62,6 @@ function currentLine(x) {
     }
 } 
 
-/*old code below for reference
 
 function currentLine(line) {
  var lineIs = [];
