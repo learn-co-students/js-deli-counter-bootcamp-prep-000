@@ -20,16 +20,14 @@ function currentLine(katzDeli){
   if (katzDeli.length === 0){
     return "The line is currently empty."
   }
-
   else {
     for (let i = 0; i < katzDeli.length; i++){
       theLineArray += (i + 1) + ". " + katzDeli[i] + ", "
     }
-      var finalLine = theLineArray.slice(0, theLineArray.length - 2)
-      return `The line is currently: ` + finalLine
+      return `The line is currently: ` + theLineArray.slice(0, theLineArray.length - 2)
+      //.slice() method is returning the new array from beginning but removing the last two elements
     }
   }
 
-// Use Object.assign to make an object with key : value pairs?
 // Make a new array and push() the new object into it so it can be returned as a string?
 // Reference: https://www.w3schools.com/js/js_arrays.asplearn
