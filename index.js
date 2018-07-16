@@ -1,8 +1,8 @@
-var katzDeliLine = []  
+var katzDeliLine = [];  
 
 function takeANumber(katzDeliLine, name) {
   katzDeliLine.push(name)
-  return (`Welcome, ${name}. You are number ${katzDeliLine.length} in line.`)
+  return `Welcome, ${name}. You are number ${katzDeliLine.length} in line.`
 }
 
 function nowServing(katzDeliLine) {
@@ -22,6 +22,8 @@ function  currentLine(katzDeliLine) {
   
   if (katzDeliLine.length > 0) {
       var str = numarray.join(`, `)
-      return ("The line is currently: " + str) 
-  } else {return ("The line is currently empty.")}
+      return "The line is currently: " + str 
+  } else {
+    return "The line is currently empty."
+  }
 }
