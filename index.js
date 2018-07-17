@@ -1,20 +1,15 @@
-var lineNumber = [];
-
-function takeANumber(lineNumber, name) {
-  lineNumber.push(name);
-  return (`Welcome, ${name}. You are number ${lineNumber.length} in line.`);
+function takeANumber(katzDeliLine, name) {
+  katzDeliLine.push(name); // adds person to the line
+  return(`Welcome, ${name}. You are number ${katzDeliLine.length} in line.`); // returns number in line
 }
 
 
-function nowServing(lineNumber) {
-  var n = 0;
-  while (n < lineNumber.length) {
-   n++;
-  }
-  if (lineNumber.length === 0) {
+function nowServing(line) {
+  if (line.length === 0) { // if there is no elements in array (people in line) 
     return "There is nobody waiting to be served!";
   } else {
-    return `Currently serving ${lineNumber.shift()}.`;
+    var firstPerson = line.shift();
+    return `Currently serving ${firstPerson}.`;
   }
 }
 
