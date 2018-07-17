@@ -17,11 +17,11 @@ function currentLine(katzDeli) {
     return "The line is currently empty."
   }
   
-  var numbersAndNames = []
+  var numeroYNombre = []
   
   for (let i = 0, k = katzDeli.length; i < k; i++) {
-    numbersAndNames.push(`${i + 1}. ${katzDeli[i]}`)
+    numeroYNombre.push(`${i + 1}. ${katzDeli[i]}`)
   }
   
-  return `The line is currently: ${numbersAndNames.join(', ')}`
+  return `The line is currently: ${numeroYNombre.join(', ')}`
 }
