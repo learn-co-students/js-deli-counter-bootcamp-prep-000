@@ -5,11 +5,11 @@ function takeANumber(katzDeliLine, name) {
 
 
 function nowServing(line) {
-  if (line.length === 0) { // if there is no elements in array (people in line) 
+  if (line.length === 0) { // if there is no elements in array (nobody in line)
     return "There is nobody waiting to be served!";
   } else {
-    var firstPerson = line.shift();
-    return `Currently serving ${firstPerson}.`;
+    var firstPerson = line.shift(); // removes first person from the line and assigns it to firstPerson variable;
+    return `Currently serving ${firstPerson}.`; // calls firstPerson 
   }
 }
 
