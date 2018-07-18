@@ -6,10 +6,11 @@ function takeANumber(katzDeliLine, name) {
 }
 
 function nowServing(katzDeliLine) {
-  if (katzDeliLine.length > 0) {
+  while (katzDeliLine.length > 0) {
     var firstInLine = katzDeliLine.shift();
       return `Currently serving ${firstInLine}.`;
-  } else {
+  } 
+  if (katzDeliLine.length == 0) {
     return "There is nobody waiting to be served!";
   }
 }
@@ -17,7 +18,7 @@ function nowServing(katzDeliLine) {
 function  currentLine(katzDeliLine) {
   var numarray = [];
   for (var i = 0; i < katzDeliLine.length; i++) {
-    numarray.push(`${i+1}. ${katzDeliLine[i]}`) ;
+    numarray.push(`${i+1}. ${katzDeliLine[i]}`);
   }
   
   if (katzDeliLine.length > 0) {
