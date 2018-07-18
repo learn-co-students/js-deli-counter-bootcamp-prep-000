@@ -1,8 +1,26 @@
 function takeANumber(katzDeliLine, name){
-  var katzDeli = [];
-  for (let i = 1; i <= katzDeliLine; i++){
-    katzDeli.push(`Welcome, ${name[i]}.  You are number ${katzDeliLine[i]} in line`);
+  katzDeliLine.push(name);
+  return `Welcome, ${name}. You are number ${katzDeliLine.length} in line.`;
   }
-  return katzDeli;
+
+function nowServing(katzDeliLine){
+  if (katzDeliLine.length === 0){
+    return "There is nobody waiting to be served!";
+  }
+  else {
+    return `Currently serving ${katzDeliLine.shift()}.`;
+  }
 }
-  
+
+function currentLine(katzDeliLine){
+  if (katzDeliLine.length === 0){
+    return "The line is currently empty.";
+  }
+  else {
+    var output = [];
+    for (let i = 0; i < katzDeliLine.length; i++){
+      output.push (`${[i+1]}. ${katzDeliLine[i]}`);
+    }
+    return `The line is currently: ${output.join(", ")}`;
+    }
+}
