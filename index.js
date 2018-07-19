@@ -14,6 +14,9 @@ if (katzDeli.length === 0){
 
 function currentLine(katzDeli){
   let customerindex = 0; while(customerindex < katzDeli.length){customerindex++}
-  let place = [customerindex]; while(place < [customerindex]){place++}
-  if (katzDeli.length === 0){return 'The line is currently empty.'} else return (`The line is currently ${place}. ${katzDeli}`)
+  {if (katzDeli.length === 3){return (`The line is currently: 1. ${katzDeli}`)} else if (katzDeli.length === 2){return (`The line is currently: 2. ${katzDeli}`)} else if (katzDeli.length === 1){return (`The line is currently: 1. ${katzDeli}`)}
+  }
+{if (katzDeli.length === 0){return 'The line is currently empty.'
+  } 
+}
 }
