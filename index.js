@@ -19,45 +19,33 @@ function nowServing(katzDeli) {
   }
 } 
 
-//  NEED A NEW LINE TO BE CREATED to store values
+
+
+
+// HAPPY WORKING CODE WHICH PASSED
+//  NEED A NEW 'LINE' TO BE CREATED to hold the variable that goes into the output 
 var line = [];
 
 function currentLine(katzDeli) {
   let i = 0;
   while (i<katzDeli.length) {
-    line.push(` ` +[i+1]+`. `  + katzDeli[i])
+    line.push(` ` +[i+1]+`. `  + katzDeli[i])   // Interpolation method would look like this - ` ${i+1}. ${katzDeli[i]` 
     i++;
   }
-    // HOW DOES FUNC KNOW TO GET ALL OF THE i's into the current line?
-    // e.g. "The line is currently: 1. Ada, 2. Grace"
-    // it's clear you need [i+1] for the number and katzDeli[i] for the name
-    
   if (katzDeli.length ===0) {
     return (`The line is currently empty.`);
   } else { 
-    return ("The line is currently:" + line);
-    // return ("The line is currently:" + line.join());
+    // return ("The line is currently:" + line);
+    return ("The line is currently:" + line.join());
+    
+    // join method with default comma separator - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/join
   }
 }
-  
-  
-/* OLD CODE
-  function forLoop (array) {
-  for (let i = 0; i < 25; i++) {
-    if (i===1) {
-      array.push(`I am 1 strange loop.`);
-    } 
-    else {
-      array.push(`I am ${i} strange loops.`);
-    } 
-  if (katzDeli.length ===0) {
-    return (`The line is currently empty.`);
-  } else{ 
-    return 
-}               */ 
 
 
-/*
+  
+
+/* TEST
 describe('currentLine(line)', () => {
     it('returns "The line is currently empty." if no one is in line', () => {
       expect(currentLine([])).toEqual("The line is currently empty.");
@@ -70,5 +58,4 @@ describe('currentLine(line)', () => {
 })
 
 */
-
 
