@@ -22,7 +22,7 @@ function  currentLine(katzDeliLine) {
   
   if (katzDeliLine.length > 0) {
       var str = numarray.join(`, `);
-      return "The line is currently: " + str;
+      return `The line is currently: ${str}`;
   } else {
     return "The line is currently empty.";
   }
