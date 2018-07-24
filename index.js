@@ -1,18 +1,19 @@
-var katzDeli = [];
+function takeANumber(katzDeliLine,newCustomer) {
+  katzDeliLine.push(newCustomer);
+  var numberInLine = katzDeliLine.length;
 
-function takeANumber(katzDeli,name) {
-  katzDeli.push(name);
-  return (`Welcome, ${name}. You are number ${katzDeli.length} in line.`);
+  return (`Welcome, ${newCustomer}. You are number ${numberInLine} in line.`);
 }
 
-function nowServing(array) {
-  if (array.length === 0) {
+function nowServing(katzDeliLine) {
+  if (katzDeliLine.length === 0) {
     return "There is nobody waiting to be served!";
   } else {
-    var current = array.shift();
+    var current = katzDeliLine.shift();
     return `Currently serving ${current}.`;
   }
 }
+
 
 function currentLine(katzDeliLine) {
   if (katzDeliLine.length === 0) {
