@@ -27,3 +27,21 @@ function currentLine(katzDeliLine) {
   }
 }
 
+//my oringinal currentLine function below
+/* function currentLine(katzDeliLine) {
+  if (katzDeliLine.length === 0) {
+    return "The line is currently empty.";
+  } else {
+    var combinedArray = [];
+    for (var i = 0; i < katzDeliLine.length; i++) { 
+      combinedArray.push(`${i + 1}. ${katzDeliLine[i]}`);
+    }
+    var arrayJoined = "";
+    for (var j = 0; j < combinedArray.length; j++) {
+      arrayJoined = arrayJoined.concat(combinedArray[j], ", ");
+    }
+    arrayJoined = arrayJoined.slice(0, arrayJoined.length-2); //removes the last comma and space
+    return `The line is currently: ${arrayJoined}`;
+  }
+} */
+
