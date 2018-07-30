@@ -1,18 +1,18 @@
 var katzDeli = [];
 
-function takeANumber(katzDeliLine, name){
+function takeANumber(katzDeli, name){
   katzDeli.push(`${name}`);
   return `Welcome, ${name}. You are number ${katzDeli.length} in line.`;
 }
 
-function nowServing(){
+function nowServing(katzDeli){
   let i = 0;
   while(i < katzDeli.length){
     i++;
   }
   
   if(katzDeli.length === 0){
-    return `here is nobody waiting to be served!`;
+    return `There is nobody waiting to be served!`;
   } else {
     return `Currently serving ${katzDeli.shift()}.`;
   }
