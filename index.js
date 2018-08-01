@@ -1,8 +1,5 @@
 function takeANumber(katzDeliLine, name){ 
-  
-   katzDeliLine.push(`${name}`);
-   
-   //returns a string w name and the length of the inputted array;
+  katzDeliLine.push(`${name}`);
    return (`Welcome, ${name}. You are number ${katzDeliLine.length} in line.`);
 }
 
