@@ -34,4 +34,3 @@ function currentLine(katzDeliLine){
     return ("The line is currently:"+line);
    }
 }
-//3. Build a function `currentLine` that returns the current line. For example, if `katzDeliLine` is currently `["Ada", "Grace"]`, `currentLine(katzDeliLine)` would return `"The line is currently: 1. Ada, 2. Grace"`.  If there is nobody in line, it should return `"The line is currently empty."
