@@ -1,8 +1,11 @@
 function takeANumber(line, name) {
   var welcomeMessage = "Welcome, " + name + ". You are number "+ (line.length + 1) + " in line.";
+  
   line.push(name);
   return welcomeMessage;
 }
+
+
  function nowServing(line) {
   if(line.length !== 0) {
     var temp = line[0]
@@ -13,17 +16,18 @@ function takeANumber(line, name) {
   }
 }
  function currentLine(line) {
-  var holder = "The line is currently: ";
-  let j = 0;
+  var hold = "The line is currently: ";
+  let i = 0;
+  
   if(line.length !== 0) {
-    while(j < line.length) {
-      holder = holder + (j+1) + ". " + line[j];
-      if(line[j+1]){
-        holder = holder + ", "
+    while(i < line.length) {
+      hold = hold + (i+1) + ". " + line[i];
+      if(line[i+1]) {
+        hold = hold + ", "
       }
-      j++;
+      i++;
     }
-    return holder;
+    return hold;
   } else {
     return "The line is currently empty.";
   }
