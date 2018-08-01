@@ -1,10 +1,14 @@
-function takeANumber(line, name) {
-  var welcomeMessage = "Welcome, " + name + ". You are number "+ (line.length + 1) + " in line.";
-  
-  line.push(name);
-  return welcomeMessage;
-}
 
+function takeANumber(line) {
+  var newPerson = (line.length + 1)
+  var welcomeMessage = "Welcome, You are number "+ (line.length + 1) + " in line.";
+  
+  line.push(newPerson);
+  
+  return welcomeMessage;
+  
+  line[-1]
+}
 
  function nowServing(line) {
   if(line.length !== 0) {
