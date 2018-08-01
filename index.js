@@ -7,11 +7,11 @@ function takeANumber(line, newPerson) {
   
 function nowServing(line) {
   
-  var nextInLine = line.shift();
   if (line.length === 0) {
     return "There is nobody waiting to be served!";
-  }
-  return `Currently serving ${nextInLine}.`;
+  } else {
+    var nextInLine = line.shift();
+    return `Currently serving ${nextInLine}.`; }
 }
 
 function currentLine(line) {
