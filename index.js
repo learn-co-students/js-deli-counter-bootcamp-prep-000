@@ -1,9 +1,5 @@
-
-//taking empty array = katzDeliLine and stringified 'name'
 function takeANumber(katzDeliLine, name){ 
   
-  //appends and stringifies 'name' variable 
-  //with corresponding katzDeliLine array
    katzDeliLine.push(`${name}`);
    
    //returns a string w name and the length of the inputted array;
