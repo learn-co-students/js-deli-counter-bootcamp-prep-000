@@ -25,10 +25,12 @@ line.push(name)
       return "The line is currently empty." }
     //} else {
     //return ("The line is currently: " + katzDeliLine[]);
-  
+  var string = "The line is currently: "
   for (var i = 0; i < katzDeliLine.length; i++  ){
-    return `The line is currently: ${[i]}. ${katzDeliLine[i]}, ${[i+1]}. ${katzDeliLine[i+1]}, ${[i++]}. ${katzDeliLine[i++]}.`
+
+     string += `${i+1}. ${katzDeliLine[i]} `
     }
+    return string;
   }
   
   
