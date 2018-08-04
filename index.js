@@ -27,9 +27,9 @@ line.push(name)
     {
     
   var string = "The line is currently: "
-  for (var i = 0; i < katzDeliLine.length + 1; i++  ){
+  for (var i = 0; i < katzDeliLine.length - 1 ; i++  ){
 
-     string += `${i}. ${katzDeliLine[i-1]}, `
+     string += `${i + 1}. ${katzDeliLine[i]}, `
     }
     
     string += `${katzDeliLine.length}. ${katzDeliLine[katzDeliLine.length-1]}`
