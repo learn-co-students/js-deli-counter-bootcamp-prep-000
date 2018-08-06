@@ -24,7 +24,27 @@ function nowServing(katzDeliLine) {
   }
   
   
-  function currentLine(katzDeliLine) {
+function currentLine(katzDeliLine) {
+  
+  /*DO NOT MODIFY ORIGINAL ARRAY*/
+  if (katzDeliLine.length === 0) {
+    return "The line is currently empty.";
+  }
+  
+  var newArray = [];
+  
+  for(let i = 0; i < katzDeliLine.length; i++) {
+    newArray.push(`${i+1}. ${katzDeliLine[i]}`);
+  }
+  return `The line is currently: ${newArray.join(', ')}`;
+}
+ 
+ 
+ 
+ 
+ 
+ 
+ /* DESTRUCTIVE function currentLine(katzDeliLine) {
     
     if (katzDeliLine.length === 0) {
       return "The line is currently empty.";
@@ -34,18 +54,13 @@ function nowServing(katzDeliLine) {
       katzDeliLine[i] = `${i+1}. ${katzDeliLine[i]}`;
     }
     return `The line is currently: ${katzDeliLine.join(', ')}`;
-  }
-  
-  
-  
-  
-  
-  
+  } */
   
   
 
 
-/*function  currentLine(katzDeliLine) {
+/* ALTERNATIVE WAY TO PASS THIS TEST
+function  currentLine(katzDeliLine) {
   
   if(katzDeliLine.length === 0){
       return 'The line is currently empty.'
