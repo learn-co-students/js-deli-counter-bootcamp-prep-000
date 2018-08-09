@@ -21,10 +21,10 @@ function currentLine(deliLine){
   if (deliLine.length == 0){
     return `The line is currently empty.`;
   } else {
-    var newArray = []
+    var numberedName = []
   for (let i = 0; i < deliLine.length; i++){
-    newArray.push(`${i + 1}. ${deliLine[i]}`)
+    numberedName.push(`${i + 1}. ${deliLine[i]}`)
     }
-    return `The line is currently: ${newArray.join(`, `)}`
+    return `The line is currently: ${numberedName.join(`, `)}`
   }
 }
