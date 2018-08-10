@@ -35,7 +35,7 @@ function currentLine(){
 }
 
 
-// please ignore following: 
+// please ignore following:
 // function currentLine(){
 //   if (currentLine.length === 0 ) {
 //     console.log('The line is currently empty.');
