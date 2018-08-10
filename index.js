@@ -21,14 +21,11 @@ function nowServing(currentLineOfPeople){
 function currentLine(currentLineOfPeople){
 // copy of currentLineOfPeople
   var currentLineOfPeopleWithNumber = []
-  console.log(currentLineOfPeopleWithNumber)
-
 
 // special case for if there is nobody in line
   if(currentLineOfPeople.length === 0){
     return "The line is currently empty."
   } else {
-    console.log(currentLineOfPeople.length)
     for(var i = 0; i < currentLineOfPeople.length; i++){
 
       // we want to manipulate the array to add a number infront of each index
