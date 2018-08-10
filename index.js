@@ -9,14 +9,14 @@ function takeANumber(katzDeliLine, name) {
 ////////////////////////////////////
 
 function nowServing(katzDeliLine) {
-  var fristPerson;
+  var firstPerson;
   if (katzDeliLine.length === 0) {
     return "There is nobody waiting to be served!";
   } else {
-    firstPerson = katzDeliLine[0]
-    katzDeliLine.shift()
+    firstPerson = katzDeliLine[0];
+    katzDeliLine.shift();
+    return `Currently serving ${firstPerson}`;
   }
-  return firstPerson;
 }
 
 //////////////////////
