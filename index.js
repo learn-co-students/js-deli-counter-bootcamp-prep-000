@@ -21,16 +21,16 @@ function nowServing(katzDeliLine) {
 
 //////////////////////
 
-function currentLine(){
-  if (currentLine.length === 0 ) {
-    console.log('The line is currently empty.');
+function currentLine(line){
+  if (line.length === 0 ) {
+    return ('The line is currently empty.');
   } else {
     var lineUp = [];
-    for (var i = 0; i < currentLine.length; i++) {
-      lineUp.push(`${i+1}`);
-      LineUp.push(`${currentLine[i]}`);
+    for (var i = 0; i < line.length; i++) {
+      lineUp.push(` ${i+1}. ${line[i]}`);
+
     }
-    console.log("The line is currently:" + lineUp)
+  return ("The line is currently:" + lineUp);
   }
 }
 
