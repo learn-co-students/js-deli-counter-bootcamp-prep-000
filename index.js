@@ -24,9 +24,11 @@ function currentLine(line){
   }
   else{
     var i=0;
+    var x;
     var str = "The line is currently: "
     do{
-      str = str + (i+1) +' ' + line[i] + '.';
+      if(i !=line.length -1){ x=', '} else{ x= ''}
+      str = str + (i+1) +'. ' + line[i] + x;
       i++;
     }
     while(i < line.length);
