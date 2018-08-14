@@ -3,11 +3,14 @@ var marxDeli = []
 var line = []
 
 function takeANumber(marxDeli, name) {
-  marxDeli.push(name);
-  return(`Welcome, ${name}. You are number ${marxDeli.length} in line.`);
+  if (name){
+    marxDeli.push(name);
+    return(`Welcome, ${name}. You are number ${marxDeli.length} in line.`);
+  }
+  else {
+    return(`Please tell us your name so we can add you to the line`);
+  }
 }
-
-// why 2 value input? couldn't this fn be takeANumber(name)?
 
 function nowServing(marxDeli) {
     if (marxDeli.length === 0) {
