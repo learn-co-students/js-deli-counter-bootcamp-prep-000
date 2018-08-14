@@ -18,12 +18,3 @@ function currentLine(array) {
     return `The line is currently: 1. ${array.shift()}, 2. ${array.shift()}, 3. ${array.shift()}`;
   }
 }
-  
-function nowServing(array, name) {
-if (array.length === 0) {
-  ("There is nobody waiting to be served!");
-} else {
-   array.splice(`Currently serving ${name}.`);
-}
-  return array;
-}
