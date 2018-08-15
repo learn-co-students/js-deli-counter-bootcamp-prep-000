@@ -1,6 +1,5 @@
 
 var marxDeli = []
-var line = []
 
 function takeANumber(marxDeli, name) {
   if (name){
@@ -22,6 +21,7 @@ function nowServing(marxDeli) {
 }
 
 function currentLine(marxDeli) {
+  var line = []
   for (var i = 0; i < marxDeli.length; i++) {
     line.push(` ${i+1}. ${marxDeli[i]}`);
   }
