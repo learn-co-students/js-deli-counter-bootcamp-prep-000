@@ -7,7 +7,7 @@ function takeANumber(marxDeli, name) {
     return(`Welcome, ${name}. You are number ${marxDeli.length} in line.`);
   }
   else {
-    return(`Please tell us your name so we can add you to the line`);
+    return(`Please tell us your name so we can hold your spot in line.`);
   }
 }
 
@@ -30,5 +30,17 @@ function currentLine(marxDeli) {
   }
   else {
     return (`The line is currently:${line}`);
+  }
+}
+
+// Extras
+
+function vip(marxDeli, name) {
+if (name){
+    marxDeli.unshift(name);
+    return(`Hey, ${name}. We'll get you seated ASAP!`);
+  }
+  else {
+    return(`We'll get you seated ASAP!`);
   }
 }
