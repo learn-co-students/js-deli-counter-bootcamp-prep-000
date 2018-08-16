@@ -15,12 +15,15 @@ function nowServing(DeliLine){
 }
 //creat a new array to store order string
 function currentLine(DeliLine){
-  var arr=[]
-  var i=0
-  while(i<DeliLine.length){
-  arr.push(` `+(i+1)+`. `+DeliLine[i])
-  i++
-  }
+   var arr=[]
+  DeliLine.forEach(function(item,index){
+    arr.push(` `+(index+1)+`. `+item)
+  })
+// var i=0
+// while(i<DeliLine.length){
+//   arr.push(` `+(i+1)+`. `+DeliLine[i])
+//   i++
+//   }
   if(DeliLine.length===0){
     return `The line is currently empty.`
   }
