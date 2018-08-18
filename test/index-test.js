@@ -1,4 +1,4 @@
-/*global describe, it */
+line/*global describe, it */
 
 describe('deli', () => {
   describe('takeANumber', () => {
