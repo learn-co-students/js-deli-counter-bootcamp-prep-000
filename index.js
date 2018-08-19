@@ -24,6 +24,6 @@ function currentLine(katzDeliLine) {
     var linePosition = katzDeliLine.indexOf(currentLineName) + 1
     currentLine += linePosition + '.' + ' ' + currentLineName + ',' + ' ';
     }
-  return currentLine    
+  return currentLine.slice(0,-2);  
   }
 }
