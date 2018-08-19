@@ -18,11 +18,11 @@ function currentLine(katzDeliLine) {
     return "The line is currently empty.";
   } 
   else {
-    var currentLine= 'The line is currently:'
-    for (var i = 0; katzDeliLine.length > 0 ; i++) {
+    var currentLine= 'The line is currently: '
+    for (var i = 0; katzDeliLine.length > i ; i++) {
     var currentLineName = katzDeliLine[i];
-    currentLine += currentLineName;
-      
+    var linePosition = katzDeliLine.indexOf(currentLineName) + 1
+    currentLine += linePosition + '.' + ' ' + currentLineName + ',' + ' ';
     }
   return currentLine    
   }
