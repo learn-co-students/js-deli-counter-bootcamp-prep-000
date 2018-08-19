@@ -18,12 +18,13 @@ function currentLine(katzDeliLine) {
   } else {
   var list = []
   var i = 0
-  var LineNumber = katzDeliLine.length + "."
+  var customer = 1 
   while (i < katzDeliLine.length) {
-     var results = `${LineNumber}` + katzDeliLine[i];
+     var results = ` ${customer}. ${katzDeliLine[i]}`;
      list.push(results);
      i += 1
+     customer += 1
    } 
-   return `The line is currently: ${list}`
+   return `The line is currently:${list}`
   }
 }
