@@ -1,0 +1,10 @@
+function takeANumber(deliLine, newCustomer) {
+  var newDeliLine = [];
+  let i = 0;
+  do {
+    newDeliLine.push("Welcome, " + deliLine[i] + ". You are number " + (i + 1) + " in line.");
+    i++;
+  }
+  while (i < deliLine.length);
+  return newDeliLine;
+}
