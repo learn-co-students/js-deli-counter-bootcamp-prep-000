@@ -13,12 +13,12 @@ function nowServing (katzDeliLine) {
 }
 
 function currentLine (katzDeliLine) {
-  var chronologicalOrder = [];
+  let chronologicalOrder = [];
   if (katzDeliLine.length !== 0) {
     for (var i = 0; i < katzDeliLine.length; i++) {
-      chronologicalOrder.push = `${i + 1}. ${katzDeliLine[i]}`;
+      chronologicalOrder.push(` ${i + 1}. ${katzDeliLine[i]}`);
     }
-    return `The line is currently: ${chronologicalOrder}`;
+    return `The line is currently:${chronologicalOrder.join()}`;
   } else {
     return "The line is currently empty.";
   }
