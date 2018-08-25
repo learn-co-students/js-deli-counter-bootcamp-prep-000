@@ -4,11 +4,11 @@ function takeANumber(line, name) {
 }
 
 function nowServing(line) {
-  return line.length ? line.shift() : "There is nobody waiting to be served!"
+  return line.length ? `Currently serving ${line.shift()}.` : "There is nobody waiting to be served!"
 }
 
 function currentLine(line) {
-  var msg = "The line is currently: "
+  var msg = `The line is currently${line.length? ': ' : ' empty.'}`
   for (var i = 0; i < line.length; i++) {
     msg += `${i + 1}. ${line[i]}${i + 1 === line.length? '' : ', '}`
   }
