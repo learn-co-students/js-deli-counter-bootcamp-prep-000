@@ -1,9 +1,9 @@
  function takeANumber (number, name) {
-   katzDeliLine.push(name);
+   number.push(name);
    return "Welcome, " + name + ". You are number " + number.length + " in line."
  }
  function nowServing (number) {
-   if (katzDeliLine.length === 0) {
+   if (number.length === 0) {
      return "There is nobody waiting to be served!"
    } else {
    var name = number[0];
