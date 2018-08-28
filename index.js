@@ -1,6 +1,6 @@
 function takeANumber(deliLine, customerName) {
   deliLine.push(customerName)
-  return "Welcome, " + customerName + ". You are number " + deliLine.length + " in line."
+   return `Welcome, ${customerName}. You are number ${deliLine.length} in line.`
 }
 
 
