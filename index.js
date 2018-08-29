@@ -5,10 +5,9 @@ let deliLine = [];
 
 function takeANumber(deliLine, customer) {
   deliLine.push(customer);
-  for(let i = 0; i < deliLine.length; i++) {
     return `Welcome, ${customer}. You are number ${deliLine.length} in line.`
-  }
 }
+
 
 
 //nowServing(deliLine)
@@ -26,7 +25,6 @@ function nowServing(deliLine) {
 
 //currentLine(line)
 
-let line = [];
 
 function currentLine(line) {
 let newLine = [];
