@@ -1,13 +1,16 @@
 function takeANumber(katzDeliLine, name){
   katzDeliLine.push(name);
-  return `Welcome, ${name}. You are number ${katzDeliLine.length} in line.`;
+  return `You are number ${katzDeliLine.length + 1}  in line.`;
+}
+
+var i = 0
+
+function newTakeANumber(katzDeliLine){
+  i += 1
+  return `You are number ${i} in line.`
 }
 
 function nowServing(katzDeliLine){
-  /*while(katzDeliLine.length > 0){
-    	console.log(`Currently serving ${katzDeliLine[0]}.`);
-    	katzDeliLine.shift();
-  }*/
   if(katzDeliLine.length > 0){
     var current = katzDeliLine[0];
     katzDeliLine.shift();
