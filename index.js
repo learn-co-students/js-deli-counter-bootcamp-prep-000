@@ -1,7 +1,5 @@
 let deliLine = [];
 
-//takeANumber(deliLine, customer)
-
 function takeANumber(deliLine, customer) {
   deliLine.push(`${customer}`);
   for(let i = 0; i < deliLine.length; i++) {
@@ -10,34 +8,37 @@ function takeANumber(deliLine, customer) {
 }
 
 
-//nowServing(deliLine)
-
 function nowServing(deliLine) {
-
-  if(deliLine.length === 0) {
+  if(!deliLine.length) {
     return 'There is nobody waiting to be served!';
-  }
-  else {
+  } else {
     return `Currently serving ${deliLine.shift()}.`;
   }
 }
 
 
-//currentLine(line)
 
-let line = [];
 
 function currentLine(line) {
-let newLine = [];
-
-  for(let i = 0; i < line.length; i++) {
-    newLine.push(`${i+1}. ${line[i]}`);
+  let currentOrder = [];
+  if (line.length > 0) {
+    for (let i = 0; i < line.length; i++) {
+      currentOrder.push(`${i + 1}. ${line[i]}`);
+    }
+    return `The line is currently: ${currentOrder.join(', ')}`;
+  } else {
+    return 'The line is currently empty.';
   }
+}
 
-    if(line.length > 0) {
-      return `The line is currently: ${newLine.join(', ')}`
+function currentLine(deliLine) {
+let newLine = [];
+  for(let i = 0; i < deliLine.length; i++) {
+    newLine.push(`${i+1}. ${deliLine[i]}`);
+    if(deliLine.length > 0) {
+      return `The line is currently ${newLine.join(', ')}`
+    } else {
+      return "There is nobody waiting to be served!"
     }
-    else {
-      return 'The line is currently empty.';
-    }
+  }
 }
