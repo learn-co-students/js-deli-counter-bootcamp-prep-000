@@ -14,7 +14,19 @@ else {
 
 function currentLine (katsDeliLine) {
 if (katsDeliLine.length > 0) {
-var n = 1; 
+var n = [1]; 
+for (var i = 0; i < katsDeliLine.length; i++, n++) {
+katsDeliLine[i]=` ${n}. ${katsDeliLine[i]}`; 
+}
+return `The line is currently: ${katsDeliLine}`}
+else {
+return `The line is currently empty.`}
+}
+
+/*
+function currentLine (katsDeliLine) {
+if (katsDeliLine.length > 0) {
+var n = [1]; 
 for (var i = 0; i < katsDeliLine.length; i++, n++) {
   katsDeliLine[i]=` ${n}. ${katsDeliLine[i]}`; 
 }
