@@ -2,7 +2,7 @@
 var marxDeli = []
 
 function takeANumber(marxDeli, name) {
-  if (name){
+  if (marxDeli, name){
     marxDeli.push(name);
     return(`Welcome, ${name}. You are number ${marxDeli.length} in line.`);
   }
@@ -38,7 +38,7 @@ function currentLine(marxDeli) {
 function vip(marxDeli, name) {
 if (name){
     marxDeli.unshift(name);
-    return(`Hey, ${name}. We'll get you seated ASAP!`);
+    return(`Hey, ${name}. Right this way.`);
   }
   else {
     return(`We'll get you seated ASAP!`);
