@@ -24,9 +24,14 @@ function currentLine(line){
     return "The line is currently empty."
   }
   else { 
-    let line = "The line is currently: 1. Bill, 2. Jane, 3. Ann";
-    return line
-    
+    let text = "The line is currently" 
+    // return line
+    for (let i = 0; i < line.length ; i++) {
+      text = i + i
+      console.log("--", text + " " + (i+1) + "." + line[i])
+    }
+    // let animals = [dog, cat, bird, frog]
+    // animals[0]
   }
 }
   
