@@ -12,10 +12,7 @@ function takeANumber(katzDeliLine, param2) {
 
 function nowServing(paramArray) {
   var msg = "Currently serving ";
-  console.log("===================");
-  console.log(paramArray);
-  console.log(paramArray.lentgh);
-  console.log("===================");
+
   if ( paramArray[0] === undefined ) {
     msg = "There is nobody waiting to be served!"
   } else {
@@ -34,12 +31,11 @@ function currentLine(paramArray) {
     msg = "The line is currently empty.";
   } else {
     for( ; i < paramArray.length ; i++, j++ ) {
-      msg += j + ". " + paramArray[i]
-
-      if (paramArray.length > 1 && paramArray.length <> i) {
-         msg += ", "
-      }
+      msg += j + ". " + paramArray[i] +  ", ";
     }
+
+    msg = msg.substr(0, msg.length-2)
+
   }
 
   return msg
