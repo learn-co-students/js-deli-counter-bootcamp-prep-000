@@ -20,7 +20,7 @@ function currentLine(katzDeliLine){
   } else {
     var i
     var storage = ""
-    for (i=0; i<=katzDeliLine.length-1; i++){
+    for (i=0; i<katzDeliLine.length-1; i++){
       if((i+1) === katzDeliLine.length) {
         storage = storage + `${i+1}. ${katzDeliLine[i]}`
       } else {
