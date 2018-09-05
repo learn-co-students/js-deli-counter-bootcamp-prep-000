@@ -1,3 +1,12 @@
 function takeANumber (array, name) {
-  return String ("Welcome, " + name + " you are number " + (array.length + 1) + "in line.")
+  array.push(name);
+  return String ("Welcome, " + name + ". You are number " + (array.length) + " in line.");
+}
+
+function nowServing (katzDeliLine) {
+  if (katzDeliLine.length > 0) {
+    return ("Currently serving " + katzDeliLine.shift() + ".")
+  }else{
+      return String ("There is nobody waiting to be served!");
+  }
 }
