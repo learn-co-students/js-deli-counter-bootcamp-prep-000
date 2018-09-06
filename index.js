@@ -20,13 +20,13 @@ function currentLine (katzDeliLine) {
 
     for (i = 0; i < katzDeliLine.length; i++) {
     
-      newString.push(" " + [i+1] + ". " + katzDeliLine[i]);
+      newString.push(' ' + [i+1] + '. ' + katzDeliLine[i]);
   
       }
    
     } else {
    
-    return 'The line is currently empty.'
+    return 'The line is currently empty.';
 
   }
   
