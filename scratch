@@ -22,9 +22,7 @@ function nowServing(katzDeliLine) {
      var index = 0
      var new_string = "The line is currently: "
      while (index <  array.length)
-     new_string += `${index + 1}. ${array[index]}, `
+     new_string.concat(`${index + 1}. ${array[index]}, `)
      index += 1
-     return new_string
     }
-    //return new_string
   }
