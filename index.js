@@ -13,15 +13,17 @@ function takeANumber(katzDeliLine, name) {
  
  
  function currentLine(katzDeliLine) {
-   let newLine = [];
+   let updateLine = [];
+   let str = "The line is currently: ";
    if (katzDeliLine.length === 0 ) {
      return "The line is currently empty.";
    } else {
      for(let i = 0; i < katzDeliLine.length; i++) {
-       newLine += (i+1) + ". " + katzDeliLine[i] + ", ";
+       updateLine[i] = `${[i+1]}. ${katzDeliLine[i]}`;
      }
-      newLine = newLine.slice(0, newLine.length-2);
-     return "The line is currently: " + newLine;
+     str = str + updateLine.join(", ");
+     return str;
    }
+   
    
  }
