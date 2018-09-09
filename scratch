@@ -28,4 +28,3 @@ function nowServing(katzDeliLine) {
      new_string = new_string.slice(0, -1)
      return new_string
     }
-  }
