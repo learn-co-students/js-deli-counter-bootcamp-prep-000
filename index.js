@@ -25,6 +25,7 @@ function nowServing(katzDeliLine) {
      new_string += ` ${index + 1}. ${array[index]},`
      index += 1
      }
+     new_string = new_string.slice(0, -1)
      return new_string
     }
   }
