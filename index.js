@@ -21,6 +21,13 @@ function currentLine(line){
     return "The line is currently empty.";
   }
   else{
-    return "The line is currently: 1. Bill, 2. Jane, 3. Ann";
+    let i;
+    let j = 1;
+    var lineList = "The line is currently: ";
+    for(i = 0; i < line.length; i++){
+      lineList += j + ". " + line[i] + ", ";
+        j++;
+      }
   }
+    return lineList.slice(0, -2);
 }
