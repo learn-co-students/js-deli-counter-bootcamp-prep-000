@@ -1,58 +1,29 @@
-function takeANumber(katsDeliLine, name){
-   katsDeliLine.push(name);
- return "Welcome, "  + name + ". You are number " + katsDeliLine.length + " in line."
- }
- 
- function nowServing (katsDeliLine) {
-if (katsDeliLine.length > 0) {
-  return ("Currently serving " + katsDeliLine.shift() +".")
-}
-else {
-  return ("There is nobody waiting to be served!") 
-}
+function takeANumber(line, name) {
+  line.push(name)
+  var number = line.length
+  return `Welcome, ${name}. You are number ${number} in line.`
 }
 
-function currentLine (katsDeliLine) {
-if (katsDeliLine.length > 0) {
-var n = [1]; 
-for (var i = 0; i < katsDeliLine.length; i++, n++) {
-katsDeliLine[i]=` ${n}. ${katsDeliLine[i]}`; 
-}
-return `The line is currently:${katsDeliLine}`}
-else {
-return `The line is currently empty.`}
-}
-
-/*
-function currentLine (katsDeliLine) {
-if (katsDeliLine.length > 0) {
-var n = [1]; 
-for (var i = 0; i < katsDeliLine.length; i++, n++) {
-  katsDeliLine[i]=` ${n}. ${katsDeliLine[i]}`; 
-}
-return `The line is currently:${katsDeliLine}`}
-else {
-return `The line is currently empty.`}
+function nowServing(katzDeliLine) {
+  if (katzDeliLine.length>0){
+    var firstPerson = katzDeliLine.shift()
+    return `Currently serving ${firstPerson}.`
+  }
+  else { 
+    return "There is nobody waiting to be served!"
+    return katzDeliLine[0]
+  }
 }
 
-  /*
-  .push("The line is currently:" + katsDeliLine[*how to get position in array here?*] + ". " + katsDeliLine[i] + ", ");
-return empty}
-else {
-  return "The line is currently empty."
-}
-}
 
-/*
- function currentLine (katsDeliLine) {
-if (katsDeliLine.length > 0)
-  {
-  var currentLine = [];
-for (var i = 0; i < katsDeliLine.length; i++)
-  currentLine.push("The line is currently:" + katsDeliLine[*how to get position in array here?*] + ". " + katsDeliLine[i] + ", ");
-return empty}
-else {
-  return "The line is currently empty."
+function currentLine(line) {
+  if (line.length>0) {
+    for(var i=0, n=1; i<line.length; i++, n++) {
+      line[i] = `${n}. ${line[i]}`
+    }
+    return `The line is currently: ${line.join(', ')}`
+    }
+  else {
+    return "The line is currently empty."
+  }
 }
-}
-*/
