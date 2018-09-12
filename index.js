@@ -11,14 +11,18 @@ function nowServing (katzDeliLine) {
   }
 }
 
-function currentLine (katzDeliLine) {
-  if (katzDeliLine.length > 0) {
-    var newArray = []
-    for (let i = 0; katzDeliLine.length > i; i++) {
-      newArray.push ("`${i + 1}. `${katzDeliLine[i]}")
-    }
-    return String ("The line is currently: `${newArray.join(, )}");
-  }else{
-      return String ("The line is currently empty.");
-   }  
+function currentLine (line) {
+  if (!line.length) {
+      return "The line is currently empty."
+  }
+  
+  var newArray = []
+  
+  for (let i = 0; line.length > i; i++) {
+    newArray.push(`${i + 1}. ${line[i]}`)
+  }
+  
+  return `The line is currently: ${newArray.join(', ')}`
 }
+
+
