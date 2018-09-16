@@ -1,4 +1,5 @@
-var waitingInLine = [];
+// var name = ["james", "Ben", "Sekou"]
+// var waitingInLine = [];
 
 function currentLine(waitingInLine) {
   if (!waitingInLine.length) {
@@ -7,8 +8,8 @@ function currentLine(waitingInLine) {
   var indexLine = []
   var index = 0 
   waitingInLine.forEach(function(name, index) {
-     index += 1 
-    indexLine.push(`${index}. ${name}`)
+      index += 1 
+      indexLine.push(`${index}. ${name}`)
     console.log(indexLine)
   })
 
@@ -33,3 +34,9 @@ function nowServing(waitingInLine) {
   return`Currently serving ${waitingInLine.shift()}.`
   }
 }
+
+
+  // takeANumber(waitingInLine, name)
+  // nowServing(waitingInLine)
+  // currentLine(waitingInLine)
+
