@@ -1,3 +1,4 @@
+learn test
 # Deli Counter Lab
 
 ## Objectives
