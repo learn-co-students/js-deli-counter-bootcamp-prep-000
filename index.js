@@ -1,7 +1,7 @@
 function takeANumber(line,name) {
-  line.push(name)
-  var length= line.length 
- return (`Welcome, ${name}. You are number ${length} in line.`)
+  line.push(name);
+  var length= line.length; 
+ return (`Welcome, ${name}. You are number ${length} in line.`);
 }
 
 function nowServing(katzDeliLine) {
@@ -15,11 +15,11 @@ function nowServing(katzDeliLine) {
 }
 function currentLine (line) {
  if (line.length>0) {
-    var statement="The line is currently:"
+    var statement="The line is currently:";
     for (var i=0; i<line.length ; i++) {
-  statement += ` ${i+1}. ${line[i]}`
+  statement += ` ${i+1}. ${line[i]}`;
   if (i<line.length -1) {
-    statement += ","
+    statement += ",";
   }
     }
    return statement;
