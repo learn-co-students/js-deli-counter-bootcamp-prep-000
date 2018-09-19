@@ -14,24 +14,16 @@ function nowServing(line) {
 }
 
 function currentLine(line) {
-  var newLine = ["The line is currently:"]
-  var people = line.join(", ")
+  var people = []
   if (!line.length) {
     return "The line is currently empty."
   } else {
-    for (let n = 0; n < people.length; n++) {
-    newLine.push(` ${n + 1}. ${people[n]}`)
-    console.log(newLine)
+    for (let n = 0; n < line.length; n++) {
+    people.push(`${n + 1}. ${line[n]}`)
   }
-
+    return("The line is currently: " + people.join(", "))
   }
 }
-
-//people = line.join(", ")
-
-
-
-
 
 
 /*var katzDeli = [];
