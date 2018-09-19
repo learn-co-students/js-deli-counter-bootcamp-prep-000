@@ -1,4 +1,4 @@
-  var katzDeliLine = [];
+var katzDeliLine = [];
 
 function takeANumber(line, person) {
   line.push(person)
@@ -14,27 +14,20 @@ function nowServing(line) {
 }
 
 function currentLine(line) {
+  var newLine = ["The line is currently:"]
+  var people = line.join(", ")
   if (!line.length) {
     return "The line is currently empty."
   } else {
+    for (let n = 0; n < people.length; n++) {
+    newLine.push(` ${n + 1}. ${people[n]}`)
+    console.log(newLine)
+  }
 
   }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+//people = line.join(", ")
 
 
 
