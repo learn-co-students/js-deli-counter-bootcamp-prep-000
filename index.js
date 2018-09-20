@@ -1,18 +1,21 @@
+katzDeli = [ ]
+
+otherDeli = ["Ada", "Grace", "Kent"]
+
+
 function takeANumber(katzDeli, otherDeli) {
+    
+    var welcome = [ ]
+    
+    var i = 0
+    
+    do{
+      katzDeli[i] = otherDeli[i]
+      welcome.push(`Welcome, ${otherDeli[i]}. You are number ${i + 1} in line.`)
+      i++
+    }while(i < otherDeli.length)
   
-    katzDeli =[ ]
-    
-    otherDeli = ["Ada", "Grace", "Kent"]
-    
-    let welcome = [ ]
-    
-    for(let i = 0; i < otherDeli.length; i++) {
-      for(let y = 1; y < otherDeli.length; y++) {
-      katzDeli.push(otherDeli[i])
-      welcome.push(`Welcome, ${katzDeli[y]}. You are number ${y} in line.`)
-       }
-    }
-    
     return welcome
     
 }
+
