@@ -11,6 +11,6 @@ function takeANumber(katzDeli, otherDeli) {
       katzDeli[i] = otherDeli[i]
       welcome.push(`Welcome, ${otherDeli[i]}. You are number ${i + 1} in line.`)
     }
-  
     return welcome
 }
+
