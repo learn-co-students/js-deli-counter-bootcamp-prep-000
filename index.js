@@ -28,8 +28,7 @@ function currentLine(deliLine) {
   if(deliLine.length > 0) {
     for(var i = 0; i < deliLine.length; i++) {
        deliLine[i] = [i + 1] + ". " + deliLine[i]
-       deliLine.push(" ")
-       lineMessage = "The line is currently: " + deliLine
+       lineMessage = "The line is currently: " + deliLine.join(', ')
     } 
   }else{
     return "The line is currently empty."
