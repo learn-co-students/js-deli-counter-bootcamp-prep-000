@@ -3,8 +3,8 @@ function takeANumber(line, name){
   return `Welcome, ${name}. You are number ${line.length} in line.`
 }
 
-function nowServing(katzDeliLine){
+function nowServing(DeliLine){
+  deliLine.shift()
   
+  if 
   
-  return "There is nobody waiting to be served!"
-}
