@@ -12,9 +12,15 @@ function nowServing(katzDeli) {
 }
 
 function currentLine(line) {
-    if (line.length < 1) {
+    if (line.length === 0) {
     return("The line is currently empty.")
   } else {
-    return(`The line is currently: 1. ${line[0]}, 2. ${line[1]}, 3. ${line[2]}`)
+
+    var lineArray = [];
+    for (var i = 0; i < line.length; i++);
+    while (line.length > 0) {
+    line.push(` ` + [i+1] + `. ` + line[i]);
     }
+    return lineArray.push(`The line is currently: ` + line);
+  }
 }
