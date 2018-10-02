@@ -2,9 +2,7 @@ var katzDeli = [];
 
 function takeANumber(line, name){
   line.push(name);
-  
   console.log("Welcome, " + name + ". You are number " + line.length + " in line.");
-  
   return "Welcome, " + name + ". You are number " + line.length + " in line."
 }
 
@@ -22,7 +20,6 @@ function currentLine(line){
     return "The line is currently empty.";
   }
   var lineNamesandNumbers = [];
-  
   for(var i=0; i<line.length; i++) {
     lineNamesandNumbers.push(i+1 + ". "+ line[i]);
   }
