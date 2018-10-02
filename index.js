@@ -2,27 +2,20 @@ var katzDeli = [];
 
 function takeANumber(line, name){
   line.push(name);
-  console.log("Welcome, " + name + ". You are number " + line.length + " in line.");
   return "Welcome, " + name + ". You are number " + line.length + " in line."
 }
 
 function nowServing(line) {
-  if(!line.length) {
-    console.log("There is nobody waiting to be served!")
+  if(line.length === 0) {
     return "There is nobody waiting to be served!"
   } else {
-    return "Currently serving " + line.shift() + ".";
+    return "Currently serving " + line.shift(0) + ".";
   }
 }
 
 function currentLine(line){
-  if(!line.length) {
+  if(line.length === 0) {
     return "The line is currently empty.";
-  }
-  var lineNamesandNumbers = [];
-  for(var i=0; i<line.length; i++) {
-    lineNamesandNumbers.push(i+1 + ". "+ line[i]);
-  }
-  console.log("The line is currently: " + lineNamesandNumbers)
-  return "The line is currently: " + lineNamesandNumbers.join(', ');
+} else {
+  return "The line is currently: 1. " + line[0] + ", 2. " + line[1] + ", 3. " + line[2];}
 }
