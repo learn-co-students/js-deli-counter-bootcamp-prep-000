@@ -12,15 +12,18 @@ else if (katzDeliline.length >= 1) {
   }
 }
 
-function currentLine(katzDeliline) {
-  if(katzDeliline.length === 0) {
-    return("The line is currently empty.")
+
+function currentLine(katzDeliLine) {
+  if (katzDeliLine.length === 0) {
+    return "The line is currently empty."
   } else {
-    var katzDelilineArray = [];
-    for (var i = 0; i < katzDeliline.length; i++);
-    while(katzDeliline.length > 0) {
-      katzDeliline.push(''+[i+1] +'.' + katzDeliline[i]);
+    var index = 0;
+    var newString = "The line is currently: "
+    while (index < katzDeliLine.length) {
+    newString += `${index + 1}. ${katzDeliLine[index]}, `;
+    index++;
+    var finalString = newString.substring(0, newString.length - 2 );
     }
-    return katzDelilineArray.push('The line is currently;' + katzDeliline);
+      return finalString;
+    }
   }
-}
