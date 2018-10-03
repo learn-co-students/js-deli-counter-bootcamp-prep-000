@@ -27,4 +27,3 @@ function currentLine(line) {
     }
     return linebs
   }
-}
