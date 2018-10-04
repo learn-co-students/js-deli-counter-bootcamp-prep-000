@@ -17,7 +17,7 @@ function currentLine(deliLine) {
   for ( var i = 0; i < deliLine.length; i++) {
     var line = `${i+1}. ${deliLine[i]}`;
     var comma = '';
-    if (i + 1 < deliLine.length) {
+    if (i < deliLine.length - 1) {
     comma = ', ';
   }
     people += line + comma;
