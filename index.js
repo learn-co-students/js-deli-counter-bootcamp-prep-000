@@ -1,3 +1,5 @@
+//Comment katzDeliLine out since the test suite will provide it 
+
 //var katzDeliLine = [];
 
 function takeANumber(currentLine, name) {
