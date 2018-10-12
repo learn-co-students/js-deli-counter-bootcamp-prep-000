@@ -34,17 +34,14 @@ var newArr = [];
     var currentIndex = i + 1;
 
      if (i < array.length - 1) {
-       var stringTwo = array[i] + ", ";
-     }
+      var stringTwo = array[i] + ", ";
+    }
      else {
        stringTwo = array[i];
      }
     //redefining string as adding the names and no in line each time
     string = string + currentIndex + ". " + stringTwo;
+    //string = string + array.join("i, , ");
   }
 return string;
 }
-
-//var string = "The line is currently: " + [i] + ". " + array[i];
-//newArr.push(string + [i] + ". " + array[i]);
-//return string;
