@@ -10,11 +10,10 @@ function nowServing(queue) {
   
   if(queue.length > 0) {
     queue.shift();
+    return `Currently serving ${upNow}.`;
   } else if(upNow === undefined) {
     return "There is nobody waiting to be served!";
   }
-  
-  return `Currently serving ${upNow}.`;
 }
 
 
