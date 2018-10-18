@@ -22,14 +22,12 @@ function currentLine(line){
     return 'The line is currently empty.'
   }
   else {
-    var lineOfPeople = 'The line is currently:'
-    var person = ''
+    var person = line[0]
+    var lineOfPeople = `The line is currently: 1. ${person}`
     for (var count = 1; count < line.length; count++){
-      person = line[count-1]
-      lineOfPeople += ` ${count}. ${person},`
+      person = line[count]
+      lineOfPeople += `, ${count + 1}. ${person}`
     }
-    person = line[count-1]
-    lineOfPeople += ` ${count}. ${person}`
     return lineOfPeople
   }
 }
