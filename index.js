@@ -1,7 +1,7 @@
-function takeANumber(katzDeli, name) {
-   for(var i = 0; i < katzDeli.length; i++) {
-   katzDeli.push(`Welcome, ${name[i]}. You are number ${i + 1} in line.`);
-   return katzDeli;
+function takeANumber(array, name) {
+   for(var i = 0; i < array.length; i++) {
+   array.push(`Welcome, ${array[i]}. You are number ${i + 1} in line`);
+   return array;
    }
 }
 
