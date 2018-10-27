@@ -17,11 +17,9 @@ function currentLine(katzDeli) {
    return 'The line is currently empty.'; 
   }
   else {
-   for(var i = 0; i < katzDeli.length; i++) {
-    {
+    var i = 0;
     return `The line is currently: ${i + 1}. ${katzDeli[i]}, ${i + 2}. ${katzDeli[i + 1]}, ${i + 3}. ${katzDeli[i + 2]}`;
-    }
-   }
+    
   }
 }
 
