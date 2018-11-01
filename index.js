@@ -5,6 +5,18 @@ function takeANumber(array, name) {
   }
 }
 
+function nowServing(katzDeli) {
+  if(katzDeli.length === 0) {
+    return "There is nobody waiting to be served!";
+  }
+  else {
+    return `Currently serving ${katzDeli.shift()}.`;
+  }
+}
+
+function currentLine(katzDeli) {
+  
+}
 
 /*
 it('adds a person to the line', () => {
