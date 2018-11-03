@@ -26,13 +26,10 @@ function currentLine(katzDeliLine){
     var print = [];
     //add each name up to final into array
     let count = 0;
-    let penultimate = katzDeliLine.length - 1;
-    while (count < penultimate){
-      print.push(` ${count + 1}. ${katzDeliLine[count]},`)
+    while (count < katzDeliLine.length){
+      print.push(` ${count + 1}. ${katzDeliLine[count]}`)
+      count++;
     }
-    //add final name
-    count++
-    print.push(` ${count + 1}. ${katzDeliLine[count]}`)
     //return results
     return (`The line is currently:${print}`);
   }
