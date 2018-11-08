@@ -21,7 +21,7 @@ function currentLine (line) {
     for(var i = 0; i < line.length; i++) {
       message += ` ${i+1}. ${line[i]},`
     }
-    return (message.slice(0, -1))
+    return (message.slice(0, -2))
   } else {
     return (message + ' empty.')
   }
