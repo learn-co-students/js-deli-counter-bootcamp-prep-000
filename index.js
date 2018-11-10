@@ -1,7 +1,9 @@
 function takeANumber(deliLine, newPerson){
-  var string ="Welcome, "+ newPerson +". You are number " + (deliLine.length+1).toString() + " in line."
   deliLine.push(newPerson)
-  return string
+
+  var welcomeMsg =`Welcome, ${newPerson}. You are number ${(deliLine.length).toString()} in line.`
+  
+  return welcomeMsg
 }
 
 function nowServing(deliLine){
@@ -9,7 +11,8 @@ function nowServing(deliLine){
 
   if (deliLine.length > 0){
     firstPerson = deliLine.shift()
-    return "Currently serving " + firstPerson +"."
+    // return "Currently serving " + firstPerson +"."
+    return `Currently serving ${firstPerson}.`
   }else{
     return "There is nobody waiting to be served!"
   }
@@ -22,7 +25,7 @@ function currentLine(deliLine){
   if (deliLine.length === 0){
     return "The line is currently empty."
   }else{
-    do {
+    while (deliLine.length>0 && i<deliLine.length) {
       if (i === 0){
         order += 1 +"."+" "+deliLine[i]
         i++
@@ -30,7 +33,7 @@ function currentLine(deliLine){
         order += ", "+(i+1)+"."+" "+deliLine[i]
         i++
       }
-    }while (deliLine.length>0 && i<deliLine.length)
+    }
   }
   
   return "The line is currently: " + order 
