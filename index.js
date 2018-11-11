@@ -21,8 +21,8 @@ function currentLine(line) {
   else {
     var string = []
     for(var i = 0, l = line.length; i < l; i++) {
-      string.push(i+1 + ". "+ line[i]+", ")
+      string.push(i+1 + ". "+ line[i])
     }
-    return "The line is currently:"+ string.join
+    return "The line is currently:"+ string
   }
 }
