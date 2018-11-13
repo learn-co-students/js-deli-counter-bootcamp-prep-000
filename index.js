@@ -8,9 +8,8 @@ function takeANumber(deliLine, newPerson){
 
 function nowServing(deliLine){
   if (deliLine.length > 0){
-    var firstPerson = deliLine.shift()
 
-    return `Currently serving ${firstPerson}.`
+    return `Currently serving ${deliLine.shift()}.`
   }else{
     return "There is nobody waiting to be served!"
   }
@@ -34,5 +33,5 @@ function currentLine(deliLine){
     }
   }
   
-  return "The line is currently: " + order 
+  return `The line is currently: ${order}` 
 }
