@@ -7,10 +7,22 @@ function takeANumber( line , name){
 function nowServing(line) {
   if  (line.length === 0) {
     return "There is nobody waiting to be served!";
+  } else {
+   line.slice(1);
+    return `Currently serving ${line.shift()}.`;
+  }
+}
+
+function currentLine(line) {
+  
+  if (line.length === 0) {
+   return "The line is currently empty."
+  } else {
+    let lineAsString = '';
+    for (var i = 0; i < line.length; i++) {
+      lineAsString += `${i+1}. ${line[i]}, `;
+    }
+    return "The line is currently: " + lineAsString.substring(0, lineAsString.length-2)
   }
   
-  else {
-    line.shift(0);
-    return line[0];
-  }
 }
