@@ -1,24 +1,24 @@
-const takeANumber = (katzDeli, customerName) => {
-  katzDeli.push(customerName)
-  return `Welcome, ${customerName}. You are number ${katzDeli.length} in line.`
+const takeANumber = (katzDeliLine, customerName) => {
+  katzDeliLine.push(customerName);
+  return `Welcome, ${customerName}. You are number ${katzDeliLine.length} in line.`;
 }
 
-const nowServing = (katzDeli) => {
-  if(katzDeli.length === 0){
-    return `There is nobody waiting to be served!`
+const nowServing = (katzDeliLine) => {
+  if(katzDeliLine.length === 0){
+    return `There is nobody waiting to be served!`;
   }else{
-    return `Currently serving ${katzDeli.shift()}.`
+    return `Currently serving ${katzDeliLine.shift()}.`;
   }
 }
 
- const currentLine = (katzDeli) => {
-  var line=[]
-   if(katzDeli.length === 0){
-     return `The line is currently empty.`
-   }else{
-    for(let i = 0; i < katzDeli.length; i++){
-       line.push(` ${[i+1]}. ${katzDeli[i]}`)
+const currentLine = (katzDeliLine) => {
+  var message=[];
+  if(katzDeliLine.length === 0){
+     return `The line is currently empty.`;
+  }else{
+    for(let i = 0; i < katzDeliLine.length; i++){
+       message.push(` ${[i+1]}. ${katzDeliLine[i]}`);
      }
-     return `The line is currently:${line}`
-   }
+     return `The line is currently:${message}`;
+  }
 }
