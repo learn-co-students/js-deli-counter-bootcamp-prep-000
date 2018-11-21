@@ -17,9 +17,9 @@ function currentLine(lineOfPeople){
     lineStatus +=': '
     for(var i = 0; i < lineOfPeople.length; i++){
       if(i != lineOfPeople.length - 1)
-        lineStatus += `${i}. ${lineOfPeople[i]}, `
+        lineStatus += `${i+1}. ${lineOfPeople[i]}, `
       else
-        lineStatus += `${i}. ${lineOfPeople[i]}`
+        lineStatus += `${i+1}. ${lineOfPeople[i]}`
     }
     return lineStatus
   } else {
