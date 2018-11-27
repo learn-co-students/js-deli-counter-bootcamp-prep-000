@@ -1,5 +1,6 @@
 
 var katzDeliLine1 = ["Jane", "Juan", "Ngugiwa"]; 
+var katzDeliLine2 = ["Vitaliy", "renae", "Nina", "Belka"]; 
 var number = 0; 
 
 function takeANumber (katzDeliLine, name){
@@ -9,8 +10,8 @@ function takeANumber (katzDeliLine, name){
 } 
 
 function nowServing (katzDeliLine) {
-    if (katzDeliLine.length>0){
-      var firstPerson = katzDeliLine.shift; 
+    if (katzDeliLine.length>0){ 
+      var firstPerson = katzDeliLine.shift(); 
       return `Now serving ${firstPerson}.`; 
     } else {
        return "There is nobody waiting to be served!"; 
@@ -22,8 +23,10 @@ function currentLine(katzDeliLine){
         return "The line is currently empty."; 
     } else {
         var text = "The line is currently: "; 
-        for (i=0; i++; i<katzDeliLine.length){
-        text += katzDeliLine[i] } 
+        for (i=0; i<katzDeliLine.length-1; i++){ 
+          text = `${text} ${katzDeliLine[i]}, `; 
+        } 
+        text = `${text} ${katzDeliLine[katzDeliLine.length-1]}.`; 
         return text; 
     } 
     
@@ -33,7 +36,10 @@ function currentLine(katzDeliLine){
 var text = takeANumber(katzDeliLine1, "jane"); 
 console.log(text); 
 
-nowServing (katzDeliLine1); 
+text = nowServing (katzDeliLine1); 
+console.log(text); 
 
-//currentLine(); 
+
+text = currentLine(katzDeliLine2); 
+console.log(text); 
 
