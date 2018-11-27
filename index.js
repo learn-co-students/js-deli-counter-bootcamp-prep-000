@@ -1,12 +1,11 @@
 
-var katzDeliLine = ["Jane", "Juan", "Ngugiwa"]; 
+var katzDeliLine1 = ["Jane", "Juan", "Ngugiwa"]; 
 var number = 0; 
 
 function takeANumber (katzDeliLine, name){
   number = katzDeliLine.length + 1; 
   //maybe add incoming customer to array? 
   return `Welcome, ${name}, you are number ${number} in line.`; 
-  
 } 
 
 function nowServing (katzDeliLine) {
@@ -17,7 +16,6 @@ function nowServing (katzDeliLine) {
        return "There is nobody waiting to be served!"; 
     }
 }
-    
     
 function currentLine(katzDeliLine){
     if (katzDeliLine.length ===0){
@@ -31,7 +29,11 @@ function currentLine(katzDeliLine){
     
 } 
 
-takeANumber(1, "jane"); 
-nowServing ("lena", 'eunice'); 
-currentLine(); 
+
+var text = takeANumber(katzDeliLine1, "jane"); 
+console.log(text); 
+
+nowServing (katzDeliLine1); 
+
+//currentLine(); 
 
