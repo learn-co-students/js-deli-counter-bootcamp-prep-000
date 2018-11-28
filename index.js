@@ -1,11 +1,9 @@
 function takeANumber(katzDeliLine, name){
-  var i = 0;
   katzDeliLine.push(name);
   return `Welcome, ${name}. You are number ${katzDeliLine.length} in line.`
 }
 
 function nowServing(deliLine){
-  var i = 0
   if (deliLine.length > 0){
     return `Currently serving ${deliLine.shift()}.`;
 } else{
