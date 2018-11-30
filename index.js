@@ -1,21 +1,29 @@
+
 var katzDeliLine = [];
 function takeANumber(katzDeliLine, name){
   katzDeliLine.push(name);
- console.log(`Welcome,${name}.You are number ${katzDeliLine.length} in line.`);
-   return katzDeliLine;
+return`Welcome,${name}.You are number ${katzDeliLine.length} in line.`;
 }
-takeANumber(katzDeliLine, 'Ada');
-takeANumber(katzDeliLine, 'Grace');
-takeANumber(katzDeliLine, 'Kent');
 
-function nowServing(katzDeliLine){
+
+function nowServing(katzDeliLine
+){
   if(katzDeliLine.length>0){
-  console.log(`We are serving ${katzDeliLine.shift()}`);
-  return katzDeliLine;}
-  else if(katzDeliLine.length===0){
-    return `There is nobody waiting to be served!`;
+  var output=`Currently serving ${katzDeliLine[0]}`;
+ katzDeliLine.shift();
+ return output;
   }
+  else if(katzDeliLine.length===0){
+    return `There is nobody waiting to be served!`;}
 }
-
- 
+function currentLine(){
+  if(katzDeliLine.length>0){
+       var array = [];
+  for(var i=0;i<katzDeliLine.length;i++){
+  array.push((i++)+"."+katzDeliLine[i]);
+  }
+    return`The line is currently:${array}`; }
+    else if(katzDeliLine.length===0){
+    return `The line is currently empty.`;}
+}
 
