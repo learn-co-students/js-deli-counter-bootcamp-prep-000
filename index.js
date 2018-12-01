@@ -5,14 +5,13 @@ var katzDeliLine = [];
   return  `Welcome, ${name}. You are number ${katzDeliLine.length} in line.`;
 }
  function nowServing(katzDeliLine){
-  if (katzDeliLine.length > 0){
-    var output = `Currently serving ${katzDeliLine[0]}.`;
+  if (!katzDeliLine.length){return "There is nobody waiting to be served!";
+    } else {  var output = `Currently serving ${katzDeliLine[0]}.`;
     katzDeliLine.shift();
-    return output;
-  } else { return "There is nobody waiting to be served!"; }
+    return output; }
 }
  function currentLine(katzDeliLine){
-   if (katzDeliLine.length === 0){ return "The line is currently empty."; }
+   if (!katzDeliLine.length ){ return "The line is currently empty."; }
   else {
     var line = "The line is currently:";
      for(var i=0; i<katzDeliLine.length; i++){
