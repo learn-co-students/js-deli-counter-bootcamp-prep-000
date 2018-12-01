@@ -8,15 +8,16 @@ var katzDeliLine = [];
   if (!katzDeliLine.length){return "There is nobody waiting to be served!";
     } else {   return `Currently serving ${katzDeliLine.shift()}.`; }
 }
- function currentLine(katzDeliLine){
-   if (!katzDeliLine.length ){ return "The line is currently empty."; }
-  else {
-    var output = "The line is currently:";
-     for(var i=0; i<katzDeliLine.length; i++){
-       output += ` ${i+1}. ${katzDeliLine[i]}`;
-       if (i < katzDeliLine.length - 1){ output += ',';}
-     }
-    return output;
-   }
- }
+
+function currentLine(katzDeliLine) {
+  if (!katzDeliLine.length) {
+    return "The line is currently empty.";
+  }
+  var array = [];
+  for (var i = 0, l = katzDeliLine.length; i < l; i++) {
+   array.push(`${i + 1}. ${katzDeliLine[i]}`);
+  }
+  return `The line is currently: ${array.join(', ')}`;
+}
+
 
