@@ -1,31 +1,27 @@
+deliLine = [];
+
 function takeANumber(line, name) {
-        line.push(name);
-        var position = line.indexOf(name);
-        console.log('Welcome ' + name,  'you are number', position + 1, 'in line.') ;
-} // end function takeANumber
+  line.push(name);
+  var position = line.indexOf(name);
+  return `Welcome ${name} you are number ${position + 1} in line`;
+}
 
 
 function nowServing(line) {
-        console.log('Now Serving: ' + line[0]);
-
-} // end of function nowServing
-
+  if(line.length == 0) {
+    return "There is nobody in line";
+}
+  else
+    return `Now serving ${line.shift()}`;
+}
 
 function currentLine(line) {
-        for(var x =0; x <= line.length; x++) {
-                console.log('Current line:', x + 1,'- '+ line[x]);
-        }
-} // end of function currentLine
-
-var deliLine = [];
-
-takeANumber(deliLine, 'chris');
-takeANumber(deliLine, 'Jess');
-takeANumber(deliLine, 'Morgan');
-console.log(deliLine);
-nowServing(deliLine);
-currentLine(deliLine);
-
+  funcArray = [];
+  for(var x =0; x < line.length; x++) {
+    funcArray.push(`${x+1}, ${line[x]}`);
+  }
+  return "The line is currently: " + array;
+}
 
 
 
