@@ -15,13 +15,13 @@ function nowServing(katzDeli) {
 
 function currentLine(katzDeli) {
   var message;
-  if (katzDeli.length == 0) {
+  if (katzDeli.length === 0) {
     message = 'The line is currently empty.'
   } else {
   message = 'The line is currently:';
   var i = 0;
   while (i < katzDeli.length) {
-    message = message + ` ${i+1} ${katzDeli[i]}`;
+    message = message + ` ${i+1}. ${katzDeli[i]}`;
     i++;
   }
   }
