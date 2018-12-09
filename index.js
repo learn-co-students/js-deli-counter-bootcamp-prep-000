@@ -1,5 +1,3 @@
-var deliQue = []
-
 function takeANumber(deli,newName){
  var position = deli.push(newName);
  return `Welcome, ${newName}. You are number ${position} in line.`;
