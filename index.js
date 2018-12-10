@@ -16,3 +16,11 @@ function currentLine(line){
   
 }
 
+function nowServing(currentLine){
+  if(currentLine){
+    return currentLine[0];
+  }else{
+    return 'The line is currently empty.'
+  }
+}
+
