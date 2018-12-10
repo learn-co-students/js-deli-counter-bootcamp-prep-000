@@ -17,10 +17,14 @@ function currentLine(line){
 }
 
 function nowServing(currentLine){
-  if(currentLine){
-    return currentLine[0];
+  if(currentLine.length > 0){
+    let name = currentLine[0];
+    currentLine.shift();
+    
+    return `Currently serving ${name}.`;
+    
   }else{
-    return 'The line is currently empty.'
+    return "There is nobody waiting to be served!"
   }
 }
 
