@@ -6,14 +6,13 @@ function takeANumber(currentLine, name){
 
 function currentLine(line){
   let cur = []
-  if (line.length === 0){
-    return "The line is currently empty.";
-  } else {
-    for(var i = 0; i < line.length; i++){
-      cur.push(Number(i+1) + '. ' + line[i]);
-    }
-    for (var j = 0; i < cur.length; j++){
-      return `The current line is ${cur[j]}`;
-    }
+  if(line.length === 0){
+    return 'The line is currently empty.'
   }
+  for(var i = 0; i < line.length; i++){
+    cur.push(' ' + Number(i+1) + '. ' + line[i]);
+  }
+  return `The line is currently:${cur.toString()}`;
+  
 }
+
