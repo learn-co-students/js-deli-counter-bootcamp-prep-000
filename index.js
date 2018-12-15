@@ -1,16 +1,45 @@
-function takeANumber(line, name){
+/*
+  Take an empty array "line" and push the person's
+  name to the end of "line". Return a greeting and
+  state the person's position in line by using the 
+  line.length property.
+*/
+
+function takeANumber(line, name) {
+  
   line.push(name);
+  
   return `Welcome, ${name}. You are number ${line.length} in line.`;
+  
 }
 
-function nowServing(line){
-  if (line.length > 0){
+/*
+  Take the array "line" and IF there are elements
+  in line, return a string using the first person
+  in line (which will always be at index 0.
+  Create a variable, "name" to reference the index
+  of "line" and use .shift() method to remove the
+  first person once they are served.
+  IF there are no people in line, return a string
+  stating that.
+*/
+
+function nowServing(line) {
+  
+  if (line.length > 0) {
+    
     var name = line[0];
+    
     line.shift();
+    
     return `Currently serving ${name}.`;
+    
   }
+  
   else {
+    
     return "There is nobody waiting to be served!";
+    
   }
 }
 
@@ -24,7 +53,7 @@ function nowServing(line){
   with a comma.
 */
 
-function currentLine(line){
+function currentLine(line) {
   
   if (line.length === 0) {
     return "The line is currently empty.";
@@ -33,7 +62,9 @@ function currentLine(line){
   var name_number = [];
   
   for (let i = 0; i < line.length; i++) {
+    
     name_number.push(`${i+1}. ${line[i]}`);
+    
   }
   
   return `The line is currently: ${name_number.join(", ")}`;
