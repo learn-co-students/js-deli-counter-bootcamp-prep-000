@@ -11,9 +11,24 @@ function takeANumber(lineOfPeople, name){
 function nowServing(lineOfPeople){
   if (lineOfPeople.length > 0){
     var firstPerson = lineOfPeople[0]
-    lineOfPeople = lineOfPeople.slice(1)
-    return firstPerson
+    lineOfPeople.shift()
+    return `Currently serving ${firstPerson}.`
   } else {
     return "There is nobody waiting to be served!"
   }
 }
+
+function currentLine(lineOfPeople) {
+  var namesOfPeopleOnLine = 'The line is currently:'
+  
+  if (lineOfPeople > 0){
+    for (i = 0; i < lineOfPeople.length; i++) {
+      namesOfPeopleOnLine = namesOfPeopleOnLine+ ` ${i+1}. lineOfPeople[i],`
+    }
+    return namesOfPeopleOnLine
+  }else{
+    return "The line is currently empty."
+  }
+}
+
+
