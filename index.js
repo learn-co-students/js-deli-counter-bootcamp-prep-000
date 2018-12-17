@@ -6,5 +6,6 @@ function takeANumber(katzDeliLine, name) {
 
 
 function nowServing(katzDeliLine) {
-
+  katzDeliLine.shift(// how to return now serving message with name?)
+  // if / else statement; if katzDeliLine === 0 return message
 }
