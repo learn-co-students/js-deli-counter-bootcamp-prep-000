@@ -20,15 +20,15 @@ function nowServing(lineOfPeople){
 
 function currentLine(lineOfPeople) {
   var namesOfPeopleOnLine = 'The line is currently:'
+  var lastIndex = lineOfPeople.length - 1
   
-  if (lineOfPeople > 0){
-    for (i = 0; i < lineOfPeople.length; i++) {
-      namesOfPeopleOnLine = namesOfPeopleOnLine+ ` ${i+1}. lineOfPeople[i],`
+  if (lineOfPeople.length > 0){
+    for (var i = 0; i < lastIndex; i++) {
+      namesOfPeopleOnLine = namesOfPeopleOnLine + ` ${i+1}. ${lineOfPeople[i]},`
     }
+    namesOfPeopleOnLine = namesOfPeopleOnLine + ` ${lineOfPeople.length}. ${lineOfPeople[lastIndex]}`
     return namesOfPeopleOnLine
   }else{
     return "The line is currently empty."
   }
 }
-
-
