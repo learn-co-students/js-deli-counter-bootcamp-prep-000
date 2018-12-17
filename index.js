@@ -5,11 +5,28 @@ function takeANumber(katzDeliLine, name) {
   return `Welcome, ${name}. You are number ${katzDeliLine.length} in line.`
   }
   
-  function nowServing (line) {
+function nowServing (line) {
   if (line.length === 0) {
     return "There is nobody waiting to be served!"
     }
     var name = line[0]
     line.shift()
     return `Currently serving ${name}.`
+    }
+    
+function currentLine(line) {
+  if (line.length === 0) {
+        return "The line is currently empty."
+      }
+      return `katzDeliLine
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      return `The line is currently: ${name}.`
     }
