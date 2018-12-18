@@ -6,6 +6,10 @@ function takeANumber(katzDeliLine, name) {
 
 
 function nowServing(katzDeliLine) {
-  katzDeliLine.shift(// how to return now serving message with name?)
-  // if / else statement; if katzDeliLine === 0 return message
+  if (katzDeliLine.length !== 0) {
+    katzDeliLine.shift()
+    return `Currently serving ${katzDeliLine[0]}.`
+  } else {
+    return `There is nobody waiting to be served!`
+  }
 }
