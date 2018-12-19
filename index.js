@@ -15,10 +15,13 @@ function nowServing(katzDeliLine) {
 
 
 function currentLine(katzDeliLine) {
-  for (var counter = 1; counter < katzDeliLine.length; counter++) {
-    return `The line is currently: ${counter}. ${katzDeliLine.shift()}`
+  var array = []
+  for (var counter = 0; counter < katzDeliLine.length; counter++) {
+     array.push(`${counter + 1}. ${katzDeliLine[counter]}`)
   }
   if (katzDeliLine.length === 0) {
     return `The line is currently empty.`
+  } else {
+    return(`The line is currently: ` + array)
   }
 }
