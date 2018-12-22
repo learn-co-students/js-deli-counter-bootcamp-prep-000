@@ -15,34 +15,38 @@ function nowServing (katzDeliLine) {
      return ("There is nobody waiting to be served!");
    }
  }
-
-function currentLine(katzDeliLine){
-  if (katzDeliLine.length === 0)
+ 
+function currentLine(katzDeliLine) {  
+  var line = [];
+if (katzDeliLine.length === 0)  {
     return "The line is currently empty.";
-  else {
-    var lineOut = "The line is currently: ";
-    for (var i = 0; i <= katzDeliLine.length-1; i++) {
-      lineOut += String(i+1) +". " +katzDeliLine[i]+", ";
+    }   
+    else 
+      {
+        for(let i = 0; i<=katzDeliLine.length-1; i++) {
+            line.push(" " + [i+1] + ". " + katzDeliLine[i]);
+        }
+        return "The line is currently:" + line;
     }
-    return lineOut.slice(0,lineOut.length-2);
-  }
 }
-  
-  /*function currentLine(katzDeliLine) {
+
+ /* function currentLine(katzDeliLine) {
    var line = [];
    let i = 0;
    while (i < katzDeliLine.length) {
-     line.push("" + [i+1] + ". " + katzDeliLine[i] + " ")
+     line.push(" " + [i+1] + ". " + katzDeliLine[i]);
      i++;
     }
    if (katzDeliLine.length === 0) {
      return "The line is currently empty.";
     } 
    else {
-   return "The line is currently: " + line + " ";
+   return "The line is currently:" + line;
     }
-  }*/
- 
+  }
+ */
+
+
 
 /*describe('deli', () => {
   describe('takeANumber', () => {
