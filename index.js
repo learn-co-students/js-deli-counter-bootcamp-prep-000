@@ -1,9 +1,8 @@
 var katzDeliLine = [];
 
 function takeANumber (line, name) {
-  var num = line.length +1;
-  line[line.length] = name;
-  return `Welcome, ${name}. You are number ${num} in line.`
+  line.push(name)
+  return `Welcome, ${name}. You are number ${line.length} in line.`
 }
 
 function currentLine (line) {
@@ -19,7 +18,6 @@ function currentLine (line) {
         punct = ""
       }
       text += `${num}. ${line[i]}${punct}`
-console.log(`${text}`)
     }
   }
   return text
@@ -30,10 +28,7 @@ function nowServing (line) {
   if (line.length === 0) {
     text = "There is nobody waiting to be served!"
   } else {
-    for (let i=0; i < line.length; i++) {
-      line[i] = line[i+1]
-    }
-    line.length--
+    text = `Currently serving ${line.shift()}.`
   }
   return text
 }
