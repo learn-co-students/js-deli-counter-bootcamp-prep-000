@@ -1,5 +1,3 @@
-//Build a function that a new customer will use when entering the deli.
-
 var katzDeliLine = [];
 
 function takeANumber(katzDeliLine, name) {
@@ -10,7 +8,6 @@ function takeANumber(katzDeliLine, name) {
   katzDeliLine.push(name);
   return(`Welcome, ` + name + `. You are number ` + katzDeliLine.length + ` in line.`);
 }
-// above function is not done, the customer's place in line reflects
 
 function nowServing(katzDeliLine) {
   if (katzDeliLine.length === 0) {
