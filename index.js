@@ -18,6 +18,7 @@ function currentLine(katzDeliLine) {
   if (katzDeliLine.length === 0) {
   return(`The line is currently empty.`);
   } else {
-    return(`The line is currently: ` + katzDeliLine.length + `.`);
+/*    return( /* I need to return a function that returns a string with 2 parameters;
+name and index, looped as many times as the current length of katzDeliLine. */
   }
 }
