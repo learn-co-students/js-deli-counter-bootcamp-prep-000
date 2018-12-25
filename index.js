@@ -17,13 +17,26 @@ function currentLine(katzDeliLine) {
   if (katzDeliLine.length === 0) {
   return(`The line is currently empty.`);
   } else {
-  var line = katzDeliLine;
-  return(`The line is currently: ` + line);
+    var line = katzDeliLine;
+    var e = e++;
+        return(`The line is currently: 1. ` + katzDeliLine.join(", " + e));
   }
 }
 
+
+
+// ` ` + katzDeliLine.indexOf() + 1 + `. ` 
+
+
+
+// concatenation? splicing?
  /*`The line is currently: ` + katzDeliLine.indexOf(katzDeliLine[i + 1]) + `. ` + katzDeliLine[i] + `, ` ); */
  
- /*    for (var i = 0; i <= katzDeliLine; i++){
-        return(`This worked`);
-        */
+/* for (var i = 0; i <= katzDeliLine.length; i++) {
+  return(katzDeliLine[i])
+} */
+
+
+
+
+ // var i = 0; i <= katzDeliLine.length; i++)
