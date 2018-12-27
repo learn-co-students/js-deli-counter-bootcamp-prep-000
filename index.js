@@ -1,5 +1,5 @@
 var katzDeliLine = [];
-    name = ["Ada", "Grace", "Kent"];
+    name = ["Ada", "Grace", "Kent", "Matz"];
     
 
 function takeANumber(katzDeliLine,name) {
