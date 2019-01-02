@@ -19,7 +19,7 @@ if (katzDeliLine.length === 0) {
 	var firstInLine = katzDeliLine[0];
 	katzDeliLine.shift();
 
-	return("Currently serving " + firstInLine);
+	return("Currently serving " + firstInLine + ".");
 	}
 
 }
@@ -42,9 +42,11 @@ else {
 
 	var s = "";
 	for(var i = 0; i < katzDeliLine.length; i+=1){
-		s+= (i+1)+ ". " + katzDeliLine[i] +" ";
-	}
-	}
-
-	return("The line is currently: " + s);
+		s+= (i+1)+ ". " + katzDeliLine[i] + ", ";
+	   }
+	
+	
+}
+ 
+	return("The line is currently: " +  s.slice(0, -2));
 }
