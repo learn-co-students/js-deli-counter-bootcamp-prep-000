@@ -3,25 +3,13 @@ function takeANumber(currentLine,name) {
   //const katzDeliLine =[currentLine];
   currentLine.push(name);
   let n=currentLine.length;
-  for(let j=n;j>=n;j++){
-    for(let i=n;i>=n;i--){
-         return (`Welcome, ${currentLine[j-1]}. You are number ${i} in line.`);
+  
+    for(let i=n;i<=n;i++){
+         return (`Welcome, ${currentLine[i-1]}. You are number ${i} in line.`);
     }
-      }
+  
 }
-/*function nowServing(katzDeliLine){
-    let n= katzDeliLine.length;
-    //const temp=[katzDeliLine];
-    
-        for (let i=0;i<=n;i++) {
-        return "`Currently serving ${katzDeliLine[i]}.`";
-         }
-     katzDeliLine.push();
-     if (katzDeliLine===[])
-       {
-          return `There is nobody waiting to be served!`;
-         }
-}*/
+
 function nowServing(katzDeli) {
   if (katzDeli.length > 0) {
     var nowServing = katzDeli[0];
