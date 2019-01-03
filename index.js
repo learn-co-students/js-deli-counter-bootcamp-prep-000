@@ -12,10 +12,9 @@ function takeANumber(currentLine,name) {
 
 function nowServing(katzDeli) {
   if (katzDeli.length > 0) {
-    var nowServing = katzDeli[0];
-    katzDeli.shift();
-    return `Currently serving ${nowServing}.`;
-  } else {
+    return `Currently serving ${katzDeli.shift()}.`;
+  }
+  else {
     return `There is nobody waiting to be served!`;
   }
 }
@@ -29,10 +28,10 @@ function currentLine(katzDeliLine){
   
   else{
      var array = [];
-    for (var i = 0; i < n; i++) {
+      for (var i = 0; i < n; i++) {
       array.push(` ${i+1}. ${katzDeliLine[i]}`);
-    }
-    return `The line is currently:` + array;
+      }
+    return 'The line is currently:' + array;
     
   }
   
