@@ -31,8 +31,6 @@ function currentLine(katzDeliLine) {
 }
 /*
 
-
-
  
 "The line is currently: 1. Frank, 2. Emily 
 
