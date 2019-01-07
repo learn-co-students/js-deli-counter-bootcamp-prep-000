@@ -19,20 +19,21 @@ function nowServing(katzDeliLine) {
 
 function currentLine(katzDeliLine) {
 const line = [];
-  if (katzDeliLine.length === 0) {
+if (katzDeliLine.length === 0) {
     return `The line is currently empty.`;
   } else {
       for (let i = 0; i < katzDeliLine.length; i++) {
         line.push(`${i + 1}. ${katzDeliLine[i]}`);
-  //I knew I needed an array created here, and I knew I needed it to be concatenated into one string, so that it could be returned in the string literal, just outside of this block of code. So I used the ".join" method to add the proper spacing between elements of the array "katzDeliLine"
+        //i knew i needed a template literal as en element to push into the array "line"
+        //tried 2 return lines (wrong scope)
+  //I knew I needed an array created here, and I knew I needed it to be concatenated into one string, so that it could be returned in the string literal, just outside of this block of code. So I used the ".join" method to add the proper spacing between elements of the array "line"
       }
+//       knowing that i needed to "put a string in each element of an array",
     return `The line is currently: ${line.join(", ")}` ;
   }
 }
 /*
-
-//needed help with block scope mistake for return "the line is currenty..."
-"The line is currently: 1. Frank, 2. Emily 
+//line.push-ing a string into an empty array, then concatenating the array into a string using .join and spacing with ", " to equal the keystrokes needed to complete the lab
 
 
 
