@@ -23,7 +23,7 @@ function currentLine(katzDeliLine) {
     return `The line is currently empty.`;
   } else {
       for (var i = 0; i < katzDeliLine.length; i++) {
-        line.push(`${i+1}. ${katzDeliLine[i]}`);
+        line.push(`${i + 1}. ${katzDeliLine[i]}`);
   //I knew I needed an array created here, and I knew I needed it to be concatenated into one string, so that it could be returned in the string literal, just outside of this block of code. So I used the ".join" method to add the proper spacing between elements of the array "katzDeliLine"
       }
     return `The line is currently: ${line.join(", ")}` ;
