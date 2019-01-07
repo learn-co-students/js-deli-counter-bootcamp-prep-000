@@ -38,7 +38,7 @@ function currentLine(katzDeliLine) {
 
 
 
-.join turns the array into a string. This for loop should satisfy the array "line" for infinity
+"".join" turns the array into a string. This for loop should satisfy the array "line" for infinity
 */
 /*
 function currentLine(katzDeliLine) {
