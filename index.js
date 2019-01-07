@@ -1,4 +1,4 @@
-var katzDeliLine;
+var katzDeliLine = [];
 
 function takeANumber(katzDeliLine, name) {
   katzDeliLine.push(name);
@@ -18,11 +18,11 @@ function nowServing(katzDeliLine) {
 [])" */
 
 function currentLine(katzDeliLine) {
-var line = [];
+const line = [];
   if (katzDeliLine.length === 0) {
     return `The line is currently empty.`;
   } else {
-      for (var i = 0; i < katzDeliLine.length; i++) {
+      for (let i = 0; i < katzDeliLine.length; i++) {
         line.push(`${i + 1}. ${katzDeliLine[i]}`);
   //I knew I needed an array created here, and I knew I needed it to be concatenated into one string, so that it could be returned in the string literal, just outside of this block of code. So I used the ".join" method to add the proper spacing between elements of the array "katzDeliLine"
       }
