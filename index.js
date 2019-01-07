@@ -4,6 +4,7 @@ function takeANumber(katzDeliLine, name) {
   katzDeliLine.push(name);
     return `Welcome, ` + name + `. You are number ` + katzDeliLine.length + ` in line.`;
 }
+// Welcome, Frank. You are number 1 in line.
 
 function nowServing(katzDeliLine) {
   if (katzDeliLine.length === 0) {
@@ -12,6 +13,9 @@ function nowServing(katzDeliLine) {
       return `Currently serving ` + katzDeliLine.splice(0, 1) +  `.`;
   }
 }
+
+/* Currently serving Frank. "//returns katzDeliLine mutated to have no elements, splice is destructive. (katzDeliLine;
+[])" */
 
 function currentLine(katzDeliLine) {
   var line = [];
@@ -26,6 +30,9 @@ function currentLine(katzDeliLine) {
   }
 }
 /*
+
+
+
  
 "The line is currently: 1. Frank, 2. Emily 
 
