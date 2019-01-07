@@ -31,7 +31,7 @@ const line = [];
 }
 /*
 
- 
+//needed help with block scope mistake for return "the line is currenty..."
 "The line is currently: 1. Frank, 2. Emily 
 
 
