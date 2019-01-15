@@ -1,13 +1,13 @@
 function takeANumber (currentLine, name) {
   currentLine.push(name);
-  return "Welcome, " + name + ". You are number " + (currentLine.length) + " in line."
+  return `Welcome, ${name}. You are number ${currentLine.length} in line.`
 }
 
 function nowServing (KatzDeliLine) {
   if (KatzDeliLine.length === 0) {
     return "There is nobody waiting to be served!"
   } else {
-    return "Currently serving " + KatzDeliLine.shift() +"."
+    return `Currently serving ${KatzDeliLine.shift()}.`
   }
 }
 
@@ -16,16 +16,13 @@ function currentLine(line) {
     return "The line is currently empty."
   } else {
    
-    var txt = ""
-    line.forEach(testFunction)
- 
-    function testFunction (value, index, array) {
-      txt = txt + (index+1) + ". " + value + ", ";
-    return txt;
+    const nameAndNumber = [];
+    
+    for (var i=0; i<line.length; i++) {
+      nameAndNumber.push(`${i+1}. ${line[i]}`)
     }
+    
+    return `The line is currently: ${nameAndNumber.join(`, `)}`
 
-    var lineIs = "The line is currently: "
-    txt = txt.replace(/,\s*$/, "");
-    return lineIs + txt;
   }
 }
