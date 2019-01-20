@@ -1,27 +1,28 @@
-function takeANumber(customerLine, newCustomer) {
-  customerLine.push(newCustomer);
-  var position = customerLine.length;
-  return `Welcome, ${newCustomer}. You are number ${position} in line.`;
+function takeANumber(currentLine,newCustomer) {
+  var customerNumber = currentLine.length + 1;
+  currentLine = currentLine.push(newCustomer);
+  return `Welcome, ${newCustomer}. You are number ${customerNumber} in line.`;
 }
 
-function nowServing(customerLine) {
-  if (customerLine.length === 0) {
-    return `There is nobody waiting to be served!`;
+function nowServing(katzDeliLine){
+  if (katzDeliLine.length === 0){
+    return "There is nobody waiting to be served!";
   } else {
-    var firstPerson = customerLine.shift();
-    return `Currently serving ${firstPerson}.`;
+    var customerServed = katzDeliLine[0];
+    katzDeliLine.shift();
+    return `Currently serving ${customerServed}.`;
   }
 }
 
-function currentLine(customerLine) {
-  if (customerLine.length === 0 ) {
-    return `The line is currently empty.`;
+function currentLine(line){
+  if (line.length === 0){
+    return "The line is currently empty.";
   } else {
-    var line = `The line is currently:`;
-    for (var i=0 ; i<customerLine.length-1 ; i++){
-      line += ` ${i+1}. ${customerLine[i]},`;
+    var theLine = `The line is currently:`;
+    for (var i=0; i<line.length-1; i++){
+      theLine = theLine + ` ${i+1}. ${line[i]},`;
     }
-    line += ` ${customerLine.length}. ${customerLine[customerLine.length-1]}`;
-    return line;
+    theLine = theLine + ` ${line.length}. ${line[line.length-1]}`;
+    return theLine;
   }
 }
