@@ -1,28 +1,26 @@
-function takeANumber(currentLine,newCustomer) {
-  var customerNumber = currentLine.length + 1;
-  currentLine = currentLine.push(newCustomer);
-  return `Welcome, ${newCustomer}. You are number ${customerNumber} in line.`;
+function takeANumber(currentLine, newName) {
+  currentLine.push(newName);
+  var position = currentLine.length; 
+  return `Welcome, ${newName}. You are number ${position} in line.`;
 }
 
-function nowServing(katzDeliLine){
+function nowServing(katzDeliLine) {
   if (katzDeliLine.length === 0){
     return "There is nobody waiting to be served!";
   } else {
-    var customerServed = katzDeliLine[0];
-    katzDeliLine.shift();
-    return `Currently serving ${customerServed}.`;
+    return `Currently serving ${katzDeliLine.shift()}.`;
   }
 }
 
-function currentLine(line){
-  if (line.length === 0){
+function currentLine(line) {
+  if (line.length === 0) {
     return "The line is currently empty.";
   } else {
-    var theLine = `The line is currently:`;
+    var statement = "The line is currently:";
     for (var i=0; i<line.length-1; i++){
-      theLine = theLine + ` ${i+1}. ${line[i]},`;
+      statement = statement + ` ${i+1}. ${line[i]},`;
     }
-    theLine = theLine + ` ${line.length}. ${line[line.length-1]}`;
-    return theLine;
+    statement = statement + ` ${line.length}. ${line[line.length-1]}`;
+    return statement;
   }
 }
