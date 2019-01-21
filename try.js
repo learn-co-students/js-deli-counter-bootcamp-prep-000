@@ -1,5 +1,7 @@
-var stuff = 'Hello mate.'
-console.log(stuff);
-var i = 1
-stuff += "ayo" + (i+1) + ' ayy';
-console.log(stuff);
+for (var i = 0; i < 5; i++) {
+  let hello = 'yo' + (i+1);
+  console.log(hello);
+}
+
+var hello = 'ayyyyy';
+console.log(hello);
