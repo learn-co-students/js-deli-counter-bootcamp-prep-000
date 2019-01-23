@@ -14,20 +14,17 @@ function nowServing (line) {
 
 function currentLine (line) { 
   
- var string = "The line is currently:"
+ var string = "The line is currently: "
 
- for (let i = 0; i < line.length; i--) {
-  // now use concatenation and interpolation to add to the string above
+ for (let i = 0; i < line.length; i++) {
   
-    string += (`${line.length[i]}. ${name[i]}`);
+    string += (`${[i+1]}. ${line[i]}, `);
    
  }
-  // return the string after the for loop
-  
-  
+
   if (line.length === 0) { return `The line is currently empty.`}
   
-  return string;
+  return string.slice(0,-2);
   
   
 }
