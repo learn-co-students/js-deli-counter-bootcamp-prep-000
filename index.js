@@ -14,10 +14,22 @@ function nowServing (line) {
 
 function currentLine (line) { 
   
-  var i;
-  if(line.length > 0) { return `The line is currently: 1. ${line[0]}, 2. ${line[1]}, 3. ${line[2]}` }
+ var string = "The line is currently:"
+
+ for (let i = 0; i < line.length; i--) {
+  // now use concatenation and interpolation to add to the string above
   
+    string += (`${line.length[i]}. ${name[i]}`);
+   
+ }
+  // return the string after the for loop
+  
+  
+  if (line.length === 0) { return `The line is currently empty.`}
+  
+  return string;
+  
+  
+}
 
-  else { return `The line is currently empty.`}
-
-  }
+  
