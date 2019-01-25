@@ -18,5 +18,5 @@ function currentLine(line) {
     for(var i = 0; i < line.length; i++){
      lineString.push( `${i + 1}. ${line[i]}`);
     }
-    return "The line is currently: "+lineString;
+     return `The line is currently: ${lineString.join(', ')}`;
 }
