@@ -4,7 +4,16 @@ function takeANumber(line, name) {
   line.push(name);
   return `Welcome, ${name}. You are number ${line.length} in line.`;
   }
+
+  let num = 0;
+  function takeANumberTwo (line, name) {
   
+    line.push(name);
+    num++; 
+    return `Welcome, ${name}. You are number ${num} in line`;
+ 
+  }
+    
   function nowServing(line) {
     if( line.length > 0 ) {
       return `Currently serving ${line.shift()}.`;
