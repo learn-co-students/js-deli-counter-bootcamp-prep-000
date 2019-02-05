@@ -12,6 +12,18 @@ function nowServing(katzDeli) {
   }
 }
 
+function currentLine(katzDeli) {
+  if(katzDeli === 0) {
+    return "The line is currently empty.";
+  }
+  else{
+    let array = [];
+    for(let i = 0; i < katzDeli.length; i++) {
+    array.push()
+  }
+  }
+}
+
 /*
    describe('deli', () => {
   describe('takeANumber', () => {
