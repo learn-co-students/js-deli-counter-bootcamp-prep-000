@@ -1,12 +1,14 @@
 var katzDeliLine = [];
 
+//Takes the current line of people and the new person's name to be added to the deli line
+//and displays a welcoming message to the console
 function takeANumber(katzDeliLine, newPerson) {
   katzDeliLine.push(newPerson)
   var result = `Welcome, ${newPerson}. You are number ${katzDeliLine.length} in line.`
   return result
 }
 
-
+//Takes the current line of people and alerts the console who is first in line
 function nowServing(katzDeliLine) {
   var result = []
   if( katzDeliLine.length <= 0 ) {
@@ -19,6 +21,7 @@ function nowServing(katzDeliLine) {
   return result
 }
 
+//Displays the current line to the console
 function currentLine(katzDeliLine) {
   var result = ""
   var i = 0
