@@ -4,7 +4,8 @@ function takeANumber(katzDeli, name) {
 }
 
 function nowServing(katzDeli) {
-  if(katzDeli === 0) {
+  let array = [];
+  if(katzDeli.length === 0) {
     return "There is nobody waiting to be served!";  
   }
   else {
