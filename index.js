@@ -21,11 +21,11 @@ function currentLine(lineNumber) {
   if(lineNumber.length === 0) {
     return "The line is currently empty.";
   } else {
+
     for(var i = 0; i < lineNumber.length; i++) {
         line += (i + 1) + ". " + lineNumber[i] + ", "
       }
       line = line.slice(0, line.length-2)
       return "The line is currently: " + line
   }
-  
 }
