@@ -1,4 +1,3 @@
-var deliLine = []
-function takeANumber(deliLine, newName) { deliLine.push(newName); return `Welcome, ${newName}. You are number ${deliLine.length} in line.` } 
-function nowServing(deliLine) { if (deliLine.length === 0) { return "There is nobody waiting to be served!" } else { return `Currently serving ${deliLine.shift()}.` } }
-function currentLine(deliLine) { if (deliLine.length === 0) { return "The line is currently empty." }  const numbersAndNames = []; for (let i = 0, l = deliLine.length; i < l; i++) { numbersAndNames.push(`${i + 1}. ${deliLine[i]}`) } return `The line is currently: ${numbersAndNames.join(', ')}` }
+function takeANumber(line, name) { line.push(`${name}`); return (`Welcome, ${name}. You are number ${line.length} in line.`) } 
+function nowServing(line) { if (line.length === 0) { return "There is nobody waiting to be served!" } return `Currently serving ${line.shift()}.` } 
+function currentLine(line) { if (line.length === 0) { return "The line is currently empty." } const namesandNumbers = []; for (let i = 0, l = line.length; i < l; i++) { namesandNumbers.push(`${i + 1}. ${line[i]}`) } return `The line is currently: ${namesandNumbers.join(', ')}` }
