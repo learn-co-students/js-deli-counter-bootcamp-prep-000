@@ -17,9 +17,8 @@ else {
 }
 
 function currentLine (line) {
-  var length = line.length
 
-if (length > 0){
+if (line.length > 0){
   var lineString = "The line is currently:"
   for (var i = 0; i < line.length; i++) {
     lineString += ` ${i+1}. ${line[i]}`
