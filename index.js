@@ -3,8 +3,16 @@ var katzDeliLine = [];
 function takeANumber(line, name) {
   let number = line.push(name);
   return `Welcome, ${name}. You are number ${number} in line.`
-
 }
+
+
+var counter = 1;
+
+function takeANumberAlt(line){
+  line.push(++counter);
+  return counter;
+}
+
 
 function nowServing(line){
   let next = line.shift();
