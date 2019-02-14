@@ -19,7 +19,7 @@ function currentLine(current) {
   
   else {
   const positions = [];
-  for (let i=0, l=current.length; i<l; i++){
+  for (let i=0; i<current.length; i++){
     positions.push(`${i + 1}. ${current[i]}`);
   }
   return `The line is currently: ${positions.join(', ')}`;
