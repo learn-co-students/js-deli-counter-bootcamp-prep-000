@@ -11,10 +11,9 @@ function nowServing(array) {
   }
   
   else {
-    return "Currently serving " + array[0] + "." ; 
+    return `Currently serving ${array.shift()}.` ; 
   }
-  array.shift();
-  return array;
+  
 }
 
 function currentLine(array) {
@@ -24,11 +23,16 @@ function currentLine(array) {
   }
   
   else {
-    for(var i = 1; i<array.length; i++ ) {
-      empty.push(` ${i}. array[i-1] `)
+    for(var i = 1; i<array.length + 1; i++ ) {
+      if (i === 1) {
+         empty.push(`${i}. ${array[i-1]}`)
+      }
+      else {
+         empty.push(` ${i}. ${array[i-1]}`)
+      }
     }
     
   }
-  return "The line is currently: " + array
+  return "The line is currently: " + empty
 
 }
