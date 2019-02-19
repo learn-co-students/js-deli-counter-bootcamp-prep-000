@@ -1,19 +1,14 @@
-const katzDeliLine = [
-  'Omid',
-  'Rob',
-  "Rita"]
-
-function takeANumber(katzDeliLine, name) {
- katzDeliLine.push(name)
- var place = [katzDeliLine.indexOf(name) + 1]
+function takeANumber(array, name) {
+ array.push(name)
+ var place = [array.indexOf(name) + 1]
 return `Welcome, ${name}. You are number ${place} in line.`
 }
 
-function nowServing(katzDeliLine) {
-  if(katzDeliLine.length === 0) {
+function nowServing(array) {
+  if(array.length === 0) {
     return "There is nobody waiting to be served!"
   } else {
-    return "Currently serving " + katzDeliLine.shift() + "."
+    return "Currently serving " + array.shift() + "."
   }
 }
 
