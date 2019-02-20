@@ -1,5 +1,5 @@
 function takeANumber(array, name) {
-	array.push(name);
+  array.push(name);
   return ("Welcome, " + name + ". You are number " + array.length + " in line.");
 }
 
@@ -14,15 +14,14 @@ function nowServing(katzDeliLine) {
   }
 }
 
-function currentLine(array) {
-  var lineState = "The line is currently";
+function currentLine(deliLine) {
   var state = [];
-  if (array.length === 0) {
-    return (lineState + " empty.");
+  if (deliLine.length === 0) {
+    return ("The line is currently empty.");
   } else {
-    for (var i = 0; i < array.length; i++) {
-	    state.push(" " + (i + 1) + ". " + (array[i]));
+    for (var i = 0; i < deliLine.length; i++) {
+	    state.push(" " + (i + 1) + ". " + (deliLine[i]));
     }
-    return (lineState + ":" + state);
+    return ("The line is currently:" + state);
   }
 }
