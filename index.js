@@ -3,28 +3,6 @@ function takeANumber(katzDeli, name) {
   return `Welcome, ${name}. You are number ${katzDeli.length} in line.`;
 }
 
-function nowServing(katzDeli) {
-  let array = [];
-  if(katzDeli.length === 0) {
-    return "There is nobody waiting to be served!";  
-  }
-  else {
-    return `Currently serving ${array.shift()}.`;
-  }
-}
-
-function currentLine(katzDeli) {
-  if(katzDeli === 0) {
-    return "The line is currently empty.";
-  }
-  else{
-    let array = [];
-    for(let i = 0; i < katzDeli.length; i++) {
-    array.push()
-  }
-  }
-}
-
 /*
    describe('deli', () => {
   describe('takeANumber', () => {
