@@ -17,10 +17,10 @@ function nowServing(katzDeliLine){
 var stringOb = [];
 
   if(katzDeliLine.length > 0){
-    stringOb = [...stringOb, `Currently serving ${katzDeliLine[0]}.`];
+    stringOb = [`Currently serving `];
 //    return stringOb;
-    katzDeliLine = katzDeliLine.slice(1)
-    return katzDeliLine;
+    stringOb += katzDeliLine.shift();
+    return (stringOb + ".");
   } else {
       return "There is nobody waiting to be served!";
   }
