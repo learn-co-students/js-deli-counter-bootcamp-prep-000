@@ -1,24 +1,29 @@
-function takeANumber(currentCustomers, newCustomer){
-  var currentWait = currentCustomers.length+1;
-  currentCustomers.push(newCustomer);
-  return "Welcome, "+ newCustomer +". You are number "+ currentWait +" in line."
+// destructively adds a new customer to the array
+function takeANumber(currentCustomers, newCustomer) {
+  var currentWait = currentCustomers.length + 1;
+  currentCustomers.push(newCustomer); // new customer added to the array
+  return `Welcome, ${newCustomer}. You are number ${currentWait} in line.`
 }
-function nowServing(katzDeliLine){
-  if(katzDeliLine.length===0){
+
+// destructively removes the first person from the array
+function nowServing(katzDeliLine) {
+  if(katzDeliLine.length === 0) { // testing if zero people are in line
     return "There is nobody waiting to be served!"
-  }else{
-  var firstInLine = katzDeliLine.shift();
-  katzDeliLine.slice(1);
+  } else {
+  var firstInLine = katzDeliLine.shift(); // first customer in line removed
+  }
+  return `Currently serving ${firstInLine}.`;
 }
-return "Currently serving "+firstInLine+".";
-}
-function currentLine(currentCustomers){
-  if(currentCustomers.length===0){
+
+// tests for whether there is anybody in line and returns an ordered list of customers in line
+function currentLine(currentCustomers) {
+  if(currentCustomers.length === 0) {
     return "The line is currently empty."
   }
-  var newArray = ['1. '+currentCustomers[0]];
-for(let i = 1; i<currentCustomers.length; i++){
-  newArray.push(' '+(i+1)+'. '+currentCustomers[i]);
-}
-return "The line is currently: "+newArray;
+    var listOfCustomers = [];
+  // creating the list of customers and their place in line
+  for(let i = 0; i < currentCustomers.length; i++) {
+    listOfCustomers.push(`${i+1}. ${currentCustomers[i]}`);
+  }
+  return "The line is currently: " + listOfCustomers.join(', ');
 }
