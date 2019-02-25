@@ -1,8 +1,7 @@
 // destructively adds a new customer to the array
 function takeANumber(currentCustomers, newCustomer) {
-  var currentWait = currentCustomers.length + 1;
   currentCustomers.push(newCustomer); // new customer added to the array
-  return `Welcome, ${newCustomer}. You are number ${currentWait} in line.`
+  return `Welcome, ${newCustomer}. You are number ${currentCustomers.length} in line.`
 }
 
 // destructively removes the first person from the array
@@ -20,7 +19,7 @@ function currentLine(currentCustomers) {
   if(currentCustomers.length === 0) {
     return "The line is currently empty."
   }
-    var listOfCustomers = [];
+  var listOfCustomers = [];
   // creating the list of customers and their place in line
   for(let i = 0; i < currentCustomers.length; i++) {
     listOfCustomers.push(`${i+1}. ${currentCustomers[i]}`);
