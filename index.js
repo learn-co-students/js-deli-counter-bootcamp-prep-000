@@ -1,38 +1,34 @@
-function takeANumber(line, name){
-  line.push(name)
-  var index = line.length
-  index
-  return `Welcome, ${name}. You are number ${index} in line.`
+function takeANumber(line, person){
+  line.push(person)
+  return `Welcome, ${person}. You are number ${line.length} in line.`
 }
 
 function nowServing(line){
-  if(line.length !== 0){
-    var first = line[0]
-    line.shift()
-    return "Currently serving " + first + "."
+  if(!line.length){
+    return 'There is nobody waiting to be served!'
   }
   else{
-    return "There is nobody waiting to be served!"
+    return `Currently serving ${line.shift()}.`
   }
 }
 
 function currentLine(line){
-  var prebar
-  var bar = "The line is currently: "
-  if(line.length !== 0){
-    for(var i = 0; i < line.length; i++){
-      prebar = line[i]
-      var j = i + 1
-      if((line.length) !== j){
-        bar = bar + `${j}. ${prebar}, `
-      }
-      else{
-        bar = bar + `${j}. ${prebar}`
-      }
+  if(!line.length){
+      return 'The line is currently empty.'
     }
-    return bar
+    else{
+      var string = "The line is currently: "
+      for(var i = 0; i < line.length; i++){
+        if(line.length !== i + 1){
+          string = string + `${i + 1}. ${line[i]}, `
+        }
+        else{
+          string = string + `${i + 1}. ${line[i]}`
+        }
+      }
+      return string
+    }
   }
-  else{
-    return "The line is currently empty."
-  }
-}
+
+var deli= ["Jason", "Freddy", "Michael Meyers"]
+console.log(currentLine(deli))
