@@ -1,25 +1,26 @@
-var takeANumber = function(line, name) {
-  line.push(name);
-  return `Welcome, ${name}. You are number ${line.length} in line.` //new customers - only need to know their new place in the index
+var katzDeliLine = [];
+
+function takeANumber (line, name) {
+  var c = line.push(name);
+  return `Welcome, ${name}. You are number ${line.length} in line.`
 };
 
-var nowServing = function (katzDeliLine) {
-  if (katzDeliLine.length === 0) {  // if katz deli line has no one
+function nowServing (katzDeliLine) {
+  if (katzDeliLine.length === 0) {
     return "There is nobody waiting to be served!"
   } else {
-    var name = katzDeliLine.shift()  // create a new name, remove them from that line
-    return `Currently serving ${name}.` // serving that name
+    return "Currently serving " + katzDeliLine.shift() +".";
   }
 };
 
-var currentLine = function (line) {  // take the line as a parameter
-  if (line.length === 0) {  // if no one, etc
+function currentLine (katzDeliLine) {
+  if (katzDeliLine.length === 0) {
     return "The line is currently empty."
   } else {
-    var call = 'The line is currently: ' // start your call-out
-    for(let i = 0; i < line.length; i++){
-     call +=  `${i + 1}. ${line[i]}, `  // call-out = call-out + the loop through
+      var myLine = [];
+      for (let i = 0; i<katzDeliLine.length; i++) {
+        var j = parseInt(i) + 1;
+        myLine.push(` ${j}. ${katzDeliLine[i]}`)
+      }    return "The line is currently:" + myLine;
     }
-   return call.slice(0, -2) // call-out index (start of call), -2 to shave off space & comma from end of call-out
   }
-};
