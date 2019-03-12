@@ -4,12 +4,12 @@ function takeANumber (line,name) {
 }
 
 function nowServing (line) {
-  var i = line.length
+  let i = line.length
   if ( i === 0 ) {
     return "There is nobody waiting to be served!"
   }
   else {
-    var newLine = line[0]
+    let newLine = line[0]
     line.shift()
     return `Currently serving ${newLine}.`
   }
@@ -17,7 +17,7 @@ function nowServing (line) {
 
 function currentLine (line) {
   let i = 0
-  var newLine = []
+  let newLine = []
   if ( line.length === 0 ) {
     return "The line is currently empty."
   }
