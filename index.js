@@ -1,7 +1,7 @@
 function takeANumber (line,name) {
   line.push(name)
   let justAdded = line.length - 1
-  return `Welcome, ${name}. You are number ${justAdded+1} in line.`
+  return `Welcome, ${name}. You are number ${justAdded + 1} in line.`
 }
 
 function nowServing (line) {
