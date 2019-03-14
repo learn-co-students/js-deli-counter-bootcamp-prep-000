@@ -24,7 +24,7 @@ function currentLine (line) {
   }
   else {
     while ( i < line.length ) {
-    newLine.push(` ${i+1}. ${line[i]}`)
+    newLine.push(` ${i + 1}. ${line[i]}`)
     i++
     }
   }
