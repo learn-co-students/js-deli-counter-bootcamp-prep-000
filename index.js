@@ -1,5 +1,5 @@
 var currentNumber = 0
-var calledNumber = 0
+var calledNumber = 1
 
 function takeANumber (line,name) {
   line.push(name)
