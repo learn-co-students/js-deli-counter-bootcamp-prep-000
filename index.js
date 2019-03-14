@@ -18,7 +18,7 @@ function nowServing (line) {
     let newLine = line[0]
     let calledNumberA = calledNumber
     line.shift()
-    currentNumber = calledNumberA + 1
+    calledNumber = calledNumberA + 1
     return `Now serving ${calledNumber}.`
     return `Currently serving ${newLine}.`
   }
