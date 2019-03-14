@@ -1,7 +1,12 @@
+var currentNumber = 0
+var calledNumber = 0
+
 function takeANumber (line,name) {
   line.push(name)
+  currentNumber = currentNumber + 1
   let justAdded = line.length - 1
   return `Welcome, ${name}. You are number ${justAdded + 1} in line.`
+  return `Welcome, your ticket number is ${currentNumber}.`
 }
 
 function nowServing (line) {
@@ -11,7 +16,10 @@ function nowServing (line) {
   }
   else {
     let newLine = line[0]
+    let calledNumberA = calledNumber
     line.shift()
+    currentNumber = calledNumberA + 1
+    return `Now serving ${calledNumber}.`
     return `Currently serving ${newLine}.`
   }
 }
