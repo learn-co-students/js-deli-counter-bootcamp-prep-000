@@ -18,6 +18,8 @@ function currentLine(line) {
     for(var i = 0; i < line.length; i++) {
       string += `${i + 1}. ${line[i]}, `
     }
-    return string.slice(0, string.length - 2)
+    return string.slice(0, string.length - 2) //Nasty edge case with multiple possible solutions
+    //Could use string.join()
+    //Coud do string.length -=2
   }
 }
