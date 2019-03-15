@@ -30,6 +30,6 @@ i++
  c.push(`${(i + 1)}. ${katzDeliLine[i]}`);
  i++;
     }
-   return c.join()
+   return c.join(", ")
   }
 }
