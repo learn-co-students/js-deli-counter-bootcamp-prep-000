@@ -23,10 +23,13 @@ function currentLine(katzDeliLine){
     return "The line is currently empty.";
   } 
   else {
-    
-  `The line is currently: ${(i+0)}. ${katzDeliLine[i]},`
-  
-  
-    
+    var i = 0;
+var c =`The line is currently: ${(i+1)}. ${katzDeliLine[i]}, `
+    while( i < katzDeliLine.length) {
+ i++;
+ var d = (c +  (`${(i+1)}. ${katzDeliLine[i]}`));
+ var e = d;
+    }
+    return e;
   }
-}-
+}
