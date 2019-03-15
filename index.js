@@ -1,7 +1,14 @@
+//let count = 1;
+
 function takeANumber(queue, name){
+  //let person = takeANumber();
   queue.push(name);
   return `Welcome, ${name}. You are number ${queue.length} in line.`;
 }
+
+// function ticketMachine(){
+  //return count++;
+//}
 
 function nowServing(queue){
   if(queue.length === 0) {
