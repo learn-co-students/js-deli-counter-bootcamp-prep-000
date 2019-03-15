@@ -24,12 +24,11 @@ function currentLine(katzDeliLine){
   } 
   else {
     var i = 0;
-var c =[`The line is currently: ${(i+1)}. ${katzDeliLine[i]}`]
-i++
+    var c = [];
     while( i < katzDeliLine.length) {
  c.push(`${(i + 1)}. ${katzDeliLine[i]}`);
  i++;
     }
-   return c.join(", ")
+   return `The line is currently: ${c.join(", ")}`
   }
 }
