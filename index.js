@@ -1,3 +1,5 @@
+var arr = []
+
 function takeANumber (arr, newCustomer) {
   arr.push(newCustomer)
   return `Welcome, ${newCustomer}. You are number ${arr.length} in line.`
@@ -19,7 +21,7 @@ function currentLine (arr) {
   }
 
   var arrNew = []
-  for (var i = 0, l = arr.length; l > i ; i++) {
+  for (var i = 0; i < arr.length; i++) {
     arrNew.push(` ${ i + 1}. ${arr[i]}`)
   }
 
