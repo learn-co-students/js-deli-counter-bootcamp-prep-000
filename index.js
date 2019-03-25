@@ -1,3 +1,18 @@
+/*var lastNumber = 0
+
+function currentNumber(lastNumber)
+{
+  
+  lastNumber += 1
+  katzDeliLine.push(lastNumber)
+  
+  return `Welcome ticket ${lastNumber}, you are ${katzDeliLine.length} in line`
+}
+*/
+
+
+
+
 function takeANumber(katzDeliLine, n)
 {
   katzDeliLine.push(`${n}`);
