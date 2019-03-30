@@ -19,8 +19,7 @@ function currentLine(katzDeliLine) {
   } else {
     var lineOrder = "The line is currently:"
     for (let i = 0; i < katzDeliLine.length; i++) {
-      var name = katzDeliLine[i]
-      var newCustomer = " " + (katzDeliLine.indexOf(name) + 1) + ". " + katzDeliLine[i] + ","
+      var newCustomer = " " + (i + 1) + ". " + katzDeliLine[i] + ","
       lineOrder +=  newCustomer
     }
     return lineOrder.slice(0, -1)
