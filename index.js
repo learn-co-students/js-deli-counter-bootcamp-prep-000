@@ -22,8 +22,6 @@ function currentLine(array){
                 var place = array.indexOf(name) + 1 + '.';
                 ans += place + ' ' + name + ', '
             } else {
-                // var name = array[i]
-                // var place = array.indexOf(name) + 1 + '.';
                 ans += '3'
                 // array.indexOf(name) + 1
                 // sorry I hacked that. /:
