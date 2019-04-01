@@ -18,6 +18,8 @@ function nowServing (line) {
     }
 }
 
+
+//Notes: can be cleaned up - rename variables to make more sense, ++instead of +1?
     function currentLine(line){
       var position=0;
       var location;
