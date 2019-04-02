@@ -1,57 +1,57 @@
 // delicounter lab
 
 function takeANumber(line,name){
-  line.push(name);//adding new customer to line
+  
+  line.push(name);   //adding new customer to line
   var position=line.length;
   return `Welcome, ${name}. You are number ${position} in line.`;
 }
 
+
 function nowServing (line) {
   var firstPerson;
-  var newArray=[];
+  
   if ((line.length)===0)
     return "There is nobody waiting to be served!";
-  else
-  {
+  else {
     firstPerson=line.shift();
     return `Currently serving ${firstPerson}.`;
-    }
+  }
 }
 
 
-//Notes: can be cleaned up - rename variables to make more sense, ++instead of +1?
+
     function currentLine(line){
-      var position=0;
-      var location;
-      var stringloc;
+      var arrayPosition=0;
+      var placeInLine;
       var name;
       var newArray=[];
-      var slice1;
+      var aSlice;
       var message="The line is currently: ";
       
       if ((line.length)===0){
       return "The line is currently empty.";
+      }   //this part was easy! 
+      
+  else {
+    
+    //The first for loop gets the names at each position in line array 
+    
+     for (arrayPosition=0;arrayPosition<(line.length);arrayPosition++) {
+        placeInLine=arrayPosition+1; // because arrays start at 0!
+        name=line.slice(arrayPosition,placeInLine);
+        placeInLine=placeInLine.toString(); //array must be all strings
+        newArray.push(placeInLine +". "+ name);       //combining the line position with spacing text and the name, and building a new array with line position and name together
       }
+            
+    //This loop goes through the new array and builds the message of who's in line         
+            
+      for (arrayPosition=0;arrayPosition<(newArray.length);arrayPosition++){
+       aSlice=newArray.slice(arrayPosition, arrayPosition+1);
+       message =message.concat(aSlice)+", "; //adds the new slice to previous slices
+          } 
+      message=message.slice(0,-2); //to get rid of last space and comma - seems kind ouf ugly...
       
-      else {
-        
-     for (position=0;position<(line.length);position++) {
-        location=position+1;
-        name=line.slice(position,location);
-        stringloc=location.toString(); //array must be all strings
-        newArray.push(stringloc+". "+ name);//combining the line position with formatting text and the name
-        
-     }
-      for (position=0;position<(newArray.length);position++){
-          
-       slice1=newArray.slice(position, position+1);
-       message =message.concat(slice1)+", "; //adds the slices from array together
-      
-      
-      } 
-      message=message.slice(0,-2);//to get rid of last space and comma - seems kind ouf ugly...
-      
-     return message
-     ;
-      }
-    }
+     return message;
+      } //end of else
+  }
