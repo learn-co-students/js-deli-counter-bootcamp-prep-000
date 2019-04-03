@@ -7,5 +7,7 @@ function nowServing (Line){
 }
 
 function currentLine (katzDeliLine){
-  return {"The Line is currently: "{[line]personsName}",")
+ let (line = 0; line >1; return {"The Line is currently: "${line}"."${personsName}",")
+} else {
+  return ("The line is currently empty.")
 }
