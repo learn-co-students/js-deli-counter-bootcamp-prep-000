@@ -5,7 +5,7 @@ function currentLine(line){
   }
   const linePosition = []
   for (let i = 0, l = line.length; i < l; i++){
-    linePosition.push(`${i + 1}. ${line[i]}`) //this should not be absolute position, but relative position not 0 === 1
+    linePosition.push(`${i + 1}. ${line[i]}`) //this should not be absolute position, but relative position
   }
   return (`The line is currently: ${linePosition.join(', ') }`)
 }
@@ -14,10 +14,9 @@ function currentLine(line){
 function nowServing (line, customerName){
  if (line.length===0){
    return ("There is nobody waiting to be served!")
- }else {
+ }else{
    return(`Currently serving ${line.shift()}.`)
  }
- 
 }
 
 //what number is someone in line once they "take a number"
