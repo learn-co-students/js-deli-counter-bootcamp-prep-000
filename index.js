@@ -1,8 +1,8 @@
-
-function takeANumber(name, placeInLine){
-return "Hi "+name+" You are number "+placeInLine+" in line.";
+function takeANumber(katzDeliLine, name) {
+katzDeliLine.push(name);
+return "Welcome, "+name+". You are number"+katzDeliLine.length+" in line."
 }
 
-takeANumber('Sam', 1);
+takeANumber(katzDeliLine, "Moe");
 
-console.log(takeANumber('Sam', 1));
+console.log(katzDeliLine);
