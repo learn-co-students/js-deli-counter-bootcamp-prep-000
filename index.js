@@ -1,3 +1,18 @@
+//what number is someone in line once they "take a number"
+function takeANumber(line, customerName){
+  line.push(customerName) // pushes the name of the customer into katzDeliLine[]
+  return (`Welcome, ${customerName}. You are number ${line.length} in line.`) //returns customer name and line length
+}
+
+//status of current line length
+function nowServing (line, customerName){
+ if (line.length===0){
+   return ("There is nobody waiting to be served!") // the index for this test forces you to use specific syntax for print
+ }else{
+   return(`Currently serving ${line.shift()}.`)
+ }
+}
+
 //this will report the person being served in line.
 function currentLine(line){
   if (line.length===0){
@@ -8,19 +23,4 @@ function currentLine(line){
     linePosition.push(`${i + 1}. ${line[i]}`) //this should not be absolute position, but relative position
   }
   return (`The line is currently: ${linePosition.join(', ') }`)
-}
-
-//status of current line length
-function nowServing (line, customerName){
- if (line.length===0){
-   return ("There is nobody waiting to be served!")
- }else{
-   return(`Currently serving ${line.shift()}.`)
- }
-}
-
-//what number is someone in line once they "take a number"
-function takeANumber(line, customerName){
-  line.push(customerName) // pushes the name of the customer into katzDeliLine[]
-  return (`Welcome, ${customerName}. You are number ${line.length} in line.`) //returns customer name and line length
 }
