@@ -1,28 +1,25 @@
-//let katzDeliLine = ['Ada', 'Grace']
+//let katzDeliLine = ['Ada', 'Grace', 'Ezra']
 
 // // #1 takeANumber
 // //unclear if should mutate/destroy the "current line of peopl" = katzDeliLine. set it to mutate.
 //
 function takeANumber (katzDeliLine, newPerson) {
   katzDeliLine.push(newPerson)
-  console.log(`Welcome, ${newPerson}. You are number ${katzDeliLine.indexOf(newPerson)+1} in line.`)
+  return(`Welcome, ${newPerson}. You are number ${katzDeliLine.indexOf(newPerson)+1} in line.`)
 }
 
 // takeANumber(['Ada', 'Grace'],'Ezra')
 //
-// //there's an extra space after the output, how to fix?
 
 // // #2 nowServing
 //
-// function nowServing(katzDeliLine) {
-//   if (katzDeliLine.length) {
-//   console.log(`Currently serving ${katzDeliLine[0]}.`)
-//   katzDeliLine.shift()
-//   console.log(katzDeliLine)
-//   } else {
-//   console.log('There is nobody waiting to be served!')
-//   }
-// }
+function nowServing(katzDeliLine) {
+  if (katzDeliLine.length) {
+  return(`Currently serving ${katzDeliLine.shift()}.`)
+  } else {
+  return('There is nobody waiting to be served!')
+  }
+}
 //
 // nowServing (['Ada', 'Grace', 'Ezra'])
 
@@ -32,10 +29,16 @@ function takeANumber (katzDeliLine, newPerson) {
 
 // // #3 currentLine
 //
-// function currentLine(katzDeliLine) {
-//   if (Array.isArrary(katzDeliLine) || katzDeliLine.length) {
-//   console.log('The line is currently:', katzDeliLine.length, ' ', katzDeliLine[0])
-//   } else {
-//   console.log('The line is currently empty')
-//   }
-// }
+function currentLine(katzDeliLine) {
+let str = 'The line is currently:'
+  if (katzDeliLine.length) {
+    for (let i=0;i<katzDeliLine.length; i++) {
+   (str += ` ${i+1}. ${katzDeliLine[i]},`)
+    } return str.slice(0,-1)
+
+  } else {
+  return('The line is currently empty.')
+  }
+}
+//
+// // currentLine([])
