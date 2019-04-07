@@ -29,4 +29,19 @@ function nowServing(katzDeliLine) {
   }
 }
 
-nowServing(katzDeliLine);
+
+
+function currentLine(katzDeliLine){
+  if(!katzDeliLine.length) {
+    return "The line is currently empty.";
+  }
+  var katzDeliLineNameAndNumber = [];
+
+  for(var i=0; i<katzDeliLine.length; i++) {
+    katzDeliLineNamesAndNumbers.push(i+1 + ". "+ katzDeliLine[i]);
+  }
+  console.log("The line is currently: " + katzDeliLineNamesAndNumbers)
+  return "The line is currently: " + katzDeliLineNamesAndNumbers.join(', ');
+}
+
+console.log(currentLine(katzDeliLineNamesAndNumbers));
