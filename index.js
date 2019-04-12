@@ -1,3 +1,4 @@
+  function currentLine(line) {
   if (!line.length) {
     return "The line is currently empty."
   }
@@ -8,6 +9,8 @@
     numbersAndNames.push(`${i + 1}. ${line[i]}`)
   }
 
+  /* Keep in mind, join() is a a shorthand for looping and building
+   * into a String. */
   return `The line is currently: ${numbersAndNames.join(', ')}`
 };
 
