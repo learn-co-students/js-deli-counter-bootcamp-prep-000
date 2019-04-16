@@ -23,8 +23,10 @@ function currentLine(line) {
     let whoseLeft = [];
      let i = -1; //had to set to -1 to make the counter work
      while (i++ < line.length-1) { // totally bodged this but it worked.
-         whoseLeft.push(`parseInt(${i})+1. ${line[i]}`)
-     } return whoseLeft
+         whoseLeft.push(`${i+1}. ${line[i]}`)
+         return `The line is currently: ${whoseLeft[i]}.`
+         //.join(', ');
+//     } return `The line is currently: ${whoseLeft[i]}.`
 
     // for (let i = 0; i < line.length; i++) {
     //
@@ -40,4 +42,4 @@ function currentLine(line) {
 
     }
   }
-//}
+}
