@@ -21,8 +21,8 @@ function currentLine(line) {
   }
   if (parseInt(line.length) > 0) { // could do else {}
     let whosLeft = [];
-     let i = -1; //had to set to -1 to make the counter work
-     while (i++ < line.length-1) { // totally bodged this but it worked.
+     let i = -1; //had to set to -1 to make the counter work in this case
+     while (i++ < line.length-1) { // if the iteration of i happens after the while loop, i=0 in the previous condition.
          whosLeft.push(`${i+1}. ${line[i]}`)
        } return `The line is currently: ${whosLeft.join(', ')}`; //note that curly bracket has to precede statement otherwide return cuts while loop
 //     } return `The line is currently: ${whosLeft[i]}.`
