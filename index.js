@@ -5,19 +5,26 @@ function takeANumber(people, newPerson) {
 
 function nowServing(katzDeliLine) {
   if(katzDeliLine.length === 0) {
-    return 'There is nobody waiting to be served!'
+    return 'There is nobody waiting to be served!';
   } else {
-    let currentPerson = katzDeliLine[0]
-    katzDeliLine.shift()
-    return `Currently serving ${currentPerson}.`
+    let currentPerson = katzDeliLine[0];
+    katzDeliLine.shift();
+    return `Currently serving ${currentPerson}.`;
   }
 }
 
 function currentLine(katzDeliLine) {
   if(katzDeliLine.length === 0) {
-    return 'The line is currently empty.'
+    return 'The line is currently empty.';
   } else {
-    let announcement = REFORMAT NAMES INTO NUMBERED LIST
-    return `Currently serving ${currentPerson}.`
+    let numberedLine = ['The line is currently: '];
+    for (let i=0;i<katzDeliLine.length;i++) {
+      let newNumber = i+1;
+      numberedLine.push(`${newNumber}. ${katzDeliLine[i]}`);
+      if (i<katzDeliLine.length - 1){
+        numberedLine.push(', ')
+      }
+    }
+    return numberedLine.join('');
   }
 }
