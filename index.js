@@ -14,7 +14,7 @@ function takeANumber(currentLine, newName) {
 // If there is no one in line, returns "There is nobody waiting to be served".
 function nowServing(currentLine) {
   
-  // Checks to see if there is no one line line. If this is true and there is no one line line, returns the string "There is nobody waiting to be served!".
+  // Checks to see if there is no one line line. If this is true and there is no one in line, returns the string "There is nobody waiting to be served!".
   if (currentLine.length === 0) {
     return "There is nobody waiting to be served!";
   } 
