@@ -17,7 +17,7 @@ function currentLine(line){
   } else for (var i=0;i<line.length-1; i++){
     a+=`${i+1}. `+line[i]+", ";}
   if (line.length!=0){
-    a+=`${i+1}. `+line[line.length-1]
+    a+=line.length+`. `+line[line.length-1]
   }
     return a;
 }
