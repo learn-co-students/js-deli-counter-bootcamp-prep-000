@@ -19,7 +19,7 @@ function currentLine(deliLine){
   var textDisplay = [];
   var baseText = "The line is currently:"
    if (deliLine.length===0){
-    return baseText + ": empty".;
+    return "The line is currently empty.";
   }
   else{
   for (var i=0; i<deliLine.length; i++){
