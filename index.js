@@ -1,6 +1,5 @@
 //1) deli takeANumber adds a person to the line
 function takeANumber(deliLine, newPerson){
-  var i = 0
 //adds person
   deliLine.push(newPerson);
   return "Welcome, " + newPerson + ". You are number " + (deliLine.length) + " in line.";
@@ -8,8 +7,8 @@ function takeANumber(deliLine, newPerson){
 
 //nowServing returns "There is nobody waiting to be served!"" when no one is in line
 function nowServing(deliLine){
-  var i = 0
   if (deliLine.length > 0) {
+    //returns first element from the array, and then removes it. This changes the length of the array
     return "Currently serving " + deliLine.shift() + ".";
   }
   if (deliLine.length < 1)  {
@@ -23,8 +22,9 @@ function currentLine(deliLine){
     if(deliLine.length < 1) {
     return "The line is currently empty."
   }
-    for(var count = 0; count < deliLine.length; count++) {
-      blankMessage.push(`${count+1}. ${deliLine[count]}`)
+  //created a loop, will loop through each element of the array and add a number that will count
+    for(var i = 0; i < deliLine.length; i++) {
+      blankMessage.push(`${i+1}. ${deliLine[i]}`)
     }
     return `The line is currently: ${blankMessage.join(', ')}`
 }
