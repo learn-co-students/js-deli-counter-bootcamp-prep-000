@@ -1,0 +1,30 @@
+function takeANumber(line, name){
+  line.push(name)
+  let position = line.indexOf(name) + 1;
+  return(`Welcome, ${name}. You are number ${position} in line.`);
+}
+function nowServing(line) {
+  if (line.length > 0) {
+    let a = line.shift()
+    return `Currently serving ${a}.`
+  } else {
+    return 'There is nobody waiting to be served!';
+  }
+}
+
+ function currentLine(line) {
+  var linearray = []
+  for (let i = 0; i<line.length; i++) {
+      var pos = line.indexOf(line[i])+1
+      var t = ' '+pos.toString()+`. ${line[i]}`
+      linearray.push(t)
+    }
+
+   if (line.length === 0) {
+    return 'The line is currently empty.';
+  } else {
+    var string1 = 'The line is currently:'
+    return string1.concat(linearray)
+    }
+
+   }
