@@ -1,13 +1,13 @@
 //Function "takeANumber", which welcomes and assigns customers a place in line
 var katzDeliLine=[];
+
 function takeANumber(katzDeliLine, name) {
-katzDeliLine.push(name);
-return "Welcome, "+name+". You are number "+katzDeliLine.length+" in line."
+  katzDeliLine.push(name);
+  return "Welcome, "+name+". You are number "+katzDeliLine.length+" in line."
 }
 
-takeANumber(katzDeliLine, "Moe");
-
-console.log(takeANumber(katzDeliLine, "Moe"));
+//takeANumber(katzDeliLine, "Moe");
+//console.log(takeANumber(katzDeliLine, "Moe"));
 
 //Function "nowServing", which returns the first person in line, and then remove the person from the line.
 //If the line is empty, the function returns "There is nobody waiting to be served".
@@ -24,8 +24,9 @@ function nowServing(katzDeliLine) {
     console.log("There is nobody waiting to be served!")
     return "There is nobody waiting to be served!"
   } else {
-    console.log("Currently serving " + katzDeliLine.shift());
-    return "Currently serving " + katzDeliLine.shift();
+    var person = katzDeliLine.shift()
+    console.log("Currently serving " + person);
+    return "Currently serving " + person;
   }
 }
 
@@ -36,13 +37,16 @@ function currentLine(katzDeliLine){
   if(!katzDeliLine.length) {
     return "The line is currently empty.";
   }
-  var katzDeliLineNameAndNumber = [];
+  var katzDeliLineNameAndNumbers = [];
 
   for(var i=0; i<katzDeliLine.length; i++) {
-    katzDeliLineNamesAndNumbers.push(i+1 + ". "+ katzDeliLine[i]);
+    katzDeliLineNameAndNumbers.push(i+1 + ". "+ katzDeliLine[i]);
   }
-  console.log("The line is currently: " + katzDeliLineNamesAndNumbers)
-  return "The line is currently: " + katzDeliLineNamesAndNumbers.join(', ');
+  console.log("The line is currently: " + katzDeliLineNameAndNumbers)
+  return "The line is currently: " + katzDeliLineNameAndNumbers.join(', ');
 }
 
-console.log(currentLine(katzDeliLineNamesAndNumbers));
+currentLine(["Jody", "Harry"])
+currentLine(["Alex", "Katy"])
+
+//console.log(currentLine(katzDeliLineNamesAndNumbers));
