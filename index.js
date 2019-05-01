@@ -29,12 +29,7 @@ function nowServing(numInLine){
   function currentLine (numInLine){
     let numbered= [];
     for (let i=0; i<numInLine.length; i++){
-    numbered= numbered + (i+1) +". "  + numInLine[i] +
-    if (numInLine[i]===numInLine.length-1 ){
-      + "."
-    } else {
-      ", ";
-       }
+    numbered= numbered + (i+1) +". "  + numInLine[i] + (i<numInLine.length-1 ? ", " : "" )
     }
-  return (numInLine.length >0 ? `The line is currently: ${numbered.toString()}.` : "The line is currently empty.");
+  return (numInLine.length >0 ? `The line is currently: ${numbered.toString()}` : "The line is currently empty.");
 }
