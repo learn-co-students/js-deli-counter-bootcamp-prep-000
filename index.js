@@ -26,14 +26,26 @@ function nowServing(numInLine){
 // "The line is currently: 1. Ada, 2. Grace". You don't have to use katzDeliLine as a variable or parameter name
 // in your function though, it's just an example of a variable that might be passed to it. If there is nobody in line,
 // it should return "The line is currently empty."
-  function currentLine (numInLine){
-    let numbered= [];
+//   function currentLine (numInLine){
+//     let numbered= [];
+// if (numInLine.length ===0){
+//   return  "The line is currently empty."
+// } else {
+//     for (let i=0; i<numInLine.length; i++){
+//     numbered= `${numbered}${(i+1)}. ${numInLine[i]}${(i<numInLine.length-1 ? ", " : "" )}`
+//   }
+// }
+//   return `The line is currently: ${numbered.toString()}`;
+// }
+
+function currentLine (numInLine){
+  let numbered= [];
 if (numInLine.length ===0){
-  return  "The line is currently empty."
+return  "The line is currently empty."
 } else {
-    for (let i=0; i<numInLine.length; i++){
-    numbered= `${numbered}${(i+1)}. ${numInLine[i]}${(i<numInLine.length-1 ? ", " : "" )}`
-  }
+  for (let i=0; i<numInLine.length; i++){
+  numbered.push(` ${(i+1)}. ${numInLine[i]}`) //  ${(i<numInLine.length-1 ? ", " : "" )}`)
 }
-  return `The line is currently: ${numbered.toString()}`;
+}
+return `The line is currently:${numbered.toString()}`;
 }
