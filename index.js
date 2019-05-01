@@ -28,8 +28,12 @@ function nowServing(numInLine){
 // it should return "The line is currently empty."
   function currentLine (numInLine){
     let numbered= [];
+if (numInLine.length ===0){
+  return  "The line is currently empty."
+} else {
     for (let i=0; i<numInLine.length; i++){
-    numbered= numbered + (i+1) +". "  + numInLine[i] + (i<numInLine.length-1 ? ", " : "" )
-    }
-  return (numInLine.length >0 ? `The line is currently: ${numbered.toString()}` : "The line is currently empty.");
+    numbered= `${numbered}${(i+1)}. ${numInLine[i]}${(i<numInLine.length-1 ? ", " : "" )}`
+  }
+}
+  return `The line is currently: ${numbered.toString()}`;
 }
