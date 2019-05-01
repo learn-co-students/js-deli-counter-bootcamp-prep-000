@@ -44,7 +44,7 @@ if (numInLine.length ===0){
 return  "The line is currently empty."
 } else {
   for (let i=0; i<numInLine.length; i++){
-  numbered.push(` ${(i+1)}. ${numInLine[i]}`) //  ${(i<numInLine.length-1 ? ", " : "" )}`)
+  numbered.push(` ${(i+1)}. ${numInLine[i]}`)
 }
 }
 return `The line is currently:${numbered.toString()}`;
