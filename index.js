@@ -1,6 +1,6 @@
 function takeANumber(arr, name) {
   arr.push(name);
-  return `Welcome, ${name}. You are number ${arr.indexOf(name) + 1} in line.`;
+  return `Welcome, ${name}. You are number ${arr.length} in line.`;
 }
 
 function nowServing(arr) {
@@ -18,8 +18,18 @@ function currentLine(arr) {
   }
   
   let announce = "";
-  arr.forEach(person => {
-    announce += `${arr.indexOf(person) + 1}. ${person}${arr.length - 1 === arr.indexOf(person) ? '' : ', '}`
+  arr.forEach((person, index) => {
+    announce += `${index + 1}. ${person}${arr.length - 1 === index ? '' : ', '}`
   });
   return "The line is currently: " + announce;
+}
+
+let callCount = 0;
+
+function takeANumber2(line) {
+  callCount++;
+  
+  line.push(callCount);
+  
+  return `Welcome! You are number ${callCount}~`
 }
