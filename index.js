@@ -4,13 +4,11 @@ function takeANumber(line, name) {
 }
 
 function nowServing(line) {
-  var firstperson = line[0];
-  line.shift();
   if (line.length === 0) {
     return "There is nobody waiting to be served!";
   }
   else {
-    return `Currently serving ${firstperson}.`;
+    return `Currently serving ${line.shift()}.`;
   }
 }
 
