@@ -37,15 +37,9 @@ takeANumber(katzDeliLine, "Pawel")
 
 var line = ["A", "B", "C", "D", "E"]
 
-for (var i = 0; i < line.length; i++) {
-  console.log(`${i + 1}. ${line[i]}`)
+var cars = ["BMW", "Volvo", "Saab", "Ford", "Fiat", "Audi"];
+var text = "";
+for (i = 0; i < cars.length; i++) {
+  text += i + ". " + cars[i] + " ";
 }
-
-
-function currentLine(line) {
-  if (line.length > 0) {
-    return `The line is currently: 1. ${line[0]}, 2. ${line[1]}, 3. ${line[2]}`
-  } else {
-    return "The line is currently empty."
-  }
-}
+console.log(text.substring(0, text.length - 2))

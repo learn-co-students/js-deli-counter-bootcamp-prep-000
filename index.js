@@ -13,7 +13,11 @@ function nowServing (katzDeliLine) {
 
 function currentLine(line) {
   if (line.length > 0) {
-    return `The line is currently: 1. ${line[0]}, 2. ${line[1]}, 3. ${line[2]}`
+    let txt = ""
+    let i
+    for (i = 0; i < line.length; i++) {
+      txt += i + 1 + ". " + line[i] + "," + " "
+    } return "The line is currently: " + txt.substring(0, txt.length -2)
   } else {
     return "The line is currently empty."
   }
