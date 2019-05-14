@@ -4,21 +4,19 @@ function takeANumber (katzDeliLine, name) {
 }
 
 function nowServing(katzDeliLine) {
-if (katzDeliLine.length > 0) {
+  if (katzDeliLine.length > 0) {
   return `Currently serving ${katzDeliLine.shift()}.`;
-}
-else {
- return "There is nobody waiting to be served!"; 
-}
+  } else {
+  return "There is nobody waiting to be served!"; 
+  }
 }
 
 function currentLine(katzDeliLine) {
   var tempLine = [];
   if (katzDeliLine > tempLine) {
-   for (var i=0; i<katzDeliLine.length; i++) {
+    for (var i=0; i<katzDeliLine.length; i++) {
      tempLine.push(` ${i+1}. ${katzDeliLine[i]}`);
-   }
-   return "The line is currently:" + tempLine;
+    } return "The line is currently:" + tempLine;
   } else {
    return "The line is currently empty.";
   }
