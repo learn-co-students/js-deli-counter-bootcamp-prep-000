@@ -1,5 +1,3 @@
-var katzDeliLine = [];
-
 function takeANumber(line, name) {
   line.push(name);
   var num = line.length;
