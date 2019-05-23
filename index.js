@@ -13,7 +13,7 @@ function nowServing(katzDeliLine) {
   
   else {
   let currentlyServing = katzDeliLine[0];
-  katzDeliLine.splice(0, 1);
+  katzDeliLine.splice(0, 1); //taking array from position 0 to position 1.
   return "Currently serving " + currentlyServing + ".";
   }
 }
@@ -23,9 +23,9 @@ function currentLine(katzDeliLine) {
       return "The line is currently empty."
     }
     let line = "" //empty string
-    for(var i = 0; i < katzDeliLine.length; i++) {
+    for(var i = 0; i < katzDeliLine.length; i++) { // the loop
 
-        let customerName = katzDeliLine[i]
+        let customerName = katzDeliLine[i] 
         let customerNumber = i + 1 // otherwise Anil would be customer 0
         line += customerNumber + ". " + customerName + ", " // += take existing string, and add this on to it
     }
