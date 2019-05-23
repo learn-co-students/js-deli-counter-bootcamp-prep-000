@@ -1,6 +1,6 @@
 let katzDeliLine = [];
 
-function takeANumber(katzDeliLine, newCustomer){
+function takeANumber(katzDeliLine, newCustomer){ 
   let placeInLine = katzDeliLine.length + 1;
   let welcomeMessage = "Welcome, " + newCustomer + ". You are number " + placeInLine + " in line."; 
   katzDeliLine.push(newCustomer);
@@ -19,14 +19,17 @@ function nowServing(katzDeliLine) {
 }
 
 function currentLine(katzDeliLine) {
-    var line = []
     if (katzDeliLine.length === 0) {
       return "The line is currently empty."
-    } else {
-      for(var i = 0; i < katzDeliLine.length; i++) {
-        line += (i + 1) + ". " + katzDeliLine[i] + ", "
-      }
-      line = line.slice(0, line.length-2)
-      return "The line is currently: " + line
     }
+    let line = "" //empty string
+    for(var i = 0; i < katzDeliLine.length; i++) {
+
+        let customerName = katzDeliLine[i]
+        let customerNumber = i + 1 // otherwise Anil would be customer 0
+        line += customerNumber + ". " + customerName + ", " // += take existing string, and add this on to it
+    }
+    // line has an extra comma/space at the end
+    line = line.slice(0, line.length-2)
+    return "The line is currently: " + line
 }
