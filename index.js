@@ -8,17 +8,16 @@ function takeANumber(line, name){
 }
 
 function nowServing(line) {
-  if(line !== line.length) {
+  if(!line.length) {
     console.log("There is nobody waiting to be served!")
     return "There is nobody waiting to be served!"
   } else {
-    console.log("Currently serving " + line.shift());
     return "Currently serving " + line.shift();
   }
 }
 
 function currentLine(line){
-  if(line !==line.length) {
+  if(!line.length) {
     return "The line is currently empty.";
   }
   var nameAndNumber = [];
