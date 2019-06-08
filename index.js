@@ -1,0 +1,4 @@
+function takeANumber(katzDeli,Ada){
+  
+  
+}
