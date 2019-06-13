@@ -2,10 +2,12 @@ function takeANumber(katzDeliLine,Ada){
 katzDeliLine.push(Ada)
   return`Welcome, ${Ada}. You are number ${katzDeliLine.length} in line.` }
 function nowServing(katzDeliLine){
-   for (let i =0; i >1; i++){
-     if(i===0){
-       katzDeliLine.push('There is nobody waiting to be served!')}
-     else{
-       katzDeliLine.push(`currently serving ${katzDeliLine.length}`) } }
-  return katzDeliLine
-}
+  if(katzDeliLine.length===0)
+  {return 'There is nobody waiting to be served!' }
+   else
+  {return `Currently serving ${katzDeliLine.shift()}.`}}
+  function currentLine(line){
+    if(line===0)
+    {return 'The line is currently empty'}
+    else
+    {return`The line is currently ${index} ${line.shift()}` }}
