@@ -12,15 +12,15 @@ function nowServing(katzDeliLine){
 }
 
   function currentLine(line) {
+    if(line.length===0){
+        return'The line is currently empty.'
+      
+    }
     var line2='The line is currently:'
     var last='.';
     for (let i=0;i<line.length;i++) {
-      if(line.length===0){
-        return'The line is currently empty.'
-      } else {
       line2+=` ${i+1}. ${line[i]},`
        }
-    }
-    return line2
+    return line2.slice(0,-1)
   }
   //The line is currently: 1. Bill, 2. Jane, 3. Ann
