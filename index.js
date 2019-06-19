@@ -20,9 +20,7 @@ function currentLine(line) {
   var positionAndName = [];
   for (var i = 0; i < line.length; i++) {
     if (i === 0) {
-    positionAndName.push(`${i+1}. ${line[0]}`);
-    } else {
-      positionAndName.push(` ${i+1}. ${line[i]}`);
+        positionAndName.push(` ${i+1}. ${line[i]}`);
     }
   }
   return `The line is currently: ${positionAndName}`;
