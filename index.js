@@ -8,6 +8,7 @@ function takeANumber(katzDeliLine, personName) {
   return `Welcome, ${personName}. You are number ${queueLength} in line.`;
 }
 
+
 // Function to accept current line of people and return a message about serving the first person in the line. If there is nobody waiting, a different message is returned
 
 function nowServing(katzDeliLine) {
@@ -17,6 +18,7 @@ function nowServing(katzDeliLine) {
     return `There is nobody waiting to be served!`;
   }
 }
+
 
 // Function to accept current line of people and return the current line as string. If there is nobody in line, a different message is returned
 
