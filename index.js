@@ -5,22 +5,16 @@ function takeANumber(line, newCust){
     return `Welcome, ${newCust}. You are number ${line.length} in line.`
 }
 
-
+//v2
 function currentLine(line){
   if (line.length > 0){
-    var counter = 0
-    while (counter < line.length ){
-      if (counter === 0){
-        var output = `The line is currently: ${counter+1}. ${line[counter]}`
+    var output = `The line is currently: 1. ${line[0]}`
+      for (var i = 1; i < line.length; i++){
+          output += `, ${i+1}. ${line[i]}`
+        }
+        return output
       }
-      else {
-        output += `, ${counter+1}. ${line[counter]}`
-      }
-      counter++
-    }
-    return output
-  }
-  else {return "The line is currently empty."}
+      else {return "The line is currently empty."}
 }
 
 
