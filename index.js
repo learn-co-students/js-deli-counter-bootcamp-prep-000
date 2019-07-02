@@ -23,7 +23,7 @@ function currentLine(deliLine) {
   }
   else{
      while (i < lineLen) {
-      text += (i + 1) + ". " + deliLine[i] + ",";
+      text += (i + 1) + ". " + deliLine[i] + ", ";
   i++;
 }
 return text
