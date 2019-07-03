@@ -1,9 +1,16 @@
 
 function takeANumber(katzDeliLine, name) {
-var message = ("Welcome, " + name + ". " + "You are number " + (katzDeliLine[i].length + 1)  + " in line.")
-console.log(message);
+  var message = "Welcome, " + name + ". " + "You are number " + (katzDeliLine.length + 1) + " in line.";
+  katzDeliLine.push(name);
 return message
 }
+
+// Another solution to takeANumber:::::::
+// function takeANumber(katzDeliLine, name) {
+//   katzDeliLine.push(`${name}`);
+//   return (`Welcome, ${name}. You are number ${katzDeliLine.length} in line.`)
+// }
+
 
 function nowServing(katzDeliLine) {
   if (katzDeliLine.length > 0) {
@@ -13,18 +20,16 @@ return "Currently serving " + katzDeliLine.shift() + "."
   }
 }
 
-function currentLine(deliLine) {
-  var i = 0;
-  var lineLen = deliLine.length;
-  var text = "The line is currently: ";
 
-  if (lineLen === 0) {
-    return "The line is currently empty."
+function currentLine(deliLine) {
+  if (deliLine.length === 0) {
+    return ("The line is currently empty.")
   }
-  else{
-     while (i < lineLen) {
-      text += (i + 1) + ". " + deliLine[i] + ", ";
-  i++;
+  else {
+    var lineOut = "The line is currently: ";
+    for (var i=0; i < deliLine.length; i++){
+    lineOut += String(i+1) + ". " + deliLine[i] +", ";
+    }
+    return lineOut.slice(0, lineOut.length - 2);
+  }
 }
-return text
-}}
