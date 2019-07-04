@@ -17,8 +17,8 @@ function nowServing(deli) {
     var first = deli.shift()
     return `Currently serving ${first}.` 
   } else {
-    
-  }return "There is nobody waiting to be served!"
+    return "There is nobody waiting to be served!"
+  }
 }
 
 function currentLine(deli) {
