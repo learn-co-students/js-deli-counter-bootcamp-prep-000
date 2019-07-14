@@ -8,6 +8,8 @@ function takeANumber(katzDeliLine, personName) {
   return `Welcome, ${personName}. You are number ${queueLength} in line.`;
 }
 
+
+// Function written during pair programming activity
 /*
 var ticketNum = 0;
 
@@ -17,6 +19,7 @@ function takeANumber(katzDeliLine) {
   return `Welcome, you have ticket number ${ticketNum}`;
 }
 */
+
 
 // Function to accept current line of people and return a message about serving the first person in the line. If there is nobody waiting, a different message is returned
 
@@ -45,6 +48,8 @@ function currentLine(katzDeliLine)
 return res;
 }
 
+
+// Alternative approach to writing the currentLine function which produces the same result
 /*
 function currentLine(katzDeliLine) {
   if (katzDeliLine.length >= 1) {
