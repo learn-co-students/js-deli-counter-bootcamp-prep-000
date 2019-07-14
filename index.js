@@ -8,6 +8,15 @@ function takeANumber(katzDeliLine, personName) {
   return `Welcome, ${personName}. You are number ${queueLength} in line.`;
 }
 
+/*
+var ticketNum = 0;
+
+function takeANumber(katzDeliLine) {
+  ticketNum ++;
+  katzDeliLine.push(ticketNum);
+  return `Welcome, you have ticket number ${ticketNum}`;
+}
+*/
 
 // Function to accept current line of people and return a message about serving the first person in the line. If there is nobody waiting, a different message is returned
 
@@ -22,6 +31,21 @@ function nowServing(katzDeliLine) {
 
 // Function to accept current line of people and return the current line as string. If there is nobody in line, a different message is returned
 
+function currentLine(katzDeliLine)
+{
+	var res = "The line is currently empty.";
+	var i = 0;
+	var queue = [];
+	
+	for(i = 0; i < katzDeliLine.length; i++)
+	{
+		queue.push(` ${i + 1}. ${katzDeliLine[i]}`);
+		res = "The line is currently:" + queue;
+	}
+return res;
+}
+
+/*
 function currentLine(katzDeliLine) {
   if (katzDeliLine.length >= 1) {
     var i = 0;
@@ -35,4 +59,4 @@ function currentLine(katzDeliLine) {
     return `The line is currently empty.`;
   }
 }
-
+*/
