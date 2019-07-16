@@ -12,7 +12,20 @@ function nowServing(array) {
   }
 }
 
+function currentLine(deliLine) {
+  let i = 0;
+  let line = [];
+  while (i < deliLine.length) {
+    line.push([i+1] + '. ' + deliLine[i]);
+    i++;
+} if (deliLine.length === 0) {
+  return 'The line is currently empty.';
+} else {
+  return 'The line is currently: ' + line.join(', ');
+  }
+}
 
+/*
 function currentLine (array) {
   return array.length === 0
    ? "The line is currently empty."
@@ -21,4 +34,4 @@ function currentLine (array) {
          .join(", ")
      }`;
 }
-
+*/
