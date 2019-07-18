@@ -1,4 +1,3 @@
-
 var katzDeliline = [];
 function takeANumber(katzDeliline, name){
   katzDeliline.push(name);
