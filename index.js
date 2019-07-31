@@ -2,10 +2,9 @@ function takeANumber(array, name) {
   array.push(name)
   return "Welcome, " + name + ". You are number "+ array.length +" in line."
 };
-function nowServing(katzDeliLine) {
-  if (katzDeliLine.length < 1) {return "There is nobody waiting to be served!"}
-  else {return "Currently serving " + katzDeliLine[0]}
-  katzDeliLine.shift()
+function nowServing(array) {
+  if (array.length < 1) {return "There is nobody waiting to be served!"}
+  else {return "Currently serving " + array.shift(0) + "."}
 };
 function currentLine(array) {
   var a = []
