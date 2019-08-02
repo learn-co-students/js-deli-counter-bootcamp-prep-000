@@ -10,7 +10,7 @@ if(x === otherDeli)
   var x = katzDeli
 }
   
-// x = currentLine of people (katzDeli)
+// Functions
      function takeANumber(x, y)
 
 {  if(x === otherDeli)
@@ -106,44 +106,6 @@ console.log( `Now Serving ${x[0]}`)
     }
     
     
-// function currentLine(line) 
-//         {
-//           {  if(line === otherDeli)
-//               {  line = otherDeli
-
-//               } else if (line === katzDeli)
-//                 {
-//                     line = katzDeli
-//                 } 
-//                     else 
-//                   {
-//                       console.log('nothing picked')
-//                     }
-//                     var array = ['The line is currently: '];
-//                   // var counter = 1
-//                     for( var counter = 0; counter < line.length; ++counter)
-//                     if(line.length < 1)
-//                     {
-//                     return `The line is currently empty`
-//                     }
-//                     else
-//                     {
-//                 //  j = `The line is currently: ${counter +1} ${ line[counter++]}. `
-//                 // s = j.join()
-//                 // status = "The line is currently: "
-//                   //array.push(status)
-//                   array.push( " " + (counter + 1) + ". " + line[counter])
-                  
-//                   //console.log(j)
-                  
-//                   // array.push
-//                     array.join(',')
-                 
-//                   //console.log(array)
-//                     }
-//           }
-//           return(array.join(','))
-//         }
 
 function currentLine(line){
   if(line.length===0){
