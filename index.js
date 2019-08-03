@@ -19,11 +19,10 @@ function currentLine(line){
   return `The line is currently empty.`
   }
   else{
-   var i = 0;
    while (line.length > 0){
-   line.unshift([i]);
-   i++
+   var i = 1; i++;
+   var n = 0; n++;
   }
-  return `The line is currently: ${i}. ${line[i]}`
+  return `The line is currently: ${[i]}. ${line[n]}`
   }
 }
