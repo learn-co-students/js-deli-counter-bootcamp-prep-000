@@ -9,7 +9,7 @@ function nowServing(katzDeliLine){
   }
   else{
   var newName = katzDeliLine[0]
-  katzDeliLine.splice(0,1)
+  katzDeliLine.shift()
   return `Currently serving ${newName}.`
   }
 }
@@ -25,5 +25,4 @@ function currentLine(line){
    }
    return `The line is currently: ` + linePlaceAndName.join( ', ')
   }
-
 }
