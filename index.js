@@ -11,6 +11,27 @@ function takeANumber(array, name) {
   return welcomeMessage ; 
 }
 
+/*Rewrite Take a number   */ 
+// assigns sequential numbers based on when u place orede //
+// This was interview question .. to assign a number instead of a name 
+
+/*
+ var assignNumber = 0 ;
+ 
+function takeNumbernew(array) {
+  assignNumber++ ;
+  array.push(newNumber);
+  var welcomeMessage 
+  = `Welcome. You have ticket number ${assignNumber}` ; 
+  console.log(welcomeMessage);
+  // Print Current Line 
+  console.log(array); 
+  return welcomeMessage ; 
+}
+
+ takeNumbernew();
+*/
+
 
 function nowServing(array) {
   
