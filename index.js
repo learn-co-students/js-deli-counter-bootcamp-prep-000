@@ -3,7 +3,7 @@
 
 function takeANumber(katzDeli, name){
 
-katzDeli.push(`${name}`);
+katzDeli.push(name);
 
 return (`Welcome, ${name}. You are number ${katzDeli.length} in line.`);
 
@@ -22,7 +22,7 @@ return (`Welcome, ${name}. You are number ${katzDeli.length} in line.`);
 
 
 
-function currentLine(katzDeli,line){
+function currentLine(katzDeli){
 
 var line = [];
 
@@ -36,3 +36,4 @@ line.push([i+1] + '. '+ katzDeli[i]);
 
 return `The line is currently: ${line.join(', ')}`};
 }
+///the join() comand helped me to add a space after the comma and solve the erro in the array
