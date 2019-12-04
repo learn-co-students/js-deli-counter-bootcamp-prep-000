@@ -24,10 +24,9 @@ return (`Welcome, ${name}. You are number ${katzDeli.length} in line.`);
 
 function currentLine(katzDeli){
 
-var line = []; ///i prefered to use and array over a string becasue i thinks is a batter way to display the line of people
+var line = [];
 
-for (let i = 0; i < katzDeli.length; i++ ){ ///allow us to iliterate thorught the katzDeli and push into the line var the element
-
+for (let i = 0; i < katzDeli.length; i++ ){
 
 line.push(`${i+1}. ${katzDeli[i]}`);
 
