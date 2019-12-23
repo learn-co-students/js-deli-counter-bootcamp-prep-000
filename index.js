@@ -6,6 +6,14 @@ function takeANumber (deliLine, newName) {
   
 }
 
+  var ticketNumber = 0;
+  
+function takeANumber (deliLine) {
+  ticketNumber++;
+  deliLine.push(ticketNumber);
+  
+  return `Welcome, your ticket number is ${ticketNumber}`;
+}
 
 function nowServing (deliLine) {
   
