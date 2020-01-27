@@ -8,9 +8,7 @@ var katzDeliLine = [];
 //Struggled getting the index of an element and then I found the .indexOf("element"); function, and added 1 for the visual effect.
 function takeANumber(katzDeliLine,name){
   katzDeliLine.push(name);
-  for (let i = 0 ; i < katzDeliLine.length; i++){
-    return `Welcome, ${name}. You are number ${katzDeliLine.indexOf(name) + 1} in line.`;
-  }
+  return `Welcome, ${name}. You are number ${katzDeliLine.indexOf(name) + 1} in line.`
 }
 
 
@@ -18,25 +16,28 @@ function takeANumber(katzDeliLine,name){
 //Also I struggled with how to erase the data from the array after 'return' ing the array.
 //Since shift() returns the erased value, I erased it first and then I returned the message
 function nowServing(katzDeliLine){
-  if (katzDeliLine.length === 0){
+  if(!katzDeliLine.length){
     return `There is nobody waiting to be served!`;
   } else {
-    katzDeliLine =  katzDeliLine.shift();
-    return `Currently serving ${katzDeliLine}.`;
+    var firstPersonInLine = katzDeliLine.shift();
+    return `Currently serving ${firstPersonInLine}.`;
   }
 }
 
+// This function wanted to return the array as a sring, so the difficult part for me
+// was first to make the first element of the array show as "1" no "0". I used a for loop and added 1 to i
+// 2nd task. to return the string contained in the index. ${katzDeliLine[i]} and display it in order,
+// 3rd task, I learned that for me in order to access a variable from outside a for loop, i had first,
+// to create an empty array so I could push all the elements in, and be able to access them later.
+// 4th
 function currentLine(katzDeliLine){
-  if (katzDeliLine.length === 0){
-      return `The line is currently empty.`;
-    } else {
-            for(let i = 0, i < katzDeliLine.length ; i++){
-                var currentLine = ${i+1}. ${katzDeliLine[i]
-              }
-              return currentLine;
-           }
-  // } else {
-  //           for(let i = 0; i < katzDeliLine.length ; i++ ){
-  //               katzDeliLine.push(`${i+1}. ${katzDeliLine[i]},`);
-  //             }
+  if (!katzDeliLine.length){
+    return `The line is currently empty.`;
+  }
+  var lineAsAString = [];
+
+	for (let i = 0 ; i < katzDeliLine.length ; i++){
+    lineAsAString.push(`${i+1}. ${katzDeliLine[i]}`)
+  }
+  return `The line is currently: ${lineAsAString.join(`, `)}`;
 }
