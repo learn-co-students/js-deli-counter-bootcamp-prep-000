@@ -18,3 +18,18 @@ function nowServing(katzDeliLine) {
       return `There is nobody waiting to be served!`;
   }
 }
+
+var deliline = [];
+function currentLine(katzDeliLine) {
+  let i = 0;
+  while (i < katzDeliLine.length) {
+    deliline.push(""+[i + 1]+"."  + katzDeliLine[i])
+    i++;
+  }
+  if (katzDeliLine.length === 0) {
+    return "The line is currently empty";
+  } else {
+      return `The line is currently: ${deliline}`;
+    
+  }
+}
