@@ -24,12 +24,12 @@ function currentLine(line) {
     
   } else { 
     
-    var myLine = [] ;
+    var newLine = [] ;
     
     for (let i = 0; i < line.length; i++) {
-      myLine.push(` ${i + 1}. ${line[i]}`) ;
+      newLine.push(` ${i + 1}. ${line[i]}`) ;
     }
     
-    return `The line is currently:` + myLine ;
+    return `The line is currently:` + newLine ;
   }
 }
