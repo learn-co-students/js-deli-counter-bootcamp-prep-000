@@ -15,7 +15,7 @@ var nowServingPerson= katzDeliLine.shift()
 return nowServingPerson}
 }else{return "There is nobody waiting to be served!"}
 }
-function currentLine(line){
+function currentLine(katzDeliLine){
 if(katzDeliLine.length>0){
 for(var i=0;i<katzDeliLine.length;i++){
 var nowServingPerson= katzDeliLine.shift()
