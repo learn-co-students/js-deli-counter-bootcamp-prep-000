@@ -1,10 +1,10 @@
 var katzDeliLine = [];
 var newPersonName
+var i=1
 function takeANumber(katzDeliLine,newPersonName){
 
-  console.log(`Welcome,${newPersonName}. You are number 1 in line.`)
+  console.log(`Welcome,${newPersonName}. You are number ${i} in line.`)
+++i
  return katzDeliLine.push(newPersonName)
+
 }
-takeANumber(katzDeliLine,"Ada")
-takeANumber(katzDeliLine,"Grace")
-takeANumber(katzDeliLine,"Kent")
