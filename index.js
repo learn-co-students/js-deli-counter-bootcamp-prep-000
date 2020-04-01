@@ -15,11 +15,12 @@ var nowServingPerson= katzDeliLine.shift()
 return nowServingPerson}
 }else{return "There is nobody waiting to be served!"}
 }
+var katzDeliLine = ["Bill", "Jane", "Ann"];
 function currentLine(katzDeliLine){
 if(katzDeliLine.length>0){
 for(var i=0;i<katzDeliLine.length;i++){
 var nowServingPerson= katzDeliLine.shift()
  console.log(katzDeliLine)
 return katzDeliLine}
-}else{return "There is nobody waiting to be served!"}
+}else{return "The line is currently empty."}
 }
