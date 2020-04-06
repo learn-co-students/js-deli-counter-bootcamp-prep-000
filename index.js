@@ -24,9 +24,9 @@ function currentLine(currentLine) {
   }
 else {
   var arr = []
-  for (var i = 0; i < currentLine.length; i++) {
+  for (var i = 0; i < currentLine.length; i+2) {
 
-    currentLine.splice(i, 0, `${i+1}.`)
+    //currentLine.splice(i, 0, `${(i+1)}.`)
   }
       return `The line is currently: ${arr}`
       //${i + 1}. ${currentLine}//
