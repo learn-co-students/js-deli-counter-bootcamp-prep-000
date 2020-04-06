@@ -24,7 +24,7 @@ function currentLine(currentLine) {
   }
 else {
   var arr = []
-  for (var i = 0; i < currentLine.length; i+2) {
+  //for (var i = 0; i < currentLine.length; i+2) {
 
     //currentLine.splice(i, 0, `${(i+1)}.`)
   }
