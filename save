@@ -1,0 +1,12 @@
+function currentLine(array) {
+  let x = 0
+  if (array.length < 1) {return "The line is currently empty."}
+  else {while (x < array.length) {return "The line is currently: " + (x+1) + ". " + array[x]} + ", "}
+  x++
+};
+
+
+function currentLine(array) {
+  if (array.length < 1) {return "The line is currently empty."}
+  else {for (var x=0; x < array.length; x++) {return "The line is currently: " + (x+1) + ". " + array[x] + ", "}}
+};
