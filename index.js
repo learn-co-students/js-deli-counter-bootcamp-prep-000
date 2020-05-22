@@ -16,7 +16,7 @@ function currentLine(line){
   }
   var namenumber = []
 
-  for (let i = 0, l = line.length; i < l; i++) {
-    namenumber.push(`${i+1}. ${line[i]}`)
+  for (let a = 0, b = line.length; a < b; a++) {
+    namenumber.push(`${a+1}. ${line[a]}`)
   } return `The line is currently: ${namenumber.join(', ')}`
 }
