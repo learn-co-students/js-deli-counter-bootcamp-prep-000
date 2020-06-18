@@ -10,9 +10,9 @@
   }
 }*/
 
-function takeANumber(currentLine, newCustomerName){
-    currentLine.push(newCustomerName);
-    return  `Welcome, ${newCustomerName}. You are number ${currentLine.length} in line.`;
+function takeANumber(deliLine, newCustomerName){
+    deliLine.push(newCustomerName);
+    return  `Welcome, ${newCustomerName}. You are number ${deliLine.length} in line.`;
 }
 
 
@@ -30,20 +30,12 @@ function nowServing(deliLine){
   
   
 
-/*function nowServing(currentLine) {
-  if (currentLine.length > 0) {
-    return "Currently serving " + currentLine.shift() + ".";
-  } else {
-      return "There is nobody waiting to be served!";
-  }
-}*/
 
-
-function currentLine(katzDeliLine) {
-  if (katzDeliLine.length > 0) {
+function currentLine(deliLine) {
+  if (deliLine.length > 0) {
     var output = "";
-    for(var i = 0; i < katzDeliLine.length; i++) {
-        output += (i + 1) + ". " + katzDeliLine[i] + ", ";
+    for(var i = 0; i < deliLine.length; i++) {
+        output += (i + 1) + ". " + deliLine[i] + ", ";
       }
     output = output.slice(0, -2);
     return `The line is currently: ${output}`;
