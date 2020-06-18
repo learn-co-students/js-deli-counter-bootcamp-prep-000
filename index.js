@@ -10,33 +10,33 @@
   }
 }*/
 
-function takeANumber(katzDeliLine, name){
-    katzDeliLine.push(name);
-    return  `Welcome, ${name}. You are number ${katzDeliLine.length} in line.`;
+function takeANumber(currentLine, newCustomerName){
+    currentLine.push(newCustomerName);
+    return  `Welcome, ${newCustomerName}. You are number ${currentLine.length} in line.`;
 }
 
 
 
 
 
-/*function nowServing(katzDeliLine){
+function nowServing(deliLine){
   if(deliLine.length > 0){
     return "Currently serving " + deliLine.shift() + ".";
   } else {
     
     return "There is nobody waiting to be served!";
     }
-  }*/
+  }
   
   
 
-function nowServing(katzDeliLine) {
-  if (katzDeliLine.length > 0) {
-    return "Currently serving " + katzDeliLine.shift() + ".";
+/*function nowServing(currentLine) {
+  if (currentLine.length > 0) {
+    return "Currently serving " + currentLine.shift() + ".";
   } else {
       return "There is nobody waiting to be served!";
   }
-}
+}*/
 
 
 function currentLine(katzDeliLine) {
