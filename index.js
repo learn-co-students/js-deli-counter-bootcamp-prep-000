@@ -18,7 +18,7 @@ if (katzDeliLine.length === 0) {
 }
 
 
-function currentLine (katzDeliLine) {
+function currentLine(katzDeliLine) {
   
   var lineNumberAndCustomer = [];
   
@@ -30,11 +30,11 @@ function currentLine (katzDeliLine) {
 if (katzDeliLine.length === 0) {
     
     return("The line is currently empty.");
-} else {
+  } else {
   
   lineNumberAndCustomer = lineNumberAndCustomer.slice(0, lineNumberAndCustomer.length-2)
   return("The line is currently: " + lineNumberAndCustomer);
   
-}
+  }
 }
 
