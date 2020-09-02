@@ -23,7 +23,7 @@ function currentLine(katzDeliLine) {
   var lineNumberAndCustomer = [];
   
   for (let i = 0; i < katzDeliLine.length; i++) {
-    lineNumberAndCustomer += (i + 1) + ". " + katzDeliLine[i] + ", "
+    lineNumberAndCustomer += (i + 1) + ". " + katzDeliLine[i] + ", ";
   }
     
   
@@ -32,9 +32,8 @@ if (katzDeliLine.length === 0) {
     return("The line is currently empty.");
   } else {
   
-  lineNumberAndCustomer = lineNumberAndCustomer.slice(0, lineNumberAndCustomer.length-2)
+  lineNumberAndCustomer = lineNumberAndCustomer.slice(0, lineNumberAndCustomer.length-2);
   return("The line is currently: " + lineNumberAndCustomer);
   
   }
 }
-
