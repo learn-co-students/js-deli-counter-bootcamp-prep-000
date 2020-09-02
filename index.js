@@ -1,3 +1,7 @@
+var katzDeliLine = [];
+
+var customer = [];
+
 function takeANumber(katzDeliLine, customer) {
   katzDeliLine.push(customer);
   return("Welcome, " + customer + ". You are number " + katzDeliLine.length + " in line.");
@@ -12,11 +16,10 @@ if (katzDeliLine.length === 0) {
     return("There is nobody waiting to be served!");
     
   } else {
-    return("Currently serving " + katzDeliLine.shift() + ".");
+    return("Currently serving " + katzDeliLine.shift(customer) + ".");
     
   }
 }
-
 
 function currentLine(katzDeliLine) {
   
