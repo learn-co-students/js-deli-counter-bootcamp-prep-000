@@ -22,11 +22,15 @@ function currentLine(currentLinePeople) {
     return "The line is currently empty.";
   } else {
     var num = 1;
-    var theLineString = "The line is currently: "
+    var theLineString = "The line is currently: ";
+    var theNamestring;
     var i;
     for (i = 0; i < currentLinePeople.length; i++) {
       num = i + 1;
-      theLineString = theLineString + num + ". " + currentLinePeople[i] + ", ";
+      theLineString = theLineString + num + ". " + currentLinePeople[i];
+      while (num !== currentLinePeople.length) {
+        theLineString = theLineString + " ,";
+      }
     }
     return theLineString;
   }
