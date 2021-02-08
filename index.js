@@ -23,6 +23,7 @@ function currentLine(currentLinePeople) {
   } else {
     var num = 1;
     var theLineString = "The line is currently: "
+    var i;
     for (i = 0; i < currentLinePeople.length; i++) {
       num = i + 1;
       theLineString = theLineString + num + ". " + currentLinePeople[i];
