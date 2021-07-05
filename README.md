@@ -46,3 +46,20 @@ currentLine(katzDeliLine); // "The line is currently: 1. Kent, 2. Matz"
 ```
 
 <p data-visibility='hidden'>View <a href='https://learn.co/lessons/js-deli-counter' title='Deli Counter Lab'>Deli Counter Lab</a> on Learn.co and start learning to code for free.</p>
+
+
+function currentLine(currentLine) {
+  var x = 0;
+  var newstring = [];
+  
+  if (currentline.length > 0) {
+    newString.push(`${[x]}.${currentLine[x]}`);
+    x++;
+  }
+  else {
+    console.log("The line is currently empty.");
+  }
+  
+  return newString;
+  
+}
