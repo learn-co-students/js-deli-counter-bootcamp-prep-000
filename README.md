@@ -1,4 +1,14 @@
-# Deli Counter Lab
+
+  var myLine = [];
+
+  i + "." + katzDeliLine[i];
+ var strLong = "The line is currently: " + myLine.push(str);
+return strLong;
+}
+if (katzDeliLine.length === 0) {
+    return `The line is currently empty.`;
+} 
+}# Deli Counter Lab
 
 ## Objectives
 1. Add elements to an array
