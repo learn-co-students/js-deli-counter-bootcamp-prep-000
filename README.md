@@ -1,4 +1,6 @@
-# Deli Counter Lab
+else (katzDeliLine.length===undefined) {
+    console.log('There is nobody waiting to be served!');
+  }# Deli Counter Lab
 
 ## Objectives
 1. Add elements to an array
