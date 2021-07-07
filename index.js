@@ -1,0 +1,3 @@
+function takeANumber(line,name){line.push(name);return `Welcome, ${name}. You are number ${line.length} in line.`;}
+function nowServing(line){if(line.length){ return 'Currently serving '+ line.shift() + '.';}else{return 'There is nobody waiting to be served!';}}
+function currentLine(line){if(line.length){var announce='The line is currently: 1. '+line[0];for(var i=1;i<line.length;i++){announce+=", "+(parseInt(i,10)+1)+'. '+line[i];}}else {var announce='The line is currently empty.';} return announce;}
