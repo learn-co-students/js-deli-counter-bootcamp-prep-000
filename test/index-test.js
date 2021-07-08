@@ -6,7 +6,7 @@ describe('deli', () => {
     var otherDeli;
 
     beforeEach(() => {
-      katzDeli = [];
+      katzDeli[i] = otherDeli[i];
       otherDeli = ["Steven", "Blake", "Avi"];
     });
 
